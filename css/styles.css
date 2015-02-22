@@ -10,3 +10,6 @@ body { font-size: 140%; }
   color: #94D5F5;
   text-shadow: 1px 1px 1px #ccc;
 }
+#game a.active {
+  text-decoration: underline;
+}

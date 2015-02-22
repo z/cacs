@@ -6,48 +6,54 @@ define(function (require) {
     $(document).ready(function() {
 
       var list = {};
-      list['items'] = [];
 
-      $.get("data/v-cmdlist.txt", function(data) {
-        cmds = data.split("\n").map(function(line){
+      function loadItems(game) {
 
-          var str = '^7+button10 : activate button10 (behavior depends on mod)';
-          var re_cmd = new RegExp(/[\^]7(.+) : (.+)/);
-          var cmd_grp = re_cmd.exec(line);
-          //console.log(cmd_grp);
+        list['items'] = [];
 
-          if (cmd_grp) {
-            var item = {
-              label: cmd_grp[1],
-              type: "cmd",
-              description: cmd_grp[2].replace('"','\"')
-            };
-            list['items'].push(item);
-          }
+        $.get("data/" + game + "/cmdlist.txt", function(data) {
+          cmds = data.split("\n").map(function(line){
+
+            var str = '^7+button10 : activate button10 (behavior depends on mod)';
+            var re_cmd = new RegExp(/[\^]7(.+) : (.+)/);
+            var cmd_grp = re_cmd.exec(line);
+            //console.log(cmd_grp);
+
+            if (cmd_grp) {
+              var item = {
+                label: cmd_grp[1],
+                type: "cmd",
+                description: cmd_grp[2].replace('"','\"')
+              };
+              list['items'].push(item);
+            }
+          });
+          
+          //console.log(list);
         });
-        
-        //console.log(list);
-      });
 
-      $.get("data/v-cvarlist.txt", function(data) {
-        cvars = data.split("\n").map(function(line){
-          var re_cvar = new RegExp(/[\^]7(\w+) is "(.*)" [\[]"(.*)"[\]] (.+)/);
-          var cvar_grp = re_cvar.exec(line);
-          //console.log(cvar_grp);
+        $.get("data/" + game + "/cvarlist.txt", function(data) {
+          cvars = data.split("\n").map(function(line){
+            var re_cvar = new RegExp(/[\^]7(\w+) is "(.*)" [\[]"(.*)"[\]] (.+)/);
+            var cvar_grp = re_cvar.exec(line);
+            //console.log(cvar_grp);
 
-          if (cvar_grp) {
-            var item = {
-              label: cvar_grp[1],
-              type: "cvar",
-              default_value: cvar_grp[3].replace('"','\"'),
-              description: cvar_grp[4].replace('"','\"')
-            };
-            list['items'].push(item);
-          }
+            if (cvar_grp) {
+              var item = {
+                label: cvar_grp[1],
+                type: "cvar",
+                default_value: cvar_grp[3].replace('"','\"'),
+                description: cvar_grp[4].replace('"','\"')
+              };
+              list['items'].push(item);
+            }
+          });
+          //console.log(list);
+          populateTable();
         });
-        //console.log(list);
-        populateTable();
-      });
+      }
+
+      loadItems("vecxis"); // default to vecxis
 
       var table = $('#cvar-cmd-list').DataTable({
         "columns": [
@@ -65,6 +71,18 @@ define(function (require) {
         var all = $.parseJSON(JSON.stringify(list));
         $('#cvar-cmd-list').DataTable().rows.add(all.items).draw();
       }
+
+      $("#game a").click(function(e) {
+        var $this = $(this);
+        var game = $this.attr("id");
+        var name = $this.text();
+        $("#game a").removeClass("active");
+        $this.addClass("active");
+        $("#game-name").text(name);
+        $("#cvar-cmd-list").DataTable().clear();
+        loadItems(game);
+        e.preventDefault();
+      });
 
     });
   });
