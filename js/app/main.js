@@ -53,7 +53,7 @@ define(function (require) {
         });
       }
 
-      loadItems("vecxis"); // default to vecxis
+      loadItems("xonotic"); // default to xonotic
 
       var table = $('#cvar-cmd-list').DataTable({
         "columns": [
