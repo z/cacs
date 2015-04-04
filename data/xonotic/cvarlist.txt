@@ -1,9 +1,12 @@
+====== Log started (Sat Apr 04 13:26:30 2015) ======
+^7]cvarlist
 ^7_backup_con_chatvars_set is "0" ["0"] custom cvar
 ^7_campaign_index is "" [""] custom cvar
 ^7_campaign_name is "" [""] custom cvar
 ^7_campaign_testrun is "0" ["0"] To verify the campaign file, set this to 1, then start the first campaign level from the menu. If you end up in the menu again, it's good, if you get a QC crash, it's bad.
-^7_cl_color is "60" ["112.211"] internal storage cvar for current player colors (changed by color command)
-^7_cl_name is "zed 😎" [""] internal storage cvar for current player name (changed by name command)
+^7_cl_color is "105" ["112.211"] internal storage cvar for current player colors (changed by color command)
+^7_cl_gender is "0" ["0"] storage cvar for current player gender (0 = undisclosed, 1 = male, 2 = female)
+^7_cl_name is "" [""] internal storage cvar for current player name (changed by name command)
 ^7_cl_playermodel is "models/player/erebus.iqm" ["models/player/erebus.iqm"] internal storage cvar for current player model in Nexuiz/Xonotic (changed by playermodel command)
 ^7_cl_playerskin is "0" ["0"] internal storage cvar for current player skin in Nexuiz/Xonotic (changed by playerskin command)
 ^7_cl_pmodel is "0" ["0"] internal storage cvar for current player model number in nehahra (changed by pmodel command)
@@ -12,7 +15,7 @@
 ^7_con_chat_maximized is "0" ["0"] custom cvar
 ^7_forced_saved_cvar_ is "done" ["doit"] custom cvar
 ^7_hud_configure is "0" ["0"] 1 = configure the HUD
-^7_hud_panelorder is "15 12 9 10 5 6 14 0 7 4 11 2 1 3 8 13 16 17 " ["15 12 9 10 5 6 14 0 7 4 11 2 1 3 8 13 16 "] contains order in which panels are to be drawn
+^7_hud_panelorder is "15 12 9 5 10 6 14 0 7 4 11 2 1 3 8 13 16 " ["15 12 9 5 10 6 14 0 7 4 11 2 1 3 8 13 16 "] contains order in which panels are to be drawn
 ^7_hud_showbinds_reload is "1" ["0"] set it to 1 to reload binds if you changed any. It is reset to 0 automatically
 ^7_independent_players is "0" ["0"] DO NOT TOUCH
 ^7_isalnum is "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" ["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"] custom cvar
@@ -34,7 +37,7 @@
 ^7_menu_vid_desktopfullscreen is "1" ["1"] custom cvar
 ^7_menu_vid_height is "1200" ["768"] custom cvar
 ^7_menu_vid_pixelheight is "1" ["1"] custom cvar
-^7_menu_vid_width is "1920" ["1024"] custom cvar
+^7_menu_vid_width is "3840" ["1024"] custom cvar
 ^7_notarget is "0" ["0"] NO, REALLY, DON'T
 ^7_snd_mixahead is "0.15" ["0.15"] how much sound to mix ahead of time
 ^7_sv_init is "0" ["0"] custom cvar
@@ -46,47 +49,6 @@
 ^7accuracy_color_levels is "0 20 100" ["0 20 100"] accuracy values at which a specified color (accuracy_color<X>) will be used. If your accuracy is between 2 of these values then a mix of the Xth and X+1th colors will be used. You can specify up to 10 values, in increasing order
 ^7ambient_fade is "100" ["100"] rate of volume fading when moving from one environment to another
 ^7ambient_level is "0.3" ["0.3"] volume of environment noises (water and wind)
-^7aot_cur_fov is "130" ["130"] custom cvar
-^7aot_cur_sens is "3" ["3"] custom cvar
-^7aot_fov1 is "130" ["130"] custom cvar
-^7aot_fov2 is "110" ["110"] custom cvar
-^7aot_fov3 is "90" ["90"] custom cvar
-^7aot_fsens1 is "3" ["3"] custom cvar
-^7aot_fsens2 is "3" ["3"] custom cvar
-^7aot_fsens3 is "2" ["2"] custom cvar
-^7aot_onetime is "//" [""] custom cvar
-^7aot_secondrun is "aot_secondrun_alias" ["aot_secondrun_alias"] custom cvar
-^7aot_zoom1 is "60" ["60"] custom cvar
-^7aot_zoom2 is "40" ["40"] custom cvar
-^7aot_zoom3 is "20" ["20"] custom cvar
-^7aot_zsens1 is "2" ["2"] custom cvar
-^7aot_zsens2 is "1" ["1"] custom cvar
-^7aot_zsens3 is "1" ["1"] custom cvar
-^7aotm_0 is "CANCEL" ["CANCEL"] custom cvar
-^7aotm_1 is "^3[^71^3] About Me" ["^3[^71^3] About Me"] custom cvar
-^7aotm_1_1 is "^5(^71.1^5) Carrying Enemy Flag" ["^5(^71.1^5) Carrying Enemy Flag"] custom cvar
-^7aotm_1_2 is "^5(^71.2^5) Status" ["^5(^71.2^5) Status"] custom cvar
-^7aotm_1_3 is "^5(^71.3^5) Protecting Flag Carrier" ["^5(^71.3^5) Protecting Flag Carrier"] custom cvar
-^7aotm_1_4 is "^5(^71.4^5) Retreiving Flag" ["^5(^71.4^5) Retreiving Flag"] custom cvar
-^7aotm_1_5 is "^5(^71.5^5) I'm on my way!" ["^5(^71.5^5) I'm on my way!"] custom cvar
-^7aotm_1_6 is "^5(^71.6^5) Defending" ["^5(^71.6^5) Defending"] custom cvar
-^7aotm_2 is "^3[^72^3] Team Commands" ["^3[^72^3] Team Commands"] custom cvar
-^7aotm_2_1 is "^5(^72.1^5) Defend Our Base" ["^5(^72.1^5) Defend Our Base"] custom cvar
-^7aotm_2_2 is "^5(^72.2^5) Meet Me Here To Attack" ["^5(^72.2^5) Meet Me Here To Attack"] custom cvar
-^7aotm_2_3 is "^5(^72.3^5) Retrieve Our Flag" ["^5(^72.3^5) Retrieve Our Flag"] custom cvar
-^7aotm_3 is "^3[^73^3] Ninjaz" ["^3[^73^3] Ninjaz"] custom cvar
-^7aotm_3_1 is "^5(^73.1^5) Are you a ninja?" ["^5(^73.1^5) Are you a ninja?"] custom cvar
-^7aotm_3_2 is "^5(^73.2^5) www.nexuizninjaz.com" ["^5(^73.2^5) www.nexuizninjaz.com"] custom cvar
-^7aotm_3_3 is "^5(^73.3^5) I am a ninja!" ["^5(^73.3^5) I am a ninja!"] custom cvar
-^7aotm_4 is "^3[^74^3] Answers" ["^3[^74^3] Answers"] custom cvar
-^7aotm_4_1 is "^5(^74.1^5) Roger That" ["^5(^74.1^5) Roger That"] custom cvar
-^7aotm_4_2 is "^5(^74.2^5) Negative" ["^5(^74.2^5) Negative"] custom cvar
-^7aotm_5 is "^3[^75^3] Intelligence" ["^3[^75^3] Intelligence"] custom cvar
-^7aotm_5_1 is "^5(^75.1^5) Chasing Enemy Flag Carrier" ["^5(^75.1^5) Chasing Enemy Flag Carrier"] custom cvar
-^7aotm_5_2 is "^5(^75.2^5) Sniper Seen" ["^5(^75.2^5) Sniper Seen"] custom cvar
-^7aotm_5_3 is "^5(^75.3^5) Quad Soon" ["^5(^75.3^5) Quad Soon"] custom cvar
-^7aotm_5_4 is "^5(^75.4^5) Incoming" ["^5(^75.4^5) Incoming"] custom cvar
-^7aotm_5_5 is "^5(^75.5^5) Enemy Base Is Clear" ["^5(^75.5^5) Enemy Base Is Clear"] custom cvar
 ^7bgmvolume is "1" ["1"] volume of background music (such as CD music or replacement files such as sound/cdtracks/track002.ogg)
 ^7bot_ai_aimskill_blendrate is "2" ["2"] How much correction will be applied to the aiming angle
 ^7bot_ai_aimskill_firetolerance_distdegrees is "100" ["100"] custom cvar
@@ -162,27 +124,27 @@
 ^7cdaudio is "1" ["1"] CD playing mode (0 = never access CD drive, 1 = play CD tracks if no replacement available, 2 = play fake tracks if no CD track available, 3 = play only real CD tracks, 4 = play real CD tracks even instead of named fake tracks)
 ^7cdaudioinitialized is "1" ["1"] indicates if CD Audio system is active
 ^7chase_active is "0" ["0"] enables chase cam
-^7chase_back is "128" ["48"] chase cam distance from the player
+^7chase_back is "48" ["48"] chase cam distance from the player
 ^7chase_overhead is "0" ["0"] chase cam looks straight down if this is not zero
 ^7chase_pitchangle is "55" ["55"] chase cam pitch angle
 ^7chase_stevie is "0" ["0"] (GOODVSBAD2 only) chase cam view from above
-^7chase_up is "48" ["24"] chase cam distance from the player
+^7chase_up is "24" ["24"] chase cam distance from the player
 ^7cl_accuracy_data_receive is "0" ["0"] 1 receive weapon accuracy data statistics at the end of the match
 ^7cl_accuracy_data_share is "0" ["0"] 1 share my weapon accuracy data statistics with other players, 0 keep my weapon accuracy data statistics hidden
-^7cl_allow_uid2name is "0" ["-1"] -1 = ask if the player wants to disable/enable this feature, 0 = disable, 1 = enable uid2name (allows showing your name in race rankings for instance)
+^7cl_allow_uid2name is "-1" ["-1"] -1 = ask if the player wants to disable/enable this feature, 0 = disable, 1 = enable uid2name (allows showing your name in race rankings for instance)
 ^7cl_allow_uidtracking is "1" ["1"] -1 = ask if the player wants to disable/enable this feature, 0 = disable, 1 = enable uid tracking (allows associating your data with your player ID)
 ^7cl_anglespeedkey is "1.5" ["1.5"] how much +speed multiplies keyboard turning speed
 ^7cl_announcer is "default" ["default"] name of the announcer you wish to use from data/sound/announcer
 ^7cl_announcer_antispam is "2" ["2"] number of seconds before an announcement of the same sound can be played again
 ^7cl_announcer_maptime is "3" ["3"] play announcer sound telling you the remaining maptime - 0: do not play at all, 1: play at one minute, 2: play at five minutes, 3: play both
-^7cl_autodemo is "1" ["0"] records every game played, using the date/time and map name to name the demo file
+^7cl_autodemo is "0" ["0"] records every game played, using the date/time and map name to name the demo file
 ^7cl_autodemo_delete is "0" ["0"] Delete demos after recording.  This is a bitmask, bit 1 gives the default, bit 0 the value for the current demo.  Thus, the values are: 0 = disabled; 1 = delete current demo only; 2 = delete all demos except the current demo; 3 = delete all demos from now on
 ^7cl_autodemo_delete_keeprecords is "0" ["0"] when 1, records with a newly made race/cts demo are kept even if cl_autodemo_delete is used to delete demos
 ^7cl_autodemo_nameformat is "demos/%Y-%m-%d_%H-%M" ["demos/%Y-%m-%d_%H-%M"] The format of the cl_autodemo filename, followed by the map name (the date is encoded using strftime escapes)
 ^7cl_autoscreenshot is "1" ["1"] Take a screenshot upon the end of a match... 0 = Disable completely, 1 = Allow sv_autoscreenshot to take a screenshot when requested, 2 = Always take an autoscreenshot anyway.
 ^7cl_autoswitch is "1" ["1"] automatically switch to newly picked up weapons if they are better than what you are carrying
 ^7cl_autotaunt is "0" ["0"] automatically taunt enemies when fragging them
-^7cl_backspeed is "540" ["400"] backward movement speed
+^7cl_backspeed is "400" ["400"] backward movement speed
 ^7cl_beams_instantaimhack is "0" ["0"] makes your lightning gun aiming update instantly
 ^7cl_beams_lightatend is "0" ["0"] make a light at the end of the beam
 ^7cl_beams_polygons is "1" ["1"] use beam polygons instead of models
@@ -233,7 +195,7 @@
 ^7cl_curl_maxdownloads is "1" ["1"] maximum number of concurrent HTTP/FTP downloads
 ^7cl_curl_maxspeed is "500" ["500"] maximum download speed (KiB/s)
 ^7cl_curl_useragent is "1" ["1"] send the User-Agent string (note: turning this off may break stuff)
-^7cl_curl_useragent_append is "0.8.0" ["0.8.0"] a string to append to the User-Agent string (useful for name and version number of your mod)
+^7cl_curl_useragent_append is "git" ["git"] a string to append to the User-Agent string (useful for name and version number of your mod)
 ^7cl_damageeffect is "1" ["1"] enable weapon damage effects. 1 enables the feature on skeletal models, 2 on any model
 ^7cl_damageeffect_bones is "5" ["5"] how many damages to allow on a rigged mesh at once (non-skeletal objects are limited to one)
 ^7cl_damageeffect_distribute is "1" ["1"] divide particle intensity if multiple damages are present
@@ -248,7 +210,7 @@
 ^7cl_deathscoreboard is "1" ["1"] shows scoreboard (+showscores) while dead
 ^7cl_decals is "1" ["1"] enables decals (bullet holes, blood, etc)
 ^7cl_decals_bias is "0.125" ["0.125"] distance to bias decals from surface to prevent depth fighting
-^7cl_decals_fadetime is "2" ["5"] how long decals take to fade away
+^7cl_decals_fadetime is "2" ["2"] how long decals take to fade away
 ^7cl_decals_max is "4096" ["4096"] maximum number of decals allowed to exist in the world at once
 ^7cl_decals_models is "0" ["0"] enables decals on animated models (if newsystem is also 1)
 ^7cl_decals_newsystem is "1" ["1"] enables new advanced decal system
@@ -296,7 +258,7 @@
 ^7cl_forcemyplayerskin is "0" ["0"] set to the skin number you want to show yourself as (does not affect how enemies look with cl_forceplayermodels)
 ^7cl_forceplayercolors is "0" ["0"] make everyone look like your own color (requires server to have sv_defaultcharacter 0, and is ignored in teamplay with more than two teams)
 ^7cl_forceplayermodels is "0" ["0"] make everyone look like your own model (requires server to have sv_defaultcharacter 0)
-^7cl_forwardspeed is "540" ["400"] forward movement speed
+^7cl_forwardspeed is "400" ["400"] forward movement speed
 ^7cl_fullbright_items is "0" ["0"] enable fullbright items (if server allows, controled by g_fullbrightitems)
 ^7cl_gameplayfix_soundsmovewithentities is "1" ["1"] causes sounds made by lifts, players, projectiles, and any other entities, to move with the entity, so for example a rocket noise follows the rocket rather than staying at the starting position
 ^7cl_gentle is "0" ["0"] client side gentle mode, master switch for removing both gibs and messages
@@ -339,13 +301,13 @@
 ^7cl_leanmodel_up_limit is "50" ["50"] gun leaning upward limit
 ^7cl_leanmodel_up_lowpass is "20" ["20"] gun leaning upward lowpass in 1/s
 ^7cl_leanmodel_up_speed is "0.65" ["0.65"] gun leaning upward speed
-^7cl_lerpanim_maxdelta_framegroups is "0.05" ["0.1"] maximum frame delta for smoothing between framegroups (when 0, one network frame)
+^7cl_lerpanim_maxdelta_framegroups is "0.05" ["0.05"] maximum frame delta for smoothing between framegroups (when 0, one network frame)
 ^7cl_lerpanim_maxdelta_server is "0.1" ["0.1"] maximum frame delta for smoothing between server-controlled animation frames (when 0, one network frame)
 ^7cl_lerpexcess is "0" ["0"] maximum allowed lerp excess (hides, not fixes, some packet loss)
 ^7cl_lockview is "0" ["0"] when 1, the camera does not move any more
 ^7cl_loddistance1 is "1024" ["1024"] custom cvar
 ^7cl_loddistance2 is "3072" ["3072"] custom cvar
-^7cl_matchcount is "6" ["0"] custom cvar
+^7cl_matchcount is "0" ["0"] custom cvar
 ^7cl_maxfps is "0" ["0"] maximum fps cap, 0 = unlimited, if game is running faster than this it will wait before running another frame (useful to make cpu time available to other programs)
 ^7cl_maxfps_alwayssleep is "1" ["1"] gives up some processing time to other applications each frame, value in milliseconds, disabled if cl_maxfps is 0
 ^7cl_maxidlefps is "20" ["20"] maximum fps cap when the game is not the active window (makes cpu time available to other programs
@@ -383,7 +345,7 @@
 ^7cl_movespeedkey is "2.0" ["2.0"] how much +speed multiplies keyboard movement speed
 ^7cl_nade_timer is "1" ["1"] show a visual timer for nades, 1 = only circle, 2 = circle with text
 ^7cl_nade_type is "3" ["3"] custom cvar
-^7cl_netfps is "60" ["72"] how many input packets to send to server each second
+^7cl_netfps is "60" ["60"] how many input packets to send to server each second
 ^7cl_netimmediatebuttons is "1" ["1"] sends extra packets whenever your buttons change or an impulse is used (basically: whenever you click fire or change weapon)
 ^7cl_netlocalping is "0" ["0"] lags local loopback connection by this much ping time (useful to play more fairly on your own server with people with higher pings)
 ^7cl_netpacketloss_receive is "0" ["0"] drops this percentage of incoming packets, useful for testing network protocol robustness (jerky movement, effects failing to start, sounds failing to play, etc)
@@ -416,7 +378,7 @@
 ^7cl_particles_forcetraileffects is "1" ["1"] force trails to be displayed even if a non-trail draw primitive was used (debug/compat feature)
 ^7cl_particles_oldvortexbeam is "0" ["0"] Uses the old v2.3 Vortex beam instead of the new beam, only works if server allows it (g_allow_oldvortexbeam 1)
 ^7cl_particles_quake is "0" ["0"] makes particle effects look mostly like the ones in Quake
-^7cl_particles_quality is "1.0" ["1"] multiplies number of particles
+^7cl_particles_quality is "1.0" ["1.0"] multiplies number of particles
 ^7cl_particles_rain is "1" ["1"] enables rain effects
 ^7cl_particles_size is "1" ["1"] multiplies particle size
 ^7cl_particles_smoke is "1" ["1"] enables smoke (used by multiple effects)
@@ -433,16 +395,18 @@
 ^7cl_prydoncursor is "0" ["0"] enables a mouse pointer which is able to click on entities in the world, useful for point and click mods, see PRYDON_CLIENTCURSOR extension in dpextensions.qc
 ^7cl_prydoncursor_notrace is "0" ["0"] disables traceline used in prydon cursor reporting to the game, saving some cpu time
 ^7cl_readpicture_force is "0" ["0"] when enabled, the low quality pictures read by ReadPicture() are preferred over the high quality pictures on the file system
-^7cl_reticle is "1" ["1"] control for toggling whether ANY zoom reticles are shown
-^7cl_reticle_item_normal is "1" ["1"] draw reticle when zooming with the zoom button, 0 disables and values between 0 and 1 change alpha
-^7cl_reticle_item_vortex is "1" ["1"] draw aiming reticle for the vortex weapon's zoom, 0 disables and values between 0 and 1 change alpha
-^7cl_reticle_stretch is "0" ["0"] whether to stretch reticles so they fit the screen (breaks image proportions)
+^7cl_reticle is "1" ["1"] enable zoom reticles
+^7cl_reticle_normal is "1" ["1"] draw an aiminig reticle when zooming with the zoom button
+^7cl_reticle_normal_alpha is "1" ["1"] alpha of the normal reticle
+^7cl_reticle_stretch is "0" ["0"] stretch reticles so they fit the screen (breaks image proportions)
+^7cl_reticle_weapon is "1" ["1"] draw custom aiming reticle when zooming with certain weapons
+^7cl_reticle_weapon_alpha is "1" ["1"] alpha of the custom reticle
 ^7cl_rollangle is "0" ["0"] how much to tilt the view when strafing
 ^7cl_rollspeed is "200" ["200"] how much strafing is necessary to tilt the view
 ^7cl_sandbox_clipboard is "" [""] custom cvar
 ^7cl_serverextension_download is "0" ["0"] indicates whether the server supports the download command
 ^7cl_shownet is "0" ["0"] 1 = print packet size, 2 = print packet message list
-^7cl_sidespeed is "540" ["350"] strafe movement speed
+^7cl_sidespeed is "350" ["350"] strafe movement speed
 ^7cl_simple_items is "0" ["0"] enable simple items (if server allows)
 ^7cl_simpleitems_postfix is "_simple" ["_simple"] posfix to add fo model name when simple items are enabled
 ^7cl_smoothviewheight is "0.05" ["0.05"] time of the averaging to the viewheight value so that it creates a smooth transition. higher values = longer transition, 0 for instant transition.
@@ -463,13 +427,13 @@
 ^7cl_stainmaps is "0" ["0"] stains lightmaps, much faster than decals but blurred
 ^7cl_stainmaps_clearonload is "1" ["1"] clear stainmaps on map restart
 ^7cl_stairsmoothspeed is "200" ["200"] how fast your view moves upward/downward when running up/down stairs
-^7cl_startcount is "5" ["0"] how many times the client has been run
+^7cl_startcount is "2" ["0"] how many times the client has been run
 ^7cl_stripcolorcodes is "0" ["0"] experimental feature (notes: strips ALL color codes from messages!)
 ^7cl_unpress_attack_on_weapon_switch is "1" ["1"] automatically unpress fire and fire1 attack buttons when you switch a weapon
 ^7cl_unpress_zoom_on_death is "1" ["1"] automatically unpress zoom when you die (and don't allow zoom again while dead)
 ^7cl_unpress_zoom_on_spawn is "1" ["1"] automatically unpress zoom when you spawn
 ^7cl_unpress_zoom_on_weapon_switch is "1" ["1"] automatically unpress zoom when you switch a weapon
-^7cl_upspeed is "540" ["400"] vertical movement speed (while swimming or flying)
+^7cl_upspeed is "400" ["400"] vertical movement speed (while swimming or flying)
 ^7cl_vehicle_spiderbot_cross_alpha is "0.4" ["0.4"] custom cvar
 ^7cl_vehicle_spiderbot_cross_size is "1" ["1"] custom cvar
 ^7cl_vehicles_hud_tactical is "1" ["1"] custom cvar
@@ -498,12 +462,12 @@
 ^7cl_weapon_stay_color is "2 0.5 0.5" ["2 0.5 0.5"] Color of picked up weapons when g_weapon_stay > 0
 ^7cl_weaponimpulsemode is "0" ["0"] 0: only cycle between currently usable weapons in weapon priority order; 1: cycle between all possible weapons on a key in weapon priority order
 ^7cl_weaponpriority is "vaporizer vortex fireball mortar machinegun hagar rifle arc electro devastator crylink minelayer shotgun hlac tuba blaster porto seeker hook" ["vaporizer vortex fireball mortar machinegun hagar rifle arc electro devastator crylink minelayer shotgun hlac tuba blaster porto seeker hook"] weapon priority list
-^7cl_weaponpriority0 is "5 4 8" ["devastator mortar hagar seeker fireball"] use impulse 200 for prev gun from this list, 210 for best gun, 220 for next gun.  Default value: explosives
-^7cl_weaponpriority1 is "4 5 8" ["vaporizer vortex crylink hlac arc electro blaster shockwave"] use impulse 201 for prev gun from this list, 211 for best gun, 221 for next gun.  Default value: energy
-^7cl_weaponpriority2 is "7 3 1    " ["vaporizer vortex rifle"] use impulse 202 for prev gun from this list, 212 for best gun, 222 for next gun.  Default value: hitscan exact
-^7cl_weaponpriority3 is "9 4 8" ["vaporizer vortex rifle machinegun shotgun"] use impulse 203 for prev gun from this list, 213 for best gun, 223 for next gun.  Default value: hitscan all
-^7cl_weaponpriority4 is "3 6 5 8" ["mortar minelayer hlac hagar crylink seeker shotgun"] use impulse 204 for prev gun from this list, 214 for best gun, 224 for next gun.  Default value: spam weapons
-^7cl_weaponpriority5 is "6 3 5 8" ["blaster shockwave hook porto"] use impulse 205 for prev gun from this list, 215 for best gun, 225 for next gun.  Default value: weapons for moving
+^7cl_weaponpriority0 is "devastator mortar hagar seeker fireball" ["devastator mortar hagar seeker fireball"] use impulse 200 for prev gun from this list, 210 for best gun, 220 for next gun.  Default value: explosives
+^7cl_weaponpriority1 is "vaporizer vortex crylink hlac arc electro blaster shockwave" ["vaporizer vortex crylink hlac arc electro blaster shockwave"] use impulse 201 for prev gun from this list, 211 for best gun, 221 for next gun.  Default value: energy
+^7cl_weaponpriority2 is "vaporizer vortex rifle" ["vaporizer vortex rifle"] use impulse 202 for prev gun from this list, 212 for best gun, 222 for next gun.  Default value: hitscan exact
+^7cl_weaponpriority3 is "vaporizer vortex rifle machinegun shotgun" ["vaporizer vortex rifle machinegun shotgun"] use impulse 203 for prev gun from this list, 213 for best gun, 223 for next gun.  Default value: hitscan all
+^7cl_weaponpriority4 is "mortar minelayer hlac hagar crylink seeker shotgun" ["mortar minelayer hlac hagar crylink seeker shotgun"] use impulse 204 for prev gun from this list, 214 for best gun, 224 for next gun.  Default value: spam weapons
+^7cl_weaponpriority5 is "blaster shockwave hook porto" ["blaster shockwave hook porto"] use impulse 205 for prev gun from this list, 215 for best gun, 225 for next gun.  Default value: weapons for moving
 ^7cl_weaponpriority6 is "" [""] use impulse 206 for prev gun from this list, 216 for best gun, 226 for next gun
 ^7cl_weaponpriority7 is "" [""] use impulse 207 for prev gun from this list, 217 for best gun, 227 for next gun
 ^7cl_weaponpriority8 is "" [""] use impulse 208 for prev gun from this list, 218 for best gun, 228 for next gun
@@ -517,7 +481,7 @@
 ^7cl_zoomfactor is "5" ["5"] how much +zoom will zoom (1-16)
 ^7cl_zoomsensitivity is "0" ["0"] how zoom changes sensitivity (0 = weakest, 1 = strongest)
 ^7cl_zoomspeed is "8" ["8"] how fast it will zoom (0.5-16), negative values mean instant zoom
-^7cmdline is "./xonotic-linux64-glx " ["./xonotic-linux64-glx "] contains commandline the engine was launched with
+^7cmdline is "darkplaces/darkplaces-sdl -xonotic -userdir /home/zed/.xonotic-vanilla " ["darkplaces/darkplaces-sdl -xonotic -userdir /home/zed/.xonotic-vanilla "] contains commandline the engine was launched with
 ^7collision_cache is "1" ["1"] store results of collision traces for next frame to reuse if possible (optimization)
 ^7collision_debug_tracelineasbox is "0" ["0"] workaround for any bugs in Collision_TraceLineBrushFloat by using Collision_TraceBrushBrushFloat
 ^7collision_extendmovelength is "16" ["16"] internal bias on trace length to ensure detection of collisions within the collision_impactnudge distance so that short moves do not degrade across frames (this does not alter the final trace length)
@@ -526,15 +490,15 @@
 ^7collision_impactnudge is "0.03125" ["0.03125"] how much to back off from the impact
 ^7collision_triangle_axialsides is "1" ["1"] generate axially-aligned edge planes on triangles - otherwise use perpendicular edge planes
 ^7collision_triangle_bevelsides is "0" ["0"] generate sloped edge planes on triangles - if 0, see axialedgeplanes
-^7con_chat is "10" ["0"] how many chat lines to show in a dedicated chat area
-^7con_chatpos is "-9" ["0"] where to put chat (negative: lines from bottom of screen, positive: lines below notify, 0: at top)
-^7con_chatrect is "1" ["0"] use con_chatrect_x and _y to position con_notify and con_chat freely instead of con_chatpos
-^7con_chatrect_x is "0.012083" [""] where to put chat, relative x coordinate of left edge on screen (use con_chatwidth for width)
-^7con_chatrect_y is "0.703333" [""] where to put chat, relative y coordinate of top edge on screen (use con_chat for line count)
-^7con_chatsize is "10" ["8"] chat text size in virtual 2D pixels (if con_chat is enabled)
+^7con_chat is "5" ["5"] how many chat lines to show in a dedicated chat area
+^7con_chatpos is "-9" ["-9"] where to put chat (negative: lines from bottom of screen, positive: lines below notify, 0: at top)
+^7con_chatrect is "0" ["0"] use con_chatrect_x and _y to position con_notify and con_chat freely instead of con_chatpos
+^7con_chatrect_x is "" [""] where to put chat, relative x coordinate of left edge on screen (use con_chatwidth for width)
+^7con_chatrect_y is "" [""] where to put chat, relative y coordinate of top edge on screen (use con_chat for line count)
+^7con_chatsize is "10" ["10"] chat text size in virtual 2D pixels (if con_chat is enabled)
 ^7con_chatsound is "1" ["1"] enables chat sound to play on message
 ^7con_chattime is "30" ["30"] how long chat lines last, in seconds
-^7con_chatwidth is "0.455833" ["1.0"] relative chat window width
+^7con_chatwidth is "0.6" ["0.6"] relative chat window width
 ^7con_closeontoggleconsole is "1" ["1"] allows toggleconsole binds to close the console as well; when set to 2, this even works when not at the start of the line in console input; when set to 3, this works even if the toggleconsole key is the color tag
 ^7con_completion_chmap is "map" ["map"] custom cvar
 ^7con_completion_devmap is "map" ["map"] custom cvar
@@ -550,19 +514,19 @@
 ^7con_completion_vnextmap is "map" ["map"] custom cvar
 ^7con_nickcompletion is "1" ["1"] tab-complete nicks in console and message input
 ^7con_nickcompletion_flags is "11" ["11"] Bitfield: 0: add nothing after completion. 1: add the last color after completion. 2: add a quote when starting a quote instead of the color. 4: will replace 1, will force color, even after a quote. 8: ignore non-alphanumerics. 16: ignore spaces. 
-^7con_notify is "0" ["4"] how many notify lines to show
-^7con_notifyalign is "0" [""] how to align notify lines: 0 = left, 0.5 = center, 1 = right, empty string = game default)
-^7con_notifysize is "10" ["8"] notify text size in virtual 2D pixels
+^7con_notify is "0" ["0"] how many notify lines to show
+^7con_notifyalign is "0" ["0"] how to align notify lines: 0 = left, 0.5 = center, 1 = right, empty string = game default)
+^7con_notifysize is "10" ["10"] notify text size in virtual 2D pixels
 ^7con_notifytime is "3" ["3"] how long notify lines last, in seconds
 ^7con_textsize is "8" ["8"] console text size in virtual 2D pixels
 ^7condump_stripcolors is "0" ["0"] strip color codes from console dumps
 ^7coop is "0" ["0"] coop mode, 0 = no coop, 1 = coop mode, multiple players playing through the singleplayer game (coop mode also shuts off deathmatch)
-^7crosshair is "16" ["0"] selects crosshair to use (0 is none)
-^7crosshair_alpha is "0.750000" ["0.75"] custom cvar
+^7crosshair is "16" ["16"] selects crosshair to use (0 is none)
+^7crosshair_alpha is "0.800000" ["0.8"] custom cvar
 ^7crosshair_color is "0.6 0.8 1" ["0.6 0.8 1"] custom cvar
 ^7crosshair_color_alpha is "1" ["1"] how opaque the crosshair should be
 ^7crosshair_color_blue is "0" ["0"] customizable crosshair color
-^7crosshair_color_green is "1" ["0"] customizable crosshair color
+^7crosshair_color_green is "0" ["0"] customizable crosshair color
 ^7crosshair_color_red is "1" ["1"] customizable crosshair color
 ^7crosshair_color_special is "1" ["1"] special color handling for crosshair... 1 = per-weapon crosshair color (see crosshair_per_weapon), 2 = crosshair changes color based on health, 3 = rainbow/random color selection
 ^7crosshair_color_special_rainbow_brightness is "20" ["20"] color brightness of the random crosshair colors
@@ -571,7 +535,7 @@
 ^7crosshair_dot_alpha is "1" ["1"] custom cvar
 ^7crosshair_dot_color is "1 0 0" ["1 0 0"] custom cvar
 ^7crosshair_dot_color_custom is "1" ["1"] use a custom color for the crosshair dot
-^7crosshair_dot_size is "0.600000" ["0.600000"] custom cvar
+^7crosshair_dot_size is "0.600000" ["0.6"] custom cvar
 ^7crosshair_effect_scalefade is "1" ["1"] use scaling and fading for crosshair effects
 ^7crosshair_effect_time is "0.4" ["0.4"] how fast (in seconds) some crosshair effects should take place, 0 = instant
 ^7crosshair_enabled is "1" ["1"] custom cvar
@@ -586,14 +550,18 @@
 ^7crosshair_per_weapon is "1" ["1"] when 1, each gun will display a different crosshair
 ^7crosshair_pickup is "0.25" ["0.25"] custom cvar
 ^7crosshair_pickup_speed is "4" ["4"] custom cvar
-^7crosshair_ring is "1" ["1"] main cvar to enable or disable normal crosshair rings
+^7crosshair_ring is "1" ["1"] enable normal crosshair rings
 ^7crosshair_ring_alpha is "0.200000" ["0.2"] ring alpha
-^7crosshair_ring_hagar is "1" ["1"] custom cvar
+^7crosshair_ring_arc is "1" ["1"] draw a ring showing arc's overheating
+^7crosshair_ring_arc_cold_alpha is "0.2" ["0.2"] custom cvar
+^7crosshair_ring_arc_hot_alpha is "0.5" ["0.5"] custom cvar
+^7crosshair_ring_arc_hot_color is "1 0 0" ["1 0 0"] custom cvar
+^7crosshair_ring_hagar is "1" ["1"] draw a ring showing the current charge of the hagar
 ^7crosshair_ring_hagar_alpha is "0.15" ["0.15"] custom cvar
 ^7crosshair_ring_inner is "0" ["0"] allow inner rings to be drawn too
-^7crosshair_ring_minelayer is "1" ["1"] custom cvar
+^7crosshair_ring_minelayer is "1" ["1"] draw a ring showing the current amount of layed mines
 ^7crosshair_ring_minelayer_alpha is "0.15" ["0.15"] custom cvar
-^7crosshair_ring_reload is "1" ["1"] main cvar to enable or disable ammo crosshair rings
+^7crosshair_ring_reload is "1" ["1"] enable ammo crosshair rings
 ^7crosshair_ring_reload_alpha is "0.2" ["0.2"] reload ring alpha
 ^7crosshair_ring_reload_size is "2.5" ["2.5"] reload ring size
 ^7crosshair_ring_size is "2" ["2"] ring size
@@ -605,7 +573,8 @@
 ^7crosshair_ring_vortex_inner_color_blue is "0" ["0"] custom cvar
 ^7crosshair_ring_vortex_inner_color_green is "0" ["0"] custom cvar
 ^7crosshair_ring_vortex_inner_color_red is "0.8" ["0.8"] custom cvar
-^7crosshair_size is "1.500000" ["1"] adjusts size of the crosshair on the screen
+^7crosshair_size is "0.400000" ["0.4"] adjusts size of the crosshair on the screen
+^7crypto_aeslevel is "1" ["1"] whether to support AES encryption in authenticated connections (0 = no, 1 = supported, 2 = requested, 3 = required)
 ^7crypto_developer is "0" ["0"] print extra info about crypto handshake
 ^7crypto_servercpudebug is "0" ["0"] print statistics about time usage by crypto
 ^7crypto_servercpumaxtime is "0.01" ["0.01"] maximum allowed crypto CPU time per frame (0 = no limit)
@@ -632,7 +601,7 @@
 ^7edgefriction is "1" ["1"] how much you slow down when nearing a ledge you might fall off, multiplier of sv_friction (Quake used 2, QuakeWorld used 1 due to a bug in physics code)
 ^7ekg is "0" ["0"] Throw huge amounts of gibs
 ^7forceqmenu is "0" ["0"] enables the quake menu instead of the quakec menu.dat (if present)
-^7fov is "110" ["100"] field of vision, 1-170 degrees, default 90, some players use 110-130
+^7fov is "100" ["100"] field of vision, 1-170 degrees, default 90, some players use 110-130
 ^7fraglimit is "0" ["0"] ends level if this many frags is reached by any player
 ^7fraglimit_override is "-1" ["-1"] Frag limit overriding the mapinfo specified one (use 0 to play without limit, and -1 to use the mapinfo's limit)
 ^7freelook is "1" ["1"] mouse controls pitch instead of forward/back
@@ -1405,12 +1374,12 @@
 ^7g_balance_shockwave_weaponthrowable is "0" ["0"] custom cvar
 ^7g_balance_shotgun_primary_ammo is "1" ["1"] custom cvar
 ^7g_balance_shotgun_primary_animtime is "0.2" ["0.2"] custom cvar
-^7g_balance_shotgun_primary_bullets is "14" ["14"] custom cvar
-^7g_balance_shotgun_primary_damage is "3.5" ["3.5"] custom cvar
+^7g_balance_shotgun_primary_bullets is "12" ["12"] custom cvar
+^7g_balance_shotgun_primary_damage is "4" ["4"] custom cvar
 ^7g_balance_shotgun_primary_force is "15" ["15"] custom cvar
 ^7g_balance_shotgun_primary_refire is "0.75" ["0.75"] custom cvar
 ^7g_balance_shotgun_primary_solidpenetration is "3.8" ["3.8"] custom cvar
-^7g_balance_shotgun_primary_spread is "0.11" ["0.11"] custom cvar
+^7g_balance_shotgun_primary_spread is "0.12" ["0.12"] custom cvar
 ^7g_balance_shotgun_reload_ammo is "0" ["0"] custom cvar
 ^7g_balance_shotgun_reload_time is "2" ["2"] custom cvar
 ^7g_balance_shotgun_secondary is "1" ["1"] custom cvar
@@ -2149,7 +2118,7 @@
 ^7g_overkill is "0" ["0"] enable overkill
 ^7g_overkill_100a_anyway is "1" ["1"] custom cvar
 ^7g_overkill_100h_anyway is "1" ["1"] custom cvar
-^7g_overkill_ammo_charge is "1" ["1"] custom cvar
+^7g_overkill_ammo_charge is "0" ["0"] custom cvar
 ^7g_overkill_ammo_charge_limit is "1" ["1"] custom cvar
 ^7g_overkill_ammo_charge_notice is "1" ["1"] custom cvar
 ^7g_overkill_ammo_charge_rate is "0.5" ["0.5"] custom cvar
@@ -2238,7 +2207,7 @@
 ^7g_playerstats_uri is "" [""] Output player statistics information to either: URL (with ://), console (with a dash like this: -), or supply a filename to output to data directory.
 ^7g_powerups is "-1" ["-1"] if set to 0 the strength and shield (invincibility) will not spawn on the map, if 1 they will spawn in all game modes, -1 is game mode default
 ^7g_projectiles_damage is "-2" ["-2"] custom cvar
-^7g_projectiles_keep_owner is "0" ["0"] custom cvar
+^7g_projectiles_keep_owner is "1" ["1"] custom cvar
 ^7g_projectiles_newton_style is "0" ["0"] custom cvar
 ^7g_projectiles_newton_style_2_maxfactor is "1.5" ["1.5"] custom cvar
 ^7g_projectiles_newton_style_2_minfactor is "0.8" ["0.8"] custom cvar
@@ -2294,7 +2263,7 @@
 ^7g_shootfromfixedorigin is "" [""] if set to a string like 0 y z, the gun is moved to the given y and z coordinates. If set to a string like x y z, the whole shot origin is used
 ^7g_showweaponspawns is "1" ["1"] display sprites for weapon spawns found on the map when a weapon key is pressed and the weapon is not available
 ^7g_spawn_alloweffects is "1" ["1"] allow clients to enable spawn point and event effects such as particles and sounds, see cl_spawn_ cvars for more info
-^7g_spawn_furthest is "0.5" ["0.5"] this amount of the spawns shall be far away from any players
+^7g_spawn_furthest is "1.0" ["1.0"] this amount of the spawns shall be far away from any players
 ^7g_spawn_near_teammate is "0" ["0"] if set, players prefer spawns near a team mate
 ^7g_spawn_near_teammate_distance is "640" ["640"] max distance to consider a spawn to be near a team mate
 ^7g_spawn_near_teammate_ignore_spawnpoint is "0" ["0"] ignore spawnpoints and spawn right at team mates
@@ -3023,10 +2992,10 @@
 ^7g_weaponratefactor is "1" ["1"] weapon fire rate multiplier
 ^7g_weaponspeedfactor is "1" ["1"] weapon projectile speed multiplier
 ^7g_weaponspreadfactor is "1" ["1"] weapon spread multiplier
-^7g_xonoticversion is "0.8.0" ["0.8.0"] Xonotic version (formatted for humans)
-^7gamecfg is "1" ["0"] unused cvar in quake, can be used by mods
+^7g_xonoticversion is "git" ["git"] Xonotic version (formatted for humans)
+^7gamecfg is "1" ["1"] unused cvar in quake, can be used by mods
 ^7gameversion is "800" ["800"] version of game data (mod-specific) to be sent to querying clients
-^7gameversion_max is "9999" ["9999"] maximum version of game data (mod-specific), when client and server gameversion mismatch in the server browser the server is shown as incompatible; if -1, gameversion is used alone
+^7gameversion_max is "65535" ["65535"] maximum version of game data (mod-specific), when client and server gameversion mismatch in the server browser the server is shown as incompatible; if -1, gameversion is used alone
 ^7gameversion_min is "0" ["0"] minimum version of game data (mod-specific), when client and server gameversion mismatch in the server browser the server is shown as incompatible; if -1, gameversion is used alone
 ^7gl_combine is "1" ["1"] indicates whether the OpenGL 1.3 rendering path is active
 ^7gl_dither is "1" ["1"] enables OpenGL dithering (16bit looks bad with this off)
@@ -3034,9 +3003,9 @@
 ^7gl_ext_stenciltwoside is "1" ["1"] make use of GL_EXT_stenciltwoside extension (NVIDIA only)
 ^7gl_finish is "0" ["0"] make the cpu wait for the graphics processor at the end of each rendered frame (can help with strange input or video lag problems on some machines)
 ^7gl_flashblend is "0" ["0"] render bright coronas for dynamic lights instead of actual lighting, fast but ugly
-^7gl_info_driver is "libGL.so.1" [""] name of driver library (opengl32.dll, libGL.so.1, or whatever).
-^7gl_info_extensions is " GLX_ARB_get_proc_address  GLX_SGI_swap_control  glbase  2.0  glshaders130  GL_ARB_depth_texture  GL_ARB_draw_buffers  GL_ARB_multitexture  GL_ARB_occlusion_query  GL_ARB_shadow  GL_ARB_texture_compression  GL_ARB_texture_cube_map  GL_ARB_texture_env_combine  GL_ARB_texture_non_power_of_two  GL_ARB_vertex_buffer_object  GL_ARB_uniform_buffer_object  separatestencil  GL_EXT_blend_minmax  GL_EXT_blend_subtract  GL_EXT_blend_func_separate  drawrangeelements  GL_ARB_framebuffer_object  GL_EXT_packed_depth_stencil  GL_EXT_stencil_two_side  GL_EXT_texture3D  GL_EXT_texture_edge_clamp  GL_EXT_texture_filter_anisotropic  GL_EXT_texture_sRGB  GL_ARB_multisample " [""] indicates extension list found by engine, space separated.
-^7gl_info_platform is "GLX" [""] indicates GL platform: WGL, GLX, or AGL.
+^7gl_info_driver is "" [""] name of driver library (opengl32.dll, libGL.so.1, or whatever).
+^7gl_info_extensions is " glbase  2.0  glshaders130  GL_ARB_depth_texture  GL_ARB_draw_buffers  GL_ARB_multitexture  GL_ARB_occlusion_query  GL_ARB_shadow  GL_ARB_texture_compression  GL_ARB_texture_cube_map  GL_ARB_texture_env_combine  GL_ARB_texture_non_power_of_two  GL_ARB_vertex_buffer_object  GL_ARB_uniform_buffer_object  separatestencil  GL_EXT_blend_minmax  GL_EXT_blend_subtract  GL_EXT_blend_func_separate  drawrangeelements  GL_ARB_framebuffer_object  GL_EXT_packed_depth_stencil  GL_EXT_stencil_two_side  GL_EXT_texture3D  GL_EXT_texture_edge_clamp  GL_EXT_texture_filter_anisotropic  GL_EXT_texture_sRGB  GL_ARB_multisample " [""] indicates extension list found by engine, space separated.
+^7gl_info_platform is "SDL" [""] indicates GL platform: WGL, GLX, or AGL.
 ^7gl_info_renderer is "Gallium 0.4 on AMD PITCAIRN" [""] indicates graphics chip model and other information
 ^7gl_info_vendor is "X.Org" [""] indicates brand of graphics chip
 ^7gl_info_version is "3.0 Mesa 10.1.3" [""] indicates version of current renderer. begins with 1.0.0, 1.1.0, 1.2.0, 1.3.1 etc.
@@ -3054,7 +3023,7 @@
 ^7gl_polyblend is "0" ["0"] tints view while underwater, hurt, etc
 ^7gl_printcheckerror is "0" ["0"] prints all OpenGL error checks, useful to identify location of driver crashes
 ^7gl_texture_anisotropy is "1" ["1"] anisotropic filtering quality (if supported by hardware), 1 sample (no anisotropy) and 8 sample (8 tap anisotropy) are recommended values
-^7gl_texturecompression is "1" ["0"] whether to compress textures, a value of 0 disables compression (even if the individual cvars are 1), 1 enables fast (low quality) compression at startup, 2 enables slow (high quality) compression at startup
+^7gl_texturecompression is "0" ["0"] whether to compress textures, a value of 0 disables compression (even if the individual cvars are 1), 1 enables fast (low quality) compression at startup, 2 enables slow (high quality) compression at startup
 ^7gl_texturecompression_2d is "0" ["0"] whether to compress 2d (hud/menu) textures other than the font
 ^7gl_texturecompression_color is "1" ["1"] whether to compress colormap (diffuse) textures
 ^7gl_texturecompression_gloss is "1" ["1"] whether to compress glossmap (specular) textures
@@ -3064,7 +3033,7 @@
 ^7gl_texturecompression_q3bspdeluxemaps is "0" ["0"] whether to compress deluxemaps in q3bsp format levels (only levels compiled with q3map2 -deluxe have these)
 ^7gl_texturecompression_q3bsplightmaps is "0" ["0"] whether to compress lightmaps in q3bsp format levels
 ^7gl_texturecompression_reflectmask is "1" ["1"] whether to compress reflection cubemap masks (mask of which areas of the texture should reflect the generic shiny cubemap)
-^7gl_texturecompression_sky is "1" ["0"] whether to compress sky textures
+^7gl_texturecompression_sky is "1" ["1"] whether to compress sky textures
 ^7gl_texturecompression_sprites is "1" ["1"] whether to compress sprites
 ^7gl_vbo is "3" ["3"] make use of GL_ARB_vertex_buffer_object extension to store static geometry in video memory for faster rendering, 0 disables VBO allocation or use, 1 enables VBOs for vertex and triangle data, 2 only for vertex data, 3 for vertex data and triangle data of simple meshes (ones with only one surface)
 ^7gl_vbo_dynamicindex is "0" ["0"] make use of GL_ARB_vertex_buffer_object extension when rendering dynamic (animated/procedural) geometry such as text and particles
@@ -3073,7 +3042,7 @@
 ^7host_framerate is "0" ["0"] locks frame timing to this value in seconds, 0.05 is 20fps for example, note that this can easily run too fast, use cl_maxfps if you want to limit your framerate instead, or sys_ticrate to limit server speed
 ^7host_maxwait is "1000" ["1000"] maximum sleep time requested from the operating system in millisecond. Larger sleeps will be done using multiple host_maxwait length sleeps. Lowering this value will increase CPU load, but may help working around problems with accuracy of sleep times.
 ^7host_speeds is "0" ["0"] reports how much time is used in server/graphics/sound
-^7hostname is "Xonotic 0.8.0 Server" ["Xonotic 0.8.0 Server"] server message to show in server browser
+^7hostname is "Xonotic git Server" ["Xonotic git Server"] server message to show in server browser
 ^7hud_colorflash_alpha is "0.5" ["0.5"] starting alpha of the color flash
 ^7hud_colorset_background is "7" ["7"] neutral/unimportant text
 ^7hud_colorset_foreground_1 is "2" ["2"] primary priority (important names, etc)
@@ -3087,8 +3056,8 @@
 ^7hud_configure_checkcollisions is "0" ["0"] check for collisions against other panels when in hud configure mode
 ^7hud_configure_grid is "1" ["1"] snap to grid when moving/resizing panels
 ^7hud_configure_grid_alpha is "0.15" ["0.15"] alpha for visible grid when in configure mode
-^7hud_configure_grid_xsize is "0.010000" ["0.010000"] snap to X * vid_conwidth
-^7hud_configure_grid_ysize is "0.010000" ["0.010000"] snap to Y * vid_conheight
+^7hud_configure_grid_xsize is "0.005000" ["0.005000"] snap to X * vid_conwidth
+^7hud_configure_grid_ysize is "0.005000" ["0.005000"] snap to Y * vid_conheight
 ^7hud_configure_teamcolorforced is "0" ["0"] 1 = force display of team colors in configure mode
 ^7hud_contents is "1" ["1"] an improved version of gl_polyblend for liquids such as water/lava/slime, draw a filler when inside the liquid
 ^7hud_contents_blur is "10" ["10"] Use postprocessing to blur the screen when you are inside a liquid. Higher values = more blur
@@ -3119,31 +3088,33 @@
 ^7hud_damage_pain_threshold_pulsating_period is "0.8" ["0.8"] one pulse every X seconds
 ^7hud_dock is "0" ["0"] enable a fullscreen background for the hud, useful for creating artificial docks, "" = disable
 ^7hud_dock_alpha is "1" ["1"] alpha of the dock
-^7hud_dock_color is "0 0.449576 0.860796" ["0 0.449576 0.860796"] dock color, accepts "shirt" and "pants"
+^7hud_dock_color is "0 0 0" ["0 0 0"] dock color, accepts "shirt" and "pants"
 ^7hud_dock_color_team is "1" ["1"] override dock color with team color in team games
 ^7hud_fontsize is "11" ["11"] text fontsize for the hud
 ^7hud_panel_ammo is "1" ["1"] enable/disable this panel
-^7hud_panel_ammo_bg is "" [""] if set to something else than "" = override default background
+^7hud_panel_ammo_bg is "border_tab_south" ["border_tab_south"] if set to something else than "" = override default background
 ^7hud_panel_ammo_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_ammo_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_ammo_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_ammo_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_ammo_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
+^7hud_panel_ammo_bg_padding is "4" ["4"] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_ammo_iconalign is "0" ["0"] 0 = align icons to the left, 1 = align icons to the right
 ^7hud_panel_ammo_maxammo is "40" ["40"] when you have this much ammo, the ammo status bar is full
+^7hud_panel_ammo_noncurrent_alpha is "0.600000" ["0.6"] alpha of noncurrent ammo types
+^7hud_panel_ammo_noncurrent_scale is "0.400000" ["0.4"] scale of noncurrent ammo types, relative to the current ammo type
 ^7hud_panel_ammo_onlycurrent is "0" ["0"] 1 = show only current ammo type
-^7hud_panel_ammo_pos is "0.330000 0.960000" ["0.330000 0.960000"] position of this panel
+^7hud_panel_ammo_pos is "0.330000 0.865000" ["0.330000 0.865000"] position of this panel
 ^7hud_panel_ammo_progressbar is "0" ["0"] use progressbar behind ammo icons
 ^7hud_panel_ammo_progressbar_name is "progressbar" ["progressbar"] name of progressbar to use behind ammo icons
 ^7hud_panel_ammo_progressbar_xoffset is "0" ["0"] percentage of mySize_x to offset progressbar with
-^7hud_panel_ammo_size is "0.350000 0.040000" ["0.350000 0.040000"] size of this panel
+^7hud_panel_ammo_size is "0.340000 0.060000" ["0.340000 0.060000"] size of this panel
 ^7hud_panel_ammo_text is "1" ["1"] show text/icons in the ammo panel
 ^7hud_panel_bg is "0" ["0"] default background for the panels, file must exist in gfx/hud/[skin name]/, 0 = disable background by default
 ^7hud_panel_bg_alpha is "1" ["1"] default alpha of the background
-^7hud_panel_bg_border is "8" ["8"] default border size for the panels
-^7hud_panel_bg_color is "0.6875 0.84375 1" ["0.6875 0.84375 1"] default background color for the panels, accepts "shirt" and "pants"
+^7hud_panel_bg_border is "2" ["2"] default border size for the panels
+^7hud_panel_bg_color is "0 0.14 0.25" ["0 0.14 0.25"] default background color for the panels, accepts "shirt" and "pants"
 ^7hud_panel_bg_color_team is "1" ["1"] default setting for overriding panel color with team color in team games, 0.5 = less saturated
-^7hud_panel_bg_padding is "2" ["2"] default padding of contents from the border
+^7hud_panel_bg_padding is "3" ["3"] default padding of contents from the border
 ^7hud_panel_buffs is "1" ["1"] enable/disable this panel
 ^7hud_panel_buffs_bg is "0" ["0"] if set to something else than "" = override default background
 ^7hud_panel_buffs_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
@@ -3151,8 +3122,8 @@
 ^7hud_panel_buffs_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_buffs_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_buffs_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
-^7hud_panel_buffs_pos is "0.450000 0.855000" ["0.450000 0.855000"] position of this panel
-^7hud_panel_buffs_size is "0.050000 0.070000" ["0.050000 0.070000"] size of this panel
+^7hud_panel_buffs_pos is "0.435000 0.840000" ["0.435000 0.840000"] position of this panel
+^7hud_panel_buffs_size is "0.125000 0.035000" ["0.125000 0.035000"] size of this panel
 ^7hud_panel_centerprint is "1" ["1"] enable/disable this panel
 ^7hud_panel_centerprint_align is "0.5" ["0.5"] text alignment: 0 left, 0.5 center, 1 right
 ^7hud_panel_centerprint_bg is "0" ["0"] if set to something else than "" = override default background
@@ -3201,9 +3172,9 @@
 ^7hud_panel_fg_alpha is "1" ["1"] alpha of the foreground
 ^7hud_panel_healtharmor is "1" ["1"] enable/disable this panel, 2 = combined health/armor display
 ^7hud_panel_healtharmor_baralign is "3" ["3"] 0 = align bars to the left, 1 = align bars to the right, 2 = align only left bar to the right, 3 = align only right bar to the right
-^7hud_panel_healtharmor_bg is "border_small_healtharmor" ["border_small_healtharmor"] if set to something else than "" = override default background
+^7hud_panel_healtharmor_bg is "border_default_south" ["border_default_south"] if set to something else than "" = override default background
 ^7hud_panel_healtharmor_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
-^7hud_panel_healtharmor_bg_border is "" [""] if set to something else than "" = override default size of border around the background
+^7hud_panel_healtharmor_bg_border is "4" ["4"] if set to something else than "" = override default size of border around the background
 ^7hud_panel_healtharmor_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_healtharmor_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_healtharmor_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
@@ -3211,7 +3182,7 @@
 ^7hud_panel_healtharmor_iconalign is "3" ["3"] 0 = align icons to the left, 1 = align icons to the right, 2 = align only left icon to the right, 3 = align only right icon to the right
 ^7hud_panel_healtharmor_maxarmor is "200" ["200"] when you have this much armor, the armor status bar is full
 ^7hud_panel_healtharmor_maxhealth is "200" ["200"] when you have this much health, the health status bar is full
-^7hud_panel_healtharmor_pos is "0.320000 0.910000" ["0.320000 0.910000"] position of this panel
+^7hud_panel_healtharmor_pos is "0.300000 0.925000" ["0.300000 0.925000"] position of this panel
 ^7hud_panel_healtharmor_progressbar is "1" ["1"] enable progressbar in panel
 ^7hud_panel_healtharmor_progressbar_armor is "progressbar" ["progressbar"] progressbar image for armor
 ^7hud_panel_healtharmor_progressbar_gfx is "1" ["1"] enable graphic effects on the progressbars
@@ -3219,7 +3190,7 @@
 ^7hud_panel_healtharmor_progressbar_gfx_lowhealth is "40" ["40"] health progressbar blinks when health is lower than this amount
 ^7hud_panel_healtharmor_progressbar_gfx_smooth is "2" ["2"] smooth changes of the progressbar when health/armor change at least by this amount; 0 disables the effect
 ^7hud_panel_healtharmor_progressbar_health is "progressbar" ["progressbar"] progressbar image for health
-^7hud_panel_healtharmor_size is "0.370000 0.060000" ["0.370000 0.060000"] size of this panel
+^7hud_panel_healtharmor_size is "0.400000 0.070000" ["0.400000 0.070000"] size of this panel
 ^7hud_panel_healtharmor_text is "1" ["1"] show text/icons in the healtharmor panel
 ^7hud_panel_infomessages is "1" ["1"] enable/disable this panel
 ^7hud_panel_infomessages_bg is "0" ["0"] if set to something else than "" = override default background
@@ -3232,17 +3203,17 @@
 ^7hud_panel_infomessages_pos is "0.720000 0.100000" ["0.720000 0.100000"] position of this base of the panel
 ^7hud_panel_infomessages_size is "0.280000 0.080000" ["0.280000 0.080000"] size of this panel
 ^7hud_panel_modicons is "1" ["1"] enable/disable this panel
-^7hud_panel_modicons_bg is "border_small_modicons" ["border_small_modicons"] if set to something else than "" = override default background
+^7hud_panel_modicons_bg is "border_fading_north" ["border_fading_north"] if set to something else than "" = override default background
 ^7hud_panel_modicons_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
-^7hud_panel_modicons_bg_border is "" [""] if set to something else than "" = override default size of border around the background
+^7hud_panel_modicons_bg_border is "4" ["4"] if set to something else than "" = override default size of border around the background
 ^7hud_panel_modicons_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_modicons_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_modicons_bg_padding is "0" ["0"] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_modicons_ca_layout is "1" ["1"] 2 possible layouts: 0) number of alive players; 1) icons and number of alive players
 ^7hud_panel_modicons_dom_layout is "1" ["1"] 3 possible layouts: 0) only icons; 1) icons and percentage of average pps (points per second); 2) icons and average pps
 ^7hud_panel_modicons_freezetag_layout is "1" ["1"] 2 possible layouts: 0) number of alive players; 1) icons and number of alive players
-^7hud_panel_modicons_pos is "0.410000 0" ["0.410000 0"] position of this base of the panel
-^7hud_panel_modicons_size is "0.180000 0.080000" ["0.180000 0.080000"] size of this panel
+^7hud_panel_modicons_pos is "0.370000 0.030000" ["0.370000 0.030000"] position of this base of the panel
+^7hud_panel_modicons_size is "0.260000 0.07000" ["0.260000 0.07000"] size of this panel
 ^7hud_panel_notify is "1" ["1"] enable/disable this panel
 ^7hud_panel_notify_bg is "0" ["0"] if set to something else than "" = override default background
 ^7hud_panel_notify_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
@@ -3253,9 +3224,9 @@
 ^7hud_panel_notify_fadetime is "3" ["3"] fade out time
 ^7hud_panel_notify_flip is "0" ["0"] order the list top to bottom instead of bottom to top
 ^7hud_panel_notify_fontsize is "0.8" ["0.8"] multiplier for the font size used for player names in the panel
-^7hud_panel_notify_icon_aspect is "2" ["2"] aspect ratio of total drawing area per icon
-^7hud_panel_notify_pos is "0.710000 0.800000" ["0.710000 0.800000"] position of this base of the panel
-^7hud_panel_notify_size is "0.290000 0.190000" ["0.290000 0.190000"] size of this panel with all notifications on
+^7hud_panel_notify_icon_aspect is "1" ["1"] aspect ratio of total drawing area per icon
+^7hud_panel_notify_pos is "0.730000 0.800000" ["0.730000 0.800000"] position of this base of the panel
+^7hud_panel_notify_size is "0.265000 0.200000" ["0.265000 0.200000"] size of this panel with all notifications on
 ^7hud_panel_notify_time is "10" ["10"] time that a new entry stays until it fades out
 ^7hud_panel_physics is "3" ["3"] enable/disable this panel, 1 = show if not observing, 2 = show always, 3 = show only in race/cts if not observing
 ^7hud_panel_physics_acceleration_max is "1.5" ["1.5"] acceleration progressbar gets completely filled up by this value (in g)
@@ -3264,18 +3235,18 @@
 ^7hud_panel_physics_acceleration_progressbar_scale is "1" ["1"] multiply acceleration progressbar values by this factor (allow progressbar to go out of panel bounds)
 ^7hud_panel_physics_acceleration_vertical is "0" ["0"] include the acceleration on the Z-axis
 ^7hud_panel_physics_baralign is "0" ["0"] 0 = align bars to the left, 1 = align bars to the right, 2 = align only left bar to the right, 3 = align only right bar to the right, 4 = align bars to the center
-^7hud_panel_physics_bg is "" [""] if set to something else than "" = override default background
-^7hud_panel_physics_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
+^7hud_panel_physics_bg is "0" ["0"] if set to something else than "" = override default background
+^7hud_panel_physics_bg_alpha is "0.700000" ["0.700000"] if set to something else than "" = override default panel background alpha
 ^7hud_panel_physics_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_physics_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_physics_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_physics_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_physics_flip is "0" ["0"] flip speed/acceleration positions
-^7hud_panel_physics_pos is "0.420000 0.620000" ["0.420000 0.620000"] position of this base of the panel
+^7hud_panel_physics_pos is "0.410000 0.630000" ["0.410000 0.630000"] position of this base of the panel
 ^7hud_panel_physics_progressbar is "1" ["1"] enable progressbar in panel (2 = only for speed; 3 = only for acceleration)
-^7hud_panel_physics_size is "0.170000 0.080000" ["0.170000 0.080000"] size of this panel
+^7hud_panel_physics_size is "0.180000 0.080000" ["0.180000 0.080000"] size of this panel
 ^7hud_panel_physics_speed_max is "1800" ["1800"] speed progressbar gets filled up completely by this value (in qu/s)
-^7hud_panel_physics_speed_unit is "3" ["3"] speed unit (1 = qu/s, 2 = m/s, 3 = km/h, 4 = mph, 5 = knots)
+^7hud_panel_physics_speed_unit is "1" ["1"] speed unit (1 = qu/s, 2 = m/s, 3 = km/h, 4 = mph, 5 = knots)
 ^7hud_panel_physics_speed_unit_show is "1" ["1"] also show speed unit
 ^7hud_panel_physics_speed_vertical is "0" ["0"] include the speed on the Z-axis
 ^7hud_panel_physics_text is "1" ["1"] show text in panel (2 = only for speed; 3 = only for acceleration)
@@ -3283,32 +3254,32 @@
 ^7hud_panel_physics_topspeed is "1" ["1"] also show top speed
 ^7hud_panel_physics_topspeed_time is "4" ["4"] how many seconds the top speed takes to fade out
 ^7hud_panel_powerups is "1" ["1"] enable/disable this panel
-^7hud_panel_powerups_baralign is "3" ["3"] 0 = align bars to the left, 1 = align bars to the right, 2 = align only left bar to the right, 3 = align only right bar to the right
-^7hud_panel_powerups_bg is "border_small_powerups" ["border_small_powerups"] if set to something else than "" = override default background
+^7hud_panel_powerups_baralign is "1" ["1"] 0 = align bars to the left, 1 = align bars to the right, 2 = align only left bar to the right, 3 = align only right bar to the right
+^7hud_panel_powerups_bg is "border_default_west" ["border_default_west"] if set to something else than "" = override default background
 ^7hud_panel_powerups_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_powerups_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_powerups_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_powerups_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_powerups_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
+^7hud_panel_powerups_bg_padding is "2" ["2"] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_powerups_flip is "1" ["1"] flip strength/shield positions
-^7hud_panel_powerups_iconalign is "3" ["3"] 0 = align icons to the left, 1 = align icons to the right, 2 = align only left icon to the right, 3 = align only right icon to the right
-^7hud_panel_powerups_pos is "0.360000 0.850000" ["0.360000 0.850000"] position of this panel
+^7hud_panel_powerups_iconalign is "1" ["1"] 0 = align icons to the left, 1 = align icons to the right, 2 = align only left icon to the right, 3 = align only right icon to the right
+^7hud_panel_powerups_pos is "0 0.270000" ["0 0.270000"] position of this panel
 ^7hud_panel_powerups_progressbar is "1" ["1"] enable progressbar in panel
 ^7hud_panel_powerups_progressbar_shield is "progressbar" ["progressbar"] progressbar image for shield
 ^7hud_panel_powerups_progressbar_strength is "progressbar" ["progressbar"] progressbar image for strength
 ^7hud_panel_powerups_progressbar_superweapons is "progressbar" ["progressbar"] progressbar image for superweapons
-^7hud_panel_powerups_size is "0.290000 0.030000" ["0.290000 0.030000"] size of this panel
+^7hud_panel_powerups_size is "0.040000 0.415000" ["0.040000 0.415000"] size of this panel
 ^7hud_panel_powerups_text is "1" ["1"] show text/icons in the powerups panel
 ^7hud_panel_pressedkeys is "1" ["1"] enable/disable this panel, 1 = show only when spectating other players, 2 = show always
 ^7hud_panel_pressedkeys_aspect is "1.600000" ["1.600000"] forced aspect on panel
 ^7hud_panel_pressedkeys_attack is "0" ["0"] show attack buttons too
-^7hud_panel_pressedkeys_bg is "0" ["0"] if set to something else than "" = override default background
+^7hud_panel_pressedkeys_bg is " " [" "] if set to something else than "" = override default background
 ^7hud_panel_pressedkeys_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_pressedkeys_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_pressedkeys_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_pressedkeys_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_pressedkeys_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
-^7hud_panel_pressedkeys_pos is "0.450000 0.720000" ["0.450000 0.720000"] position of this base of the panel
+^7hud_panel_pressedkeys_bg_padding is "1" ["1"] if set to something else than "" = override default padding of contents from border
+^7hud_panel_pressedkeys_pos is "0.445000 0.730000" ["0.445000 0.730000"] position of this base of the panel
 ^7hud_panel_pressedkeys_size is "0.110000 0.090000" ["0.110000 0.090000"] size of this panel
 ^7hud_panel_racetimer is "1" ["1"] enable/disable this panel
 ^7hud_panel_racetimer_bg is "0" ["0"] if set to something else than "" = override default background
@@ -3319,83 +3290,84 @@
 ^7hud_panel_racetimer_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_racetimer_pos is "0.360000 0.110000" ["0.360000 0.110000"] position of this base of the panel
 ^7hud_panel_racetimer_size is "0.280000 0.090000" ["0.280000 0.090000"] size of this panel
-^7hud_panel_radar is "2" ["2"] enable/disable this panel, 2 = also enable in non-teambased gamemodes
-^7hud_panel_radar_bg is "border_small_radar" ["border_small_radar"] if set to something else than "" = override default background
-^7hud_panel_radar_bg_alpha is "0.800000" ["0.800000"] if set to something else than "" = override default panel background alpha
+^7hud_panel_radar is "1" ["1"] enable/disable this panel, 2 = also enable in non-teambased gamemodes
+^7hud_panel_radar_bg is "border_corner_northwest" ["border_corner_northwest"] if set to something else than "" = override default background
+^7hud_panel_radar_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_radar_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_radar_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_radar_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_radar_bg_padding is "-1" ["-1"] if set to something else than "" = override default padding of contents from border
-^7hud_panel_radar_foreground_alpha is "0.800000" ["0.800000"] alpha of the map
+^7hud_panel_radar_bg_padding is "1" ["1"] if set to something else than "" = override default padding of contents from border
+^7hud_panel_radar_foreground_alpha is "1" ["1"] alpha of the map
 ^7hud_panel_radar_maximized_rotation is "1" ["1"] rotation mode: you set what points up. 0 = player, 1 = west, 2 = south, 3 = east, 4 = north
-^7hud_panel_radar_maximized_scale is "8192" ["8192"] distance you can see on the radar when maximized
+^7hud_panel_radar_maximized_scale is "5120" ["5120"] distance you can see on the radar when maximized
 ^7hud_panel_radar_maximized_size is "0.5 0.5" ["0.5 0.5"] size of the radar when maximized
 ^7hud_panel_radar_maximized_zoommode is "3" ["3"] zoom mode: 0 = zoomed by default, 1 = zoomed when +zoom, 2 = always zoomed, 3 = always zoomed out
 ^7hud_panel_radar_pos is "0 0" ["0 0"] position of this base of the panel
 ^7hud_panel_radar_rotation is "0" ["0"] rotation mode: you set what points up. 0 = player, 1 = west, 2 = south, 3 = east, 4 = north
-^7hud_panel_radar_scale is "4096" ["4096"] distance you can see on the team radar
-^7hud_panel_radar_size is "0.200000 0.240000" ["0.200000 0.240000"] size of this panel
+^7hud_panel_radar_scale is "8192" ["8192"] distance you can see on the team radar
+^7hud_panel_radar_size is "0.200000 0.250000" ["0.200000 0.250000"] size of this panel
 ^7hud_panel_radar_zoommode is "0" ["0"] zoom mode: 0 = zoomed by default, 1 = zoomed when +zoom, 2 = always zoomed, 3 = always zoomed out
 ^7hud_panel_score is "1" ["1"] enable/disable this panel
-^7hud_panel_score_bg is "border_small_score" ["border_small_score"] if set to something else than "" = override default background
+^7hud_panel_score_bg is "border_corner_northeast" ["border_corner_northeast"] if set to something else than "" = override default background
 ^7hud_panel_score_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_score_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_score_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_score_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_score_bg_padding is "0" ["0"] if set to something else than "" = override default padding of contents from border
-^7hud_panel_score_pos is "0.890000 0.030000" ["0.890000 0.030000"] position of this base of the panel
+^7hud_panel_score_bg_padding is "1" ["1"] if set to something else than "" = override default padding of contents from border
+^7hud_panel_score_pos is "0.880000 0" ["0.880000 0"] position of this base of the panel
 ^7hud_panel_score_rankings is "1" ["1"] show rankings: 1 always show my own score; 2 pure rankings
-^7hud_panel_score_size is "0.100000 0.050000" ["0.100000 0.050000"] size of this panel
+^7hud_panel_score_size is "0.120000 0.080000" ["0.120000 0.080000"] size of this panel
 ^7hud_panel_timer is "1" ["1"] enable/disable this panel
-^7hud_panel_timer_bg is "border_small_timer" ["border_small_timer"] if set to something else than "" = override default background
+^7hud_panel_timer_bg is "border_plain_north" ["border_plain_north"] if set to something else than "" = override default background
 ^7hud_panel_timer_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_timer_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_timer_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_timer_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_timer_bg_padding is "0" ["0"] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_timer_increment is "0" ["0"] show elapsed time instead of remaining time
-^7hud_panel_timer_pos is "0.800000 0.040000" ["0.800000 0.040000"] position of this base of the panel
-^7hud_panel_timer_size is "0.070000 0.040000" ["0.070000 0.040000"] size of this panel
+^7hud_panel_timer_pos is "0.456000 0" ["0.456000 0"] position of this base of the panel
+^7hud_panel_timer_size is "0.088000 0.030000" ["0.088000 0.030000"] size of this panel
 ^7hud_panel_update_interval is "2" ["2"] how often (in seconds) common panel cvars are reloaded
 ^7hud_panel_vote is "1" ["1"] enable/disable this panel
-^7hud_panel_vote_alreadyvoted_alpha is "0.500000" ["0.500000"] alpha of the vote dialog after you have voted
-^7hud_panel_vote_bg is "border_vote" ["border_vote"] if set to something else than "" = override default background
+^7hud_panel_vote_alreadyvoted_alpha is "0.700000" ["0.700000"] alpha of the vote dialog after you have voted
+^7hud_panel_vote_bg is " " [" "] if set to something else than "" = override default background
 ^7hud_panel_vote_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_vote_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_vote_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_vote_bg_color_team is "" [""] override panel color with team color in team based games
 ^7hud_panel_vote_bg_padding is "" [""] if set to something else than "" = override default padding of contents from border
-^7hud_panel_vote_pos is "0.720000 0.670000" ["0.720000 0.670000"] position of this base of the panel
+^7hud_panel_vote_pos is "0.740000 0.690000" ["0.740000 0.690000"] position of this base of the panel
 ^7hud_panel_vote_size is "0.190000 0.090000" ["0.190000 0.090000"] size of this panel
 ^7hud_panel_weapons is "1" ["1"] enable/disable this panel
-^7hud_panel_weapons_accuracy is "1" ["1"] show accuracy color as the weapon icon background; colors can be configured with accuracy_color* cvars
-^7hud_panel_weapons_ammo is "1" ["1"] show ammo as a status bar
+^7hud_panel_weapons_accuracy is "0" ["0"] show accuracy color as the weapon icon background; colors can be configured with accuracy_color* cvars
+^7hud_panel_weapons_ammo is "0" ["0"] show ammo as a status bar
 ^7hud_panel_weapons_ammo_alpha is "1" ["1"] alpha of status bar
-^7hud_panel_weapons_ammo_color is "0 1 0" ["0 1 0"] color of status bar
+^7hud_panel_weapons_ammo_color is "0.58 1 0.04" ["0.58 1 0.04"] color of status bar
 ^7hud_panel_weapons_ammo_full_cells is "180" ["180"] show 100% of the status bar at this ammo count
 ^7hud_panel_weapons_ammo_full_fuel is "100" ["100"] show 100% of the status bar at this ammo count
 ^7hud_panel_weapons_ammo_full_nails is "320" ["320"] show 100% of the status bar at this ammo count
 ^7hud_panel_weapons_ammo_full_plasma is "180" ["180"] show 100% of the status bar at this ammo count
 ^7hud_panel_weapons_ammo_full_rockets is "160" ["160"] show 100% of the status bar at this ammo count
 ^7hud_panel_weapons_ammo_full_shells is "60" ["60"] show 100% of the status bar at this ammo count
-^7hud_panel_weapons_aspect is "2" ["2"] use this aspect on the items
-^7hud_panel_weapons_bg is "border_small_weapons" ["border_small_weapons"] if set to something else than "" = override default background
+^7hud_panel_weapons_aspect is "1" ["1"] use this aspect on the items
+^7hud_panel_weapons_bg is "border_default_east" ["border_default_east"] if set to something else than "" = override default background
 ^7hud_panel_weapons_bg_alpha is "" [""] if set to something else than "" = override default panel background alpha
 ^7hud_panel_weapons_bg_border is "" [""] if set to something else than "" = override default size of border around the background
 ^7hud_panel_weapons_bg_color is "" [""] if set to something else than "" = override default panel background color
 ^7hud_panel_weapons_bg_color_team is "" [""] override panel color with team color in team based games
-^7hud_panel_weapons_bg_padding is "4" ["4"] if set to something else than "" = override default padding of contents from border
+^7hud_panel_weapons_bg_padding is "0" ["0"] if set to something else than "" = override default padding of contents from border
 ^7hud_panel_weapons_complainbubble is "1" ["1"] complain bubble (out of ammo, weapon not available etc)
-^7hud_panel_weapons_complainbubble_color_donthave is "0.8 0.5 0" ["0.8 0.5 0"] color of the complainbubble when showing don't have weapon message
-^7hud_panel_weapons_complainbubble_color_outofammo is "0.8 0 0" ["0.8 0 0"] color of the complainbubble when showing out of ammo message
-^7hud_panel_weapons_complainbubble_color_unavailable is "0 0.3 0.8" ["0 0.3 0.8"] color of the complainbubble when showing weapon unavailable message
+^7hud_panel_weapons_complainbubble_color_donthave is "0.88 0.75 0" ["0.88 0.75 0"] color of the complainbubble when showing don't have weapon message
+^7hud_panel_weapons_complainbubble_color_outofammo is "0.8 0.11 0" ["0.8 0.11 0"] color of the complainbubble when showing out of ammo message
+^7hud_panel_weapons_complainbubble_color_unavailable is "0 0.71 1" ["0 0.71 1"] color of the complainbubble when showing weapon unavailable message
 ^7hud_panel_weapons_complainbubble_fadetime is "1" ["1"] fade out time
-^7hud_panel_weapons_complainbubble_padding is "-1" ["-1"] padding for the complainbubble
+^7hud_panel_weapons_complainbubble_padding is "0" ["0"] padding for the complainbubble
 ^7hud_panel_weapons_complainbubble_time is "0" ["0"] time that a new entry stays until it fades out
 ^7hud_panel_weapons_label is "1" ["1"] 1 = show number of weapon, 2 = show bound key of weapon, 3 = show name of weapon
+^7hud_panel_weapons_label_scale is "0.300000" ["0.3"] scale of the weapon text label
 ^7hud_panel_weapons_onlyowned is "1" ["1"] show only owned weapons
-^7hud_panel_weapons_pos is "0.930000 0.170000" ["0.930000 0.170000"] position of this panel
-^7hud_panel_weapons_size is "0.070000 0.650000" ["0.070000 0.650000"] size of this panel
+^7hud_panel_weapons_pos is "0.965000 0.120000" ["0.965000 0.120000"] position of this panel
+^7hud_panel_weapons_size is "0.035000 0.770000" ["0.035000 0.770000"] size of this panel
 ^7hud_panel_weapons_timeout is "1" ["1"] panel disappears if you don't switch weapon for this amount of seconds
 ^7hud_panel_weapons_timeout_effect is "1" ["1"] disappearance effect: 0) no effect; 1) panel fades out; 2) panel moves off the screen; 3) combination of 1 and 2
 ^7hud_panel_weapons_timeout_fadebgmin is "0.4" ["0.4"] minimum alpha of the panel background while in effect mode 1
@@ -3406,17 +3378,17 @@
 ^7hud_postprocessing_maxbluralpha is "0" ["0"] maximum alpha which the blur postprocess can be, default is 0.5
 ^7hud_postprocessing_maxblurradius is "8" ["8"] maximum radius which the blur postprocess can be, default is 8
 ^7hud_powerup is "0" ["0"] power of the sharpen effect when owning the shield or strength powerups, default is 0.5
-^7hud_progressbar_acceleration_color is "0.5 0.75 1" ["0.5 0.75 1"] R G B vector of the progress bar background color
-^7hud_progressbar_acceleration_neg_color is "0.125 0.25 0.5" ["0.125 0.25 0.5"] R G B vector of the progress bar background color
-^7hud_progressbar_alpha is "0.500000" ["0.500000"] alpha of progressbars
-^7hud_progressbar_armor_color is "0 0.6 0" ["0 0.6 0"] R G B vector of the progress bar background color
-^7hud_progressbar_fuel_color is "0.6 0.6 0" ["0.6 0.6 0"] R G B vector of the progress bar background color
-^7hud_progressbar_health_color is "0.6 0 0" ["0.6 0 0"] R G B vector of the progress bar background color
-^7hud_progressbar_nexball_color is "0.7 0.1 0" ["0.7 0.1 0"] R G B vector of the progress bar background color
-^7hud_progressbar_shield_color is "0.6 0 0.6" ["0.6 0 0.6"] R G B vector of the progress bar background color
-^7hud_progressbar_speed_color is "1 0.75 0" ["1 0.75 0"] R G B vector of the progress bar background color
-^7hud_progressbar_strength_color is "0 0 0.6" ["0 0 0.6"] R G B vector of the progress bar background color
-^7hud_progressbar_superweapons_color is "0.6 0.3 0" ["0.6 0.3 0"] R G B vector of the progress bar background color
+^7hud_progressbar_acceleration_color is "0.2 0.65 0.93" ["0.2 0.65 0.93"] R G B vector of the progress bar background color
+^7hud_progressbar_acceleration_neg_color is "0.86 0.35 0" ["0.86 0.35 0"] R G B vector of the progress bar background color
+^7hud_progressbar_alpha is "0.600000" ["0.600000"] alpha of progressbars
+^7hud_progressbar_armor_color is "0.28 0.8 0" ["0.28 0.8 0"] R G B vector of the progress bar background color
+^7hud_progressbar_fuel_color is "0.77 0.67 0" ["0.77 0.67 0"] R G B vector of the progress bar background color
+^7hud_progressbar_health_color is "0.83 0.12 0" ["0.83 0.12 0"] R G B vector of the progress bar background color
+^7hud_progressbar_nexball_color is "0.2 0.65 0.93" ["0.2 0.65 0.93"] R G B vector of the progress bar background color
+^7hud_progressbar_shield_color is "0.28 0.8 0" ["0.28 0.8 0"] R G B vector of the progress bar background color
+^7hud_progressbar_speed_color is "0.77 0.67 0" ["0.77 0.67 0"] R G B vector of the progress bar background color
+^7hud_progressbar_strength_color is "0.86 0.35 0" ["0.86 0.35 0"] R G B vector of the progress bar background color
+^7hud_progressbar_superweapons_color is "0.77 0.67 0" ["0.77 0.67 0"] R G B vector of the progress bar background color
 ^7hud_showbinds is "1" ["1"] what to show in the HUD to indicate certain keys to press: 0 display commands, 1 bound keys, 2 both
 ^7hud_showbinds_limit is "2" ["2"] maximum number of bound keys to show for a command. 0 for unlimited
 ^7hud_shownames is "1" ["1"] draw names and health/armor of nearby players
@@ -3437,7 +3409,7 @@
 ^7hud_shownames_self is "0" ["0"] also include your own name to be shown when third person camera mode is on (chase_active/cl_eventchase)
 ^7hud_shownames_status is "1" ["1"] 1 = draw health/armor status of teammates
 ^7hud_shownames_statusbar_height is "4" ["4"] height of status bar
-^7hud_skin is "luminos" ["luminos"] skin folder where to look for images
+^7hud_skin is "luma" ["luma"] skin folder where to look for images
 ^7hud_width is "560" ["560"] 2D virtual width for the hud
 ^7in_pitch_max is "90" ["90"] how far you can aim downward (quake used 80)
 ^7in_pitch_min is "-90" ["-90"] how far you can aim upward (quake used -70)
@@ -3490,12 +3462,12 @@
 ^7leadlimit is "0" ["0"] custom cvar
 ^7leadlimit_and_fraglimit is "0" ["0"] if set, leadlimit is ANDed with fraglimit (otherwise ORed)
 ^7leadlimit_override is "-1" ["-1"] Lead limit overriding the mapinfo specified one (use 0 to play without limit, and -1 to use the mapinfo's limit)
-^7locksession is "1" ["0"] Lock the session? 0 = no, 1 = yes and abort on failure, 2 = yes and continue on failure
+^7locksession is "1" ["1"] Lock the session? 0 = no, 1 = yes and abort on failure, 2 = yes and continue on failure
 ^7locs_enable is "0" ["0"] enables replacement of certain % codes in chat messages: %l (location), %d (last death location), %h (health), %a (armor), %x (rockets), %c (cells), %r (rocket launcher status), %p (powerup status), %w (weapon status), %t (current time in level)
 ^7locs_show is "0" ["0"] shows defined locations for editing purposes
 ^7loddebug is "0" ["0"] force this LOD level
 ^7log_dest_udp is "" [""] UDP address to log messages to (in QW rcon compatible format); multiple destinations can be separated by spaces; DO NOT SPECIFY DNS NAMES HERE
-^7log_file is "" [""] filename to log messages to
+^7log_file is "cvarlist.txt" [""] filename to log messages to
 ^7log_file_stripcolors is "0" ["0"] strip color codes from log messages
 ^7lookspring is "0" ["0"] returns pitch to level with the floor when no longer holding a pitch key
 ^7lookstrafe is "0" ["0"] move instead of turning
@@ -3536,7 +3508,7 @@
 ^7menu_sandbox_edit_solidity is "1" ["1"] custom cvar
 ^7menu_sandbox_spawn_model is "" [""] custom cvar
 ^7menu_showboxes is "0" ["0"] show item bounding boxes (debug)
-^7menu_skin is "luminos" ["luminos"] custom cvar
+^7menu_skin is "luma" ["luma"] custom cvar
 ^7menu_slist_categories is "1" ["1"] custom cvar
 ^7menu_slist_categories_CAT_DEFRAG_override is "" [""] custom cvar
 ^7menu_slist_categories_CAT_FAVORITED_override is "" [""] custom cvar
@@ -3569,7 +3541,7 @@
 ^7menu_vid_allowdualscreenresolution is "0" ["0"] custom cvar
 ^7menu_vid_scale is "0" ["0"] custom cvar
 ^7menu_video_played is "1" ["1"] custom cvar
-^7menu_watermark is "" [""] custom cvar
+^7menu_watermark is "xonotic-v0.8.0-485-g99e86a2" ["xonotic-v0.8.0-485-g99e86a2"] custom cvar
 ^7menu_weaponarena is "" [""] custom cvar
 ^7minplayers is "0" ["0"] number of players playing at the same time (if not enough real players are there the remaining slots are filled with bots)
 ^7mod_alias_force_animated is "" [""] if set to an non-empty string, overrides the is-animated flag of any alias models (for benchmarking)
@@ -3586,8 +3558,8 @@
 ^7mod_generatelightmaps_vertexradius is "16" ["16"] sampling area around each vertex
 ^7mod_generatelightmaps_vertexsamples is "16" ["16"] number of shadow tests done per vertex
 ^7mod_noshader_default_offsetmapping is "1" ["1"] use offsetmapping by default on all surfaces that are not using q3 shader files
-^7mod_obj_orientation is "0" ["1"] fix orientation of OBJ models to the usual conventions (if zero, use coordinates as is)
-^7mod_q1bsp_polygoncollisions is "1" ["0"] disables use of precomputed cliphulls and instead collides with polygons (uses Bounding Interval Hierarchy optimizations)
+^7mod_obj_orientation is "0" ["0"] fix orientation of OBJ models to the usual conventions (if zero, use coordinates as is)
+^7mod_q1bsp_polygoncollisions is "1" ["1"] disables use of precomputed cliphulls and instead collides with polygons (uses Bounding Interval Hierarchy optimizations)
 ^7mod_q3bsp_curves_collisions is "1" ["1"] enables collisions with curves (SLOW)
 ^7mod_q3bsp_curves_collisions_stride is "16" ["16"] collisions against curves: optimize performance by doing a combined collision check for this triangle amount first (-1 avoids any box tests)
 ^7mod_q3bsp_curves_stride is "16" ["16"] particle effect collisions against curves: optimize performance by doing a combined collision check for this triangle amount first (-1 avoids any box tests)
@@ -3601,7 +3573,7 @@
 ^7mod_q3shader_default_offsetmapping_bias is "0" ["0"] default bias used for offsetmapping
 ^7mod_q3shader_default_offsetmapping_scale is "1" ["1"] default scale used for offsetmapping
 ^7mod_q3shader_default_polygonfactor is "0" ["0"] biases depth values of 'polygonoffset' shaders to prevent z-fighting artifacts
-^7mod_q3shader_default_polygonoffset is "-14" ["-2"] biases depth values of 'polygonoffset' shaders to prevent z-fighting artifacts
+^7mod_q3shader_default_polygonoffset is "-14" ["-14"] biases depth values of 'polygonoffset' shaders to prevent z-fighting artifacts
 ^7mod_q3shader_force_addalpha is "0" ["0"] treat GL_ONE GL_ONE (or add) blendfunc as GL_SRC_ALPHA GL_ONE for compatibility with older DarkPlaces releases
 ^7mod_q3shader_force_terrain_alphaflag is "1" ["1"] for multilayered terrain shaders force TEXF_ALPHA flag on both layers
 ^7mod_recalculatenodeboxes is "1" ["1"] enables use of generated node bounding boxes based on BSP tree portal reconstruction, rather than the node boxes supplied by the map compiler
@@ -3684,11 +3656,6 @@
 ^7net_tos_dscp is "32" ["32"] DiffServ Codepoint for network sockets (may need game restart to apply)
 ^7net_usesizelimit is "2" ["2"] use packet size limiting (0: never, 1: in non-CSQC mode, 2: always)
 ^7nextmap is "" [""] override the maplist when switching to the next map
-^7nn_lDangerHere is "^1{@^7%l^1}; g_waypointsprite_team_danger" ["^1{@^7%l^1}; g_waypointsprite_team_danger"] custom cvar
-^7nn_lDangerThere is "^1{@^7%l^1}; g_waypointsprite_team_danger_p" ["^1{@^7%l^1}; g_waypointsprite_team_danger_p"] custom cvar
-^7nn_lHelp is "^3{@^7%l^3}; g_waypointsprite_team_helpme" ["^3{@^7%l^3}; g_waypointsprite_team_helpme"] custom cvar
-^7nn_lHere is "^2{@^7%l^2}; g_waypointsprite_team_here" ["^2{@^7%l^2}; g_waypointsprite_team_here"] custom cvar
-^7nn_pStats is "^7(^1%h ^2%a^7)" ["^7(^1%h ^2%a^7)"] custom cvar
 ^7noaim is "1" ["1"] QW option to disable vertical autoaim
 ^7noexit is "0" ["0"] kills anyone attempting to use an exit
 ^7nomonsters is "0" ["0"] unused cvar in quake, can be used by mods
@@ -3782,9 +3749,11 @@
 ^7notification_ANNCE_VOTE_ACCEPT is "2" ["2"] 0 = disabled, 1 = enabled if gentle mode is off, 2 = always enabled
 ^7notification_ANNCE_VOTE_CALL is "2" ["2"] 0 = disabled, 1 = enabled if gentle mode is off, 2 = always enabled
 ^7notification_ANNCE_VOTE_FAIL is "2" ["2"] 0 = disabled, 1 = enabled if gentle mode is off, 2 = always enabled
+^7notification_CENTER_ALONE is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ASSAULT_ATTACKING is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ASSAULT_DEFENDING is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_CAMPCHECK is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_COINTOSS is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_COUNTDOWN_BEGIN is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_COUNTDOWN_GAMESTART is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_COUNTDOWN_ROUNDSTART is "1" ["1"] 0 = off, 1 = centerprint
@@ -3873,7 +3842,6 @@
 ^7notification_CENTER_INSTAGIB_FINDAMMO is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_INSTAGIB_FINDAMMO_FIRST is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_INSTAGIB_LIVES_REMAINING is "1" ["1"] 0 = off, 1 = centerprint
-^7notification_CENTER_INSTAGIB_SECONDARY is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_INVASION_SUPERMONSTER is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ITEM_BUFF_DROP is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ITEM_BUFF_GOT is "1" ["1"] 0 = off, 1 = centerprint
@@ -3902,6 +3870,7 @@
 ^7notification_CENTER_KEYHUNT_START_RED is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_KEYHUNT_START_YELLOW is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_KEYHUNT_WAIT is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_LMS_NOLIVES is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_MISSING_PLAYERS is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_MISSING_TEAMS is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_MOTD is "1" ["1"] 0 = off, 1 = centerprint
@@ -3910,8 +3879,13 @@
 ^7notification_CENTER_NADE_THROW is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_NIX_COUNTDOWN is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_NIX_NEWWEAPON is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_ONS_NOTSHIELDED is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_OVERTIME_CONTROLPOINT is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_OVERTIME_FRAG is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_OVERTIME_TIME is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_PORTO_CREATED_IN is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_PORTO_CREATED_OUT is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_PORTO_FAILED is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_POWERDOWN_INVISIBILITY is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_POWERDOWN_SHIELD is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_POWERDOWN_SPEED is "1" ["1"] 0 = off, 1 = centerprint
@@ -3928,6 +3902,7 @@
 ^7notification_CENTER_ROUND_TEAM_WIN_RED is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ROUND_TEAM_WIN_YELLOW is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_ROUND_TIED is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_SECONDARY_NODAMAGE is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_SEQUENCE_COMPLETED is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_SEQUENCE_COUNTER is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_SEQUENCE_COUNTER_FEWMORE is "1" ["1"] 0 = off, 1 = centerprint
@@ -3943,6 +3918,7 @@
 ^7notification_CENTER_TEAMCHANGE_YELLOW is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_TIMEOUT_BEGINNING is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CENTER_TIMEOUT_ENDING is "1" ["1"] 0 = off, 1 = centerprint
+^7notification_CENTER_WEAPON_MINELAYER_LIMIT is "1" ["1"] 0 = off, 1 = centerprint
 ^7notification_CHOICE_CTF_CAPTURE_BROKEN_BLUE is "1" ["1"] Choice for this notification 0 = off, 1 = default message, 2 = verbose message
 ^7notification_CHOICE_CTF_CAPTURE_BROKEN_BLUE_ALLOWED is "2" ["2"] Allow choice for this notification 0 = off, 1 = only in warmup mode, 2 = always
 ^7notification_CHOICE_CTF_CAPTURE_BROKEN_RED is "1" ["1"] Choice for this notification 0 = off, 1 = default message, 2 = verbose message
@@ -4050,7 +4026,10 @@
 ^7notification_DEATH_SELF_VH_WAKI_DEATH is "1" ["1"] Enable this multiple notification
 ^7notification_DEATH_SELF_VH_WAKI_ROCKET is "1" ["1"] Enable this multiple notification
 ^7notification_DEATH_SELF_VOID is "1" ["1"] Enable this multiple notification
+^7notification_INFO_CA_JOIN_LATE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_CA_LEAVE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_CHAT_NOSPECTATORS is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_COINTOSS is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_CTF_CAPTURE_BLUE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_CTF_CAPTURE_BROKEN_BLUE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_CTF_CAPTURE_BROKEN_RED is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
@@ -4184,6 +4163,7 @@
 ^7notification_INFO_ITEM_WEAPON_NOAMMO is "0" ["0"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_ITEM_WEAPON_PRIMORSEC is "0" ["0"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_ITEM_WEAPON_UNAVAILABLE is "0" ["0"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_JETPACK_NOFUEL is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_JOIN_CONNECT is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_JOIN_CONNECT_TEAM_BLUE is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_JOIN_CONNECT_TEAM_PINK is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
@@ -4239,6 +4219,7 @@
 ^7notification_INFO_SCORES_RED is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_SCORES_YELLOW is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_SPECTATE_WARNING is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_SUPERSPEC_MISSING_UID is "2" ["2"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_SUPERWEAPON_PICKUP is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_TEAMCHANGE_LARGERTEAM is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_TEAMCHANGE_NOTALLOWED is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
@@ -4248,8 +4229,14 @@
 ^7notification_INFO_WATERMARK is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_ACCORDEON_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_ACCORDEON_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_ARC_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_BLASTER_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_BLASTER_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_CRYLINK_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_CRYLINK_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_DEVASTATOR_MURDER_DIRECT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_DEVASTATOR_MURDER_SPLASH is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_DEVASTATOR_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_ELECTRO_MURDER_BOLT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_ELECTRO_MURDER_COMBO is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_ELECTRO_MURDER_ORBS is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
@@ -4264,36 +4251,40 @@
 ^7notification_INFO_WEAPON_HAGAR_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_HLAC_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_HLAC_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_HMG_MURDER_SNIPE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_HMG_MURDER_SPRAY is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_HOOK_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_KLEINBOTTLE_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_KLEINBOTTLE_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_LASER_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_LASER_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_MACHINEGUN_MURDER_SNIPE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_MACHINEGUN_MURDER_SPRAY is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_MINELAYER_LIMIT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MINELAYER_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MINELAYER_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_MINSTANEX_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MORTAR_MURDER_BOUNCE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MORTAR_MURDER_EXPLODE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MORTAR_SUICIDE_BOUNCE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_MORTAR_SUICIDE_EXPLODE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_NEX_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_RIFLE_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_RIFLE_MURDER_HAIL is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_RIFLE_MURDER_HAIL_PIERCING is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_RIFLE_MURDER_PIERCING is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_ROCKETLAUNCHER_MURDER_DIRECT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_ROCKETLAUNCHER_MURDER_SPLASH is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_ROCKETLAUNCHER_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_RPC_MURDER_DIRECT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_RPC_MURDER_SPLASH is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_RPC_SUICIDE_DIRECT is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_RPC_SUICIDE_SPLASH is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_SEEKER_MURDER_SPRAY is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_SEEKER_MURDER_TAG is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_SEEKER_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_SHOCKWAVE_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_SHOCKWAVE_MURDER_SLAP is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_SHOTGUN_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_SHOTGUN_MURDER_SLAP is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_THINKING_WITH_PORTALS is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_TUBA_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_INFO_WEAPON_TUBA_SUICIDE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_UZI_MURDER_SNIPE is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
-^7notification_INFO_WEAPON_UZI_MURDER_SPRAY is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_VAPORIZER_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
+^7notification_INFO_WEAPON_VORTEX_MURDER is "1" ["1"] 0 = off, 1 = print to console, 2 = print to console and chatbox (if notification_allow_chatboxprint is enabled)
 ^7notification_ITEM_BUFF_DROP is "1" ["1"] Enable this multiple notification
 ^7notification_ITEM_BUFF_GOT is "1" ["1"] Enable this multiple notification
 ^7notification_ITEM_WEAPON_DONTHAVE is "1" ["1"] Enable this multiple notification
@@ -4302,12 +4293,19 @@
 ^7notification_ITEM_WEAPON_NOAMMO is "1" ["1"] Enable this multiple notification
 ^7notification_ITEM_WEAPON_PRIMORSEC is "1" ["1"] Enable this multiple notification
 ^7notification_ITEM_WEAPON_UNAVAILABLE is "1" ["1"] Enable this multiple notification
+^7notification_MULTI_COINTOSS is "1" ["1"] Enable this multiple notification
 ^7notification_MULTI_COUNTDOWN_BEGIN is "1" ["1"] Enable this multiple notification
 ^7notification_MULTI_INSTAGIB_FINDAMMO is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_ACCORDEON_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_ACCORDEON_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_ARC_MURDER is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_BLASTER_MURDER is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_BLASTER_SUICIDE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_CRYLINK_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_CRYLINK_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_DEVASTATOR_MURDER_DIRECT is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_DEVASTATOR_MURDER_SPLASH is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_DEVASTATOR_SUICIDE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_ELECTRO_MURDER_BOLT is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_ELECTRO_MURDER_COMBO is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_ELECTRO_MURDER_ORBS is "1" ["1"] Enable this multiple notification
@@ -4322,36 +4320,40 @@
 ^7notification_WEAPON_HAGAR_SUICIDE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_HLAC_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_HLAC_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_HMG_MURDER_SNIPE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_HMG_MURDER_SPRAY is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_HOOK_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_KLEINBOTTLE_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_KLEINBOTTLE_SUICIDE is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_LASER_MURDER is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_LASER_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_MACHINEGUN_MURDER_SNIPE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_MACHINEGUN_MURDER_SPRAY is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_MINELAYER_LIMIT is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MINELAYER_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MINELAYER_SUICIDE is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_MINSTANEX_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MORTAR_MURDER_BOUNCE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MORTAR_MURDER_EXPLODE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MORTAR_SUICIDE_BOUNCE is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_MORTAR_SUICIDE_EXPLODE is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_NEX_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_RIFLE_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_RIFLE_MURDER_HAIL is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_RIFLE_MURDER_HAIL_PIERCING is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_RIFLE_MURDER_PIERCING is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_ROCKETLAUNCHER_MURDER_DIRECT is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_ROCKETLAUNCHER_MURDER_SPLASH is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_ROCKETLAUNCHER_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_RPC_MURDER_DIRECT is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_RPC_MURDER_SPLASH is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_RPC_SUICIDE_DIRECT is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_RPC_SUICIDE_SPLASH is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_SEEKER_MURDER_SPRAY is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_SEEKER_MURDER_TAG is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_SEEKER_SUICIDE is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_SHOCKWAVE_MURDER is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_SHOCKWAVE_MURDER_SLAP is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_SHOTGUN_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_SHOTGUN_MURDER_SLAP is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_THINKING_WITH_PORTALS is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_TUBA_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_WEAPON_TUBA_SUICIDE is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_UZI_MURDER_SNIPE is "1" ["1"] Enable this multiple notification
-^7notification_WEAPON_UZI_MURDER_SPRAY is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_VAPORIZER_MURDER is "1" ["1"] Enable this multiple notification
+^7notification_WEAPON_VORTEX_MURDER is "1" ["1"] Enable this multiple notification
 ^7notification_allow_chatboxprint is "1" ["1"] Allow INFO notifications to be printed to chat box0 = do not allow, 1 = allow only if allowed by individual notification_INFO* cvars, 2 = force all INFO notifications to be printed to the chatbox
 ^7notification_debug is "0" ["0"] Print extra debug information on all notification function calls (Requires -DNOTIFICATIONS_DEBUG flag to be enabled on QCSRC compilation)... 0 = disabled, 1 = dprint, 2 = print
 ^7notification_errors_are_fatal is "1" ["1"] If a notification fails upon initialization, cause a Host_Error to stop the program
@@ -4399,19 +4401,19 @@
 ^7physics_ode_worldstep_iterations is "20" ["20"] parameter to dWorldQuickStep
 ^7port is "26000" ["26000"] server port for players to connect to
 ^7pr_checkextension is "1" ["1"] indicates to QuakeC that the standard quakec extensions system is available (if 0, quakec should not attempt to use extensions)
-^7prvm_backtraceforwarnings is "1" ["0"] print a backtrace for warnings too
+^7prvm_backtraceforwarnings is "1" ["1"] print a backtrace for warnings too
 ^7prvm_breakpointdump is "0" ["0"] write a savegame on breakpoint to breakpoint-server.dmp
 ^7prvm_coverage is "0" ["0"] report and count coverage events (1: per-function, 2: coverage() builtin, 4: per-statement)
 ^7prvm_errordump is "0" ["0"] write a savegame on crash to crash-server.dmp
 ^7prvm_language is "en" ["en"] when set, loads PROGSFILE.LANGUAGENAME.po and common.LANGUAGENAME.po for string translations; when set to dump, PROGSFILE.pot is written from the strings in the progs
 ^7prvm_leaktest is "0" ["0"] try to detect memory leaks in strings or entities
-^7prvm_leaktest_ignore_classnames is "ctf_team dom_team tdm_team" [""] classnames of entities to NOT leak check because they are found by find(world, classname, ...) but are actually spawned by QC code (NOT map entities)
+^7prvm_leaktest_ignore_classnames is "ctf_team dom_team tdm_team" ["ctf_team dom_team tdm_team"] classnames of entities to NOT leak check because they are found by find(world, classname, ...) but are actually spawned by QC code (NOT map entities)
 ^7prvm_reuseedicts_neverinsameframe is "1" ["1"] never allows re-use of freed entity slots during same frame
 ^7prvm_reuseedicts_startuptime is "2" ["2"] allows immediate re-use of freed entity slots during start of new level (value in seconds)
 ^7prvm_statementprofiling is "0" ["0"] counts how many times each QuakeC statement has been executed, these counts are displayed in prvm_printfunction output (if enabled)
 ^7prvm_timeprofiling is "0" ["0"] counts how long each function has been executed, these counts are displayed in prvm_profile output (if enabled)
 ^7prvm_traceqc is "0" ["0"] prints every QuakeC statement as it is executed (only for really thorough debugging!)
-^7qport is "57593" ["57593"] identification key for playing on qw servers (allows you to maintain a connection to a quakeworld server even if your port changes)
+^7qport is "5014" ["5014"] identification key for playing on qw servers (allows you to maintain a connection to a quakeworld server even if your port changes)
 ^7quit_and_redirect is "" [""] set to an IP to redirect all players at the end of the match to another server. Set to "self" to let all players reconnect at the end of the match (use it to make seamless engine updates)
 ^7quit_and_redirect_timer is "1.5" ["1.5"] set to number of seconds after quit before performing the connect operation of quit_and_redirect
 ^7quit_when_empty is "0" ["0"] set to 1, then the server exits when the next level would start but is empty
@@ -4435,29 +4437,29 @@
 ^7r_celoutlines is "0" ["0"] cartoon-style outlines (requires r_shadow_deferred; OpenGL 2.x only)
 ^7r_celshading is "0" ["0"] cartoon-style light shading (OpenGL 2.x only)
 ^7r_colormap_palette is "gfx/colormap_palette.lmp" ["gfx/colormap_palette.lmp"] name of a palette lmp file to override the shirt/pants colors of player models. It consists of 16 shirt colors, 16 scoreboard shirt colors, 16 pants colors and 16 scoreboard pants colors
-^7r_coronas is "1" ["0"] brightness of corona flare effects around certain lights, 0 disables corona effects
+^7r_coronas is "1" ["1"] brightness of corona flare effects around certain lights, 0 disables corona effects
 ^7r_coronas_occlusionquery is "0" ["0"] use GL_ARB_occlusion_query extension if supported (fades coronas according to visibility) - bad performance (synchronous rendering) - worse on multi-gpu!
 ^7r_coronas_occlusionsizescale is "0.1" ["0.1"] size of light source for corona occlusion checksum the proportion of hidden pixels controls corona intensity
-^7r_cullentities_trace is "0" ["1"] probabistically cull invisible entities
+^7r_cullentities_trace is "0" ["0"] probabistically cull invisible entities
 ^7r_cullentities_trace_delay is "1" ["1"] number of seconds until the entity gets actually culled
 ^7r_cullentities_trace_enlarge is "0" ["0"] box enlargement for entity culling
 ^7r_cullentities_trace_samples is "2" ["2"] number of samples to test for entity culling (in addition to center sample)
 ^7r_cullentities_trace_tempentitysamples is "-1" ["-1"] number of samples to test for entity culling of temp entities (including all CSQC entities), -1 disables trace culling on these entities to prevent flicker (pvs still applies)
 ^7r_damageblur is "0" ["0"] screen motionblur based on damage - value represents intensity, somewhere around 0.5 recommended - NOTE: bad performance on multi-gpu!
 ^7r_deformvertexes is "1" ["1"] allows use of deformvertexes in shader files (can be turned off to check performance impact)
-^7r_depthfirst is "1" ["0"] renders a depth-only version of the scene before normal rendering begins to eliminate overdraw, values: 0 = off, 1 = world depth, 2 = world and model depth
+^7r_depthfirst is "1" ["1"] renders a depth-only version of the scene before normal rendering begins to eliminate overdraw, values: 0 = off, 1 = world depth, 2 = world and model depth
 ^7r_draw2d is "1" ["1"] draw 2D stuff (dangerous to turn off)
 ^7r_drawdecals is "1" ["1"] enables drawing of decals
-^7r_drawdecals_drawdistance is "300" ["500"] decals further than drawdistance*size will not be drawn
+^7r_drawdecals_drawdistance is "300" ["300"] decals further than drawdistance*size will not be drawn
 ^7r_draweffects is "1" ["1"] renders temporary sprite effects
 ^7r_drawentities is "1" ["1"] draw entities (doors, players, projectiles, etc)
 ^7r_drawexplosions is "1" ["1"] enables rendering of explosion shells (see also cl_particles_explosions_shell)
 ^7r_drawexteriormodel is "1" ["1"] draw your player model (e.g. in chase cam, reflections)
 ^7r_drawfog is "1" ["1"] allows one to disable fog rendering
 ^7r_drawparticles is "1" ["1"] enables drawing of particles
-^7r_drawparticles_drawdistance is "1000" ["2000"] particles further than drawdistance*size will not be drawn
-^7r_drawparticles_nearclip_max is "16" ["4"] particles closer than drawnearclip_min will be faded
-^7r_drawparticles_nearclip_min is "8" ["4"] particles closer than drawnearclip_min will not be drawn
+^7r_drawparticles_drawdistance is "1000" ["1000"] particles further than drawdistance*size will not be drawn
+^7r_drawparticles_nearclip_max is "16" ["16"] particles closer than drawnearclip_min will be faded
+^7r_drawparticles_nearclip_min is "8" ["8"] particles closer than drawnearclip_min will not be drawn
 ^7r_drawportals is "0" ["0"] shows portals (separating polygons) in world interior in quake1 maps
 ^7r_drawviewmodel is "1" ["1"] draw your weapon model
 ^7r_drawworld is "1" ["1"] draw world (most static stuff)
@@ -4485,11 +4487,11 @@
 ^7r_editlights_quakelightsizescale is "1" ["1"] changes size of light entities loaded from a map
 ^7r_enableshadowvolumes is "1" ["1"] Enables use of Stencil Shadow Volume shadowing methods, saves some memory if turned off
 ^7r_equalize_entities_by is "0.7" ["0.7"] light equalizing: exponent of dynamics compression (0 = no compression, 1 = full compression)
-^7r_equalize_entities_fullbright is "1" ["0"] render fullbright entities by equalizing their lightness, not by not rendering light
+^7r_equalize_entities_fullbright is "1" ["1"] render fullbright entities by equalizing their lightness, not by not rendering light
 ^7r_equalize_entities_minambient is "0.5" ["0.5"] light equalizing: ensure at least this ambient/diffuse ratio
 ^7r_equalize_entities_to is "0.8" ["0.8"] light equalizing: target light level
 ^7r_explosionclip is "1" ["1"] enables collision detection for explosion shell (so that it flattens against walls and floors)
-^7r_fakelight is "1" ["0"] render 'fake' lighting instead of real lightmaps
+^7r_fakelight is "1" ["1"] render 'fake' lighting instead of real lightmaps
 ^7r_fakelight_intensity is "0.75" ["0.75"] fakelight intensity modifier
 ^7r_farclip_base is "65536" ["65536"] farclip (furthest visible distance) for rendering when r_useinfinitefarclip is 0
 ^7r_farclip_world is "2" ["2"] adds map size to farclip multiplied by this value
@@ -4498,19 +4500,19 @@
 ^7r_fog_exp2 is "0" ["0"] uses GL_EXP2 fog (as in Nehahra) rather than realistic GL_EXP fog
 ^7r_font_antialias is "1" ["1"] 0 = monochrome, 1 = grey
 ^7r_font_compress is "0" ["0"] use texture compression on font textures to save video memory
-^7r_font_disable_freetype is "0" ["1"] disable freetype support for fonts entirely
+^7r_font_disable_freetype is "0" ["0"] disable freetype support for fonts entirely
 ^7r_font_diskcache is "0" ["0"] save font textures to disk for future loading rather than generating them every time
-^7r_font_hinting is "1" ["3"] 0 = no hinting, 1 = light autohinting, 2 = full autohinting, 3 = full hinting
+^7r_font_hinting is "1" ["1"] 0 = no hinting, 1 = light autohinting, 2 = full autohinting, 3 = full hinting
 ^7r_font_kerning is "1" ["1"] Use kerning if available
 ^7r_font_nonpoweroftwo is "1" ["1"] use nonpoweroftwo textures for font (saves memory, potentially slower)
-^7r_font_postprocess_blur is "1" ["0"] font blur amount
-^7r_font_postprocess_outline is "1" ["0"] font outline amount
+^7r_font_postprocess_blur is "1" ["1"] font blur amount
+^7r_font_postprocess_outline is "1" ["1"] font outline amount
 ^7r_font_postprocess_shadow_x is "0" ["0"] font shadow X shift amount, applied during outlining
 ^7r_font_postprocess_shadow_y is "0" ["0"] font shadow Y shift amount, applied during outlining
 ^7r_font_postprocess_shadow_z is "0" ["0"] font shadow Z shift amount, applied during blurring
-^7r_font_size_snapping is "4" ["1"] stick to good looking font sizes whenever possible - bad when the mod doesn't support it!
+^7r_font_size_snapping is "4" ["4"] stick to good looking font sizes whenever possible - bad when the mod doesn't support it!
 ^7r_font_use_alpha_textures is "0" ["0"] use alpha-textures for font rendering, this should safe memory
-^7r_framedatasize is "16" ["0.5"] size of renderer data cache used during one frame (for skeletal animation caching, light processing, etc)
+^7r_framedatasize is "0.5" ["0.5"] size of renderer data cache used during one frame (for skeletal animation caching, light processing, etc)
 ^7r_fullbright is "0" ["0"] makes map very bright and renders faster
 ^7r_fullbrights is "1" ["1"] enables glowing pixels in quake textures (changes need r_restart to take effect)
 ^7r_fxaa is "0" ["0"] fast approximate anti aliasing
@@ -4535,7 +4537,7 @@
 ^7r_glsl_postprocess_uservec4_enable is "1" ["1"] enables postprocessing uservec4 usage, creates USERVEC1 define (only useful if default.glsl has been customized)
 ^7r_glsl_saturation is "1" ["1"] saturation multiplier (only working in glsl!)
 ^7r_glsl_saturation_redcompensate is "0" ["0"] a 'vampire sight' addition to desaturation effect, does compensation for red color, r_glsl_restart is required
-^7r_glsl_skeletal is "0" ["1"] render skeletal models faster using a gpu-skinning technique
+^7r_glsl_skeletal is "0" ["0"] render skeletal models faster using a gpu-skinning technique
 ^7r_glsl_vertextextureblend_usebothalphas is "1" ["1"] use both alpha layers on vertex blended surfaces, each alpha layer sets amount of 'blend leak' on another layer, requires mod_q3shader_force_terrain_alphaflag on.
 ^7r_hdr_glowintensity is "1" ["1"] how bright light emitting textures should appear
 ^7r_hdr_irisadaptation is "0" ["0"] adjust scene brightness according to light intensity at player location
@@ -4589,9 +4591,9 @@
 ^7r_picmipsprites is "0" ["0"] make gl_picmip affect sprites too (saves some graphics memory in sprite heavy games) (setting this to 0 is a shorthand for gl_picmip_sprites -9999999)
 ^7r_picmipworld is "1" ["1"] whether gl_picmip shall apply to world textures too (setting this to 0 is a shorthand for gl_picmip_world -9999999)
 ^7r_polygonoffset_decals_factor is "0" ["0"] biases depth values of decals to prevent z-fighting artifacts
-^7r_polygonoffset_decals_offset is "-28" ["-14"] biases depth values of decals to prevent z-fighting artifacts
+^7r_polygonoffset_decals_offset is "-28" ["-28"] biases depth values of decals to prevent z-fighting artifacts
 ^7r_polygonoffset_submodel_factor is "0" ["0"] biases depth values of world submodels such as doors, to prevent z-fighting artifacts in Quake maps
-^7r_polygonoffset_submodel_offset is "0" ["14"] biases depth values of world submodels such as doors, to prevent z-fighting artifacts in Quake maps
+^7r_polygonoffset_submodel_offset is "0" ["0"] biases depth values of world submodels such as doors, to prevent z-fighting artifacts in Quake maps
 ^7r_q1bsp_skymasking is "1" ["1"] allows sky polygons in quake1 maps to obscure other geometry
 ^7r_q3bsp_renderskydepth is "0" ["0"] draws sky depth masking in q3 maps (as in q1 maps), this means for example that sky polygons can hide other things
 ^7r_render is "1" ["1"] enables rendering 3D views (you want this on!)
@@ -4627,7 +4629,7 @@
 ^7r_shadow_gloss is "1" ["1"] 0 disables gloss (specularity) rendering, 1 uses gloss if textures are found, 2 forces a flat metallic specular effect on everything without textures (similar to tenebrae)
 ^7r_shadow_gloss2exponent is "32" ["32"] same as r_shadow_glossexponent but for forced gloss (gloss 2) surfaces
 ^7r_shadow_gloss2intensity is "0.125" ["0.125"] how bright the forced flat gloss should look if r_shadow_gloss is 2
-^7r_shadow_glossexact is "1" ["0"] use exact reflection math for gloss (slightly slower, but should look a tad better)
+^7r_shadow_glossexact is "1" ["1"] use exact reflection math for gloss (slightly slower, but should look a tad better)
 ^7r_shadow_glossexponent is "32" ["32"] how 'sharp' the gloss should appear (specular power)
 ^7r_shadow_glossintensity is "1" ["1"] how bright textured glossmaps should look if r_shadow_gloss is 1 or 2
 ^7r_shadow_lightattenuationdividebias is "1" ["1"] changes attenuation texture generation
@@ -4639,17 +4641,18 @@
 ^7r_shadow_projectdistance is "0" ["0"] how far to cast shadows
 ^7r_shadow_realtime_dlight is "1" ["1"] enables rendering of dynamic lights such as explosions and rocket light
 ^7r_shadow_realtime_dlight_portalculling is "0" ["0"] enables portal optimization on dynamic lights (slow!)
-^7r_shadow_realtime_dlight_shadows is "0" ["1"] enables rendering of shadows from dynamic lights
+^7r_shadow_realtime_dlight_shadows is "0" ["0"] enables rendering of shadows from dynamic lights
 ^7r_shadow_realtime_dlight_svbspculling is "0" ["0"] enables svbsp optimization on dynamic lights (very slow!)
 ^7r_shadow_realtime_world is "0" ["0"] enables rendering of full world lighting (whether loaded from the map, or a .rtlights file, or a .ent file, or a .lights file produced by hlight)
 ^7r_shadow_realtime_world_compile is "1" ["1"] enables compilation of world lights for higher performance rendering
 ^7r_shadow_realtime_world_compileportalculling is "1" ["1"] enables portal-based culling optimization during compilation (overrides compilesvbsp)
 ^7r_shadow_realtime_world_compileshadow is "1" ["1"] enables compilation of shadows from world lights for higher performance rendering
 ^7r_shadow_realtime_world_compilesvbsp is "1" ["1"] enables svbsp optimization during compilation (slower than compileportalculling but more exact)
+^7r_shadow_realtime_world_importlightentitiesfrommap is "0" ["0"] load lights from .ent file or map entities at startup if no .rtlights or .lights file is present (if set to 2, always use the .ent or map entities)
 ^7r_shadow_realtime_world_lightmaps is "1" ["1"] brightness to render lightmaps when using full world lighting, try 0.5 for a tenebrae-like appearance
-^7r_shadow_realtime_world_shadows is "0" ["1"] enables rendering of shadows from world lights
+^7r_shadow_realtime_world_shadows is "0" ["0"] enables rendering of shadows from world lights
 ^7r_shadow_scissor is "1" ["1"] use scissor optimization of light rendering (restricts rendering to the portion of the screen affected by the light)
-^7r_shadow_shadowmapping is "0" ["1"] enables use of shadowmapping (depth texture sampling) instead of stencil shadow volumes, requires gl_fbo 1
+^7r_shadow_shadowmapping is "0" ["0"] enables use of shadowmapping (depth texture sampling) instead of stencil shadow volumes, requires gl_fbo 1
 ^7r_shadow_shadowmapping_bias is "0.03" ["0.03"] shadowmap bias parameter (this is multiplied by nearclip * 1024 / lodsize)
 ^7r_shadow_shadowmapping_bordersize is "4" ["4"] shadowmap size bias for filtering
 ^7r_shadow_shadowmapping_depthbits is "24" ["24"] requested minimum shadowmap texture depth bits
@@ -4731,16 +4734,16 @@
 ^7r_subdivisions_maxtess is "1024" ["1024"] maximum number of subdivisions (prevents curves beyond a certain detail level, limits smoothing)
 ^7r_subdivisions_maxvertices is "65536" ["65536"] maximum vertices allowed per subdivided curve
 ^7r_subdivisions_mintess is "0" ["0"] minimum number of subdivisions (values above 0 will smooth curves that don't need it)
-^7r_subdivisions_tolerance is "3" ["4"] maximum error tolerance on curve subdivision for rendering purposes (in other words, the curves will be given as many polygons as necessary to represent curves at this quality)
+^7r_subdivisions_tolerance is "3" ["3"] maximum error tolerance on curve subdivision for rendering purposes (in other words, the curves will be given as many polygons as necessary to represent curves at this quality)
 ^7r_test is "0" ["0"] internal development use only, leave it alone (usually does nothing anyway)
-^7r_textbrightness is "0.2" ["0"] additional brightness for text color codes (0 keeps colors as is, 1 makes them all white)
-^7r_textcontrast is "0.8" ["1"] additional contrast for text color codes (1 keeps colors as is, 0 makes them all black)
+^7r_textbrightness is "0.2" ["0.2"] additional brightness for text color codes (0 keeps colors as is, 1 makes them all white)
+^7r_textcontrast is "0.8" ["0.8"] additional contrast for text color codes (1 keeps colors as is, 0 makes them all black)
 ^7r_textshadow is "0" ["0"] draws a shadow on all text to improve readability (note: value controls offset, 1 = 1 pixel, 1.5 = 1.5 pixels, etc)
-^7r_texture_dds_load is "1" ["0"] load compressed dds/filename.dds texture instead of filename.tga, if the file exists (requires driver support)
-^7r_texture_dds_load_alphamode is "2" ["1"] 0: trust DDPF_ALPHAPIXELS flag, 1: texture format and brute force search if ambiguous, 2: texture format only
+^7r_texture_dds_load is "0" ["1"] load compressed dds/filename.dds texture instead of filename.tga, if the file exists (requires driver support)
+^7r_texture_dds_load_alphamode is "2" ["2"] 0: trust DDPF_ALPHAPIXELS flag, 1: texture format and brute force search if ambiguous, 2: texture format only
 ^7r_texture_dds_load_logfailure is "0" ["0"] log missing DDS textures to ddstexturefailures.log, 0: done log, 1: log with no optional textures (_norm, glow etc.). 2: log all
 ^7r_texture_dds_save is "0" ["0"] save compressed dds/filename.dds texture when filename.tga is loaded, so that it can be loaded instead next time
-^7r_texture_dds_swdecode is "1" ["0"] 0: don't software decode DDS, 1: software decode DDS if unsupported, 2: always software decode DDS
+^7r_texture_dds_swdecode is "1" ["1"] 0: don't software decode DDS, 1: software decode DDS if unsupported, 2: always software decode DDS
 ^7r_texture_jpeg_fastpicmip is "1" ["1"] perform gl_picmip during decompression for JPEG files (faster)
 ^7r_textureunits is "8" ["32"] number of texture units to use in GL 1.1 and GL 1.3 rendering paths
 ^7r_track_sprites is "1" ["1"] track SPR_LABEL* sprites by putting them as indicator at the screen border to rotate to
@@ -4771,20 +4774,20 @@
 ^7r_water is "0" ["0"] whether to use reflections and refraction on water surfaces (note: r_wateralpha must be set below 1)
 ^7r_water_clippingplanebias is "1" ["1"] a rather technical setting which avoids black pixels around water edges
 ^7r_water_fbo is "1" ["1"] enables use of render to texture for water effects, otherwise copy to texture is used (slower)
-^7r_water_hideplayer is "1" ["0"] if set to 1 then player will be hidden in refraction views, if set to 2 then player will also be hidden in reflection views, player is always visible in camera views
+^7r_water_hideplayer is "1" ["1"] if set to 1 then player will be hidden in refraction views, if set to 2 then player will also be hidden in reflection views, player is always visible in camera views
 ^7r_water_lowquality is "0" ["0"] special option to accelerate water rendering, 1 disables shadows and particles, 2 disables all dynamic lights
 ^7r_water_reflectdistort is "0.01" ["0.01"] how much water reflections shimmer
-^7r_water_refractdistort is "0.019" ["0.01"] how much water refractions shimmer
-^7r_water_resolutionmultiplier is "0.25" ["0.5"] multiplier for screen resolution when rendering refracted/reflected scenes, 1 is full quality, lower values are faster
+^7r_water_refractdistort is "0.019" ["0.019"] how much water refractions shimmer
+^7r_water_resolutionmultiplier is "0.25" ["0.25"] multiplier for screen resolution when rendering refracted/reflected scenes, 1 is full quality, lower values are faster
 ^7r_water_scissormode is "3" ["3"] scissor (1) or cull (2) or both (3) water renders
 ^7r_wateralpha is "1" ["1"] opacity of water polygons
 ^7r_waterscroll is "1" ["1"] makes water scroll around, value controls how much
 ^7r_waterwarp is "1" ["1"] warp view while underwater
 ^7rcon_address is "" [""] server address to send rcon commands to (when not connected to a server)
 ^7rcon_password is "********" [""] password to authenticate rcon commands; NOTE: changing rcon_secure clears rcon_password, so set rcon_secure always before rcon_password; may be set to a string of the form user1:pass1 user2:pass2 user3:pass3 to allow multiple user accounts - the client then has to specify ONE of these combinations
-^7rcon_restricted_commands is "restart fraglimit chmap gotomap endmatch reducematchtime extendmatchtime allready kick kickban "sv_cmd bans" "sv_cmd unban *" status "sv_cmd teamstatus" movetoauto movetored movetoblue movetoyellow movetopink" [""] allowed commands for rcon when the restricted mode password was used
+^7rcon_restricted_commands is "restart fraglimit chmap gotomap endmatch reducematchtime extendmatchtime allready kick kickban "sv_cmd bans" "sv_cmd unban *" status "sv_cmd teamstatus" movetoauto movetored movetoblue movetoyellow movetopink" ["restart fraglimit chmap gotomap endmatch reducematchtime extendmatchtime allready kick kickban "sv_cmd bans" "sv_cmd unban *" status "sv_cmd teamstatus" movetoauto movetored movetoblue movetoyellow movetopink"] allowed commands for rcon when the restricted mode password was used
 ^7rcon_restricted_password is "********" [""] password to authenticate rcon commands in restricted mode; may be set to a string of the form user1:pass1 user2:pass2 user3:pass3 to allow multiple user accounts - the client then has to specify ONE of these combinations
-^7rcon_secure is "1" ["0"] force secure rcon authentication (1 = time based, 2 = challenge based); NOTE: changing rcon_secure clears rcon_password, so set rcon_secure always before rcon_password
+^7rcon_secure is "1" ["1"] force secure rcon authentication (1 = time based, 2 = challenge based); NOTE: changing rcon_secure clears rcon_password, so set rcon_secure always before rcon_password
 ^7rcon_secure_challengetimeout is "5" ["5"] challenge-based secure rcon: time out requests if no challenge came within this time interval
 ^7rcon_secure_maxdiff is "5" ["5"] maximum time difference between rcon request and server system clock (to protect against replay attack)
 ^7registered is "0" ["0"] indicates if this is running registered quake (whether gfx/pop.lmp was found)
@@ -4802,7 +4805,7 @@
 ^7sbar_flagstatus_pos is "115" ["115"] pixel position of the Nexuiz flag status icons, from the bottom
 ^7sbar_flagstatus_right is "0" ["0"] moves Nexuiz flag status icons to the right
 ^7sbar_gametime is "1" ["1"] shows an overlay for the time left in the current match/level (or current game time if there is no timelimit set)
-^7sbar_hudselector is "1" ["0"] selects which of the builtin hud layouts to use (meaning is somewhat dependent on gamemode, so nexuiz has a very different set of hud layouts than quake for example)
+^7sbar_hudselector is "0" ["0"] selects which of the builtin hud layouts to use (meaning is somewhat dependent on gamemode, so nexuiz has a very different set of hud layouts than quake for example)
 ^7sbar_info_pos is "0" ["0"] pixel position of the info strings (such as showfps), from the bottom
 ^7sbar_miniscoreboard_size is "-1" ["-1"] sets the size of the mini deathmatch overlay in items, or disables it when set to 0, or sets it to a sane default when set to -1
 ^7sbar_scorerank is "1" ["1"] shows an overlay for your score (or team score) and rank in the scoreboard
@@ -4832,28 +4835,28 @@
 ^7scoreboard_respawntime_decimals is "1" ["1"] decimal places to show for the respawntime countdown display on the scoreboard
 ^7scr_centertime is "2" ["2"] how long centerprint messages show
 ^7scr_conalpha is "1" ["1"] opacity of console background gfx/conback
-^7scr_conalpha2factor is "0.3" ["0"] opacity of console background gfx/conback2 relative to scr_conalpha; when 0, gfx/conback2 is not drawn
-^7scr_conalpha3factor is "1" ["0"] opacity of console background gfx/conback3 relative to scr_conalpha; when 0, gfx/conback3 is not drawn
-^7scr_conalphafactor is "0.8" ["1"] opacity of console background gfx/conback relative to scr_conalpha; when 0, gfx/conback is not drawn
-^7scr_conbrightness is "0.35" ["0.2"] brightness of console background (0 = black, 1 = image)
-^7scr_conforcewhiledisconnected is "0" ["1"] forces fullscreen console while disconnected
-^7scr_conscroll2_x is "0.11" ["0"] scroll speed of gfx/conback2 in x direction
-^7scr_conscroll2_y is "0.2" ["0"] scroll speed of gfx/conback2 in y direction
+^7scr_conalpha2factor is "0.3" ["0.3"] opacity of console background gfx/conback2 relative to scr_conalpha; when 0, gfx/conback2 is not drawn
+^7scr_conalpha3factor is "1" ["1"] opacity of console background gfx/conback3 relative to scr_conalpha; when 0, gfx/conback3 is not drawn
+^7scr_conalphafactor is "0.8" ["0.8"] opacity of console background gfx/conback relative to scr_conalpha; when 0, gfx/conback is not drawn
+^7scr_conbrightness is "0.35" ["0.35"] brightness of console background (0 = black, 1 = image)
+^7scr_conforcewhiledisconnected is "0" ["0"] forces fullscreen console while disconnected
+^7scr_conscroll2_x is "0.11" ["0.11"] scroll speed of gfx/conback2 in x direction
+^7scr_conscroll2_y is "0.2" ["0.2"] scroll speed of gfx/conback2 in y direction
 ^7scr_conscroll3_x is "0" ["0"] scroll speed of gfx/conback3 in x direction
 ^7scr_conscroll3_y is "0" ["0"] scroll speed of gfx/conback3 in y direction
-^7scr_conscroll_x is "-0.1" ["0"] scroll speed of gfx/conback in x direction
-^7scr_conscroll_y is "-0.3" ["0"] scroll speed of gfx/conback in y direction
-^7scr_infobar_height is "12" ["8"] the height of the infobar items
+^7scr_conscroll_x is "-0.1" ["-0.1"] scroll speed of gfx/conback in x direction
+^7scr_conscroll_y is "-0.3" ["-0.3"] scroll speed of gfx/conback in y direction
+^7scr_infobar_height is "12" ["12"] the height of the infobar items
 ^7scr_loadingscreen_background is "0" ["0"] show the last visible background during loading screen (costs one screenful of video memory)
-^7scr_loadingscreen_barcolor is "0 0.5 1" ["0 0 1"] rgb color of loadingscreen progress bar
-^7scr_loadingscreen_barheight is "12" ["8"] the height of the loadingscreen progress bar
+^7scr_loadingscreen_barcolor is "0 0.5 1" ["0 0.5 1"] rgb color of loadingscreen progress bar
+^7scr_loadingscreen_barheight is "12" ["12"] the height of the loadingscreen progress bar
 ^7scr_loadingscreen_count is "1" ["1"] number of loading screen files to use randomly (named loading.tga, loading2.tga, loading3.tga, ...)
-^7scr_loadingscreen_firstforstartup is "1" ["0"] remove loading.tga from random scr_loadingscreen_count selection and only display it on client startup, 0 = normal, 1 = firstforstartup
+^7scr_loadingscreen_firstforstartup is "1" ["1"] remove loading.tga from random scr_loadingscreen_count selection and only display it on client startup, 0 = normal, 1 = firstforstartup
 ^7scr_loadingscreen_maxfps is "10" ["10"] restrict maximal FPS for loading screen so it will not update very often (this will make lesser loading times on a maps loading large number of models)
 ^7scr_loadingscreen_picture is "gfx/loading" ["gfx/loading"] picture shown during loading
-^7scr_loadingscreen_scale is "999" ["1"] scale factor of the background
-^7scr_loadingscreen_scale_base is "1" ["0"] 0 = console pixels, 1 = video pixels
-^7scr_loadingscreen_scale_limit is "2" ["0"] 0 = no limit, 1 = until first edge hits screen edge, 2 = until last edge hits screen edge, 3 = until width hits screen width, 4 = until height hits screen height
+^7scr_loadingscreen_scale is "999" ["999"] scale factor of the background
+^7scr_loadingscreen_scale_base is "1" ["1"] 0 = console pixels, 1 = video pixels
+^7scr_loadingscreen_scale_limit is "2" ["2"] 0 = no limit, 1 = until first edge hits screen edge, 2 = until last edge hits screen edge, 3 = until width hits screen width, 4 = until height hits screen height
 ^7scr_menuforcewhiledisconnected is "0" ["0"] forces menu while disconnected
 ^7scr_printspeed is "0" ["0"] speed of intermission printing (episode end texts), a value of 0 disables the slow printing
 ^7scr_refresh is "1" ["1"] allows you to completely shut off rendering for benchmarking purposes
@@ -4861,7 +4864,7 @@
 ^7scr_screenshot_gammaboost is "1" ["1"] gamma correction on saved screenshots and videos, 1.0 saves unmodified images
 ^7scr_screenshot_hwgamma is "1" ["1"] apply the video gamma ramp to saved screenshots and videos
 ^7scr_screenshot_jpeg is "1" ["1"] save jpeg instead of targa
-^7scr_screenshot_jpeg_quality is "1" ["0.9"] image quality of saved jpeg
+^7scr_screenshot_jpeg_quality is "0.9" ["0.9"] image quality of saved jpeg
 ^7scr_screenshot_name is "xonotic" ["xonotic"] prefix name for saved screenshots (changes based on -game commandline, as well as which game mode is running; the date is encoded using strftime escapes)
 ^7scr_screenshot_name_in_mapdir is "0" ["0"] if set to 1, screenshots are placed in a subdirectory named like the map they are from
 ^7scr_screenshot_png is "0" ["0"] save png instead of targa
@@ -4871,7 +4874,7 @@
 ^7scratch2 is "0" ["0"] unused cvar in quake, can be used by mods
 ^7scratch3 is "0" ["0"] unused cvar in quake, can be used by mods
 ^7scratch4 is "0" ["0"] unused cvar in quake, can be used by mods
-^7sensitivity is "3" ["6"] mouse speed multiplier
+^7sensitivity is "6" ["6"] mouse speed multiplier
 ^7serverconfig is "server.cfg" ["server.cfg"] custom cvar
 ^7sessionid is "" [""] ID of the current session (use the -sessionid parameter to set it); this is always either empty or begins with a dot (.)
 ^7showblur is "0" ["0"] shows the current alpha level of motionblur
@@ -4879,11 +4882,11 @@
 ^7showdate is "0" ["0"] shows current date (useful on screenshots)
 ^7showdate_format is "%Y-%m-%d" ["%Y-%m-%d"] format string for date
 ^7showfps is "0" ["0"] shows your rendered fps (frames per second)
-^7shownetgraph is "1" ["0"] shows a graph of packet sizes and other information, 0 = off, 1 = show client netgraph, 2 = show client and server netgraphs (when hosting a server)
+^7shownetgraph is "0" ["0"] shows a graph of packet sizes and other information, 0 = off, 1 = show client netgraph, 2 = show client and server netgraphs (when hosting a server)
 ^7showpause is "1" ["1"] show pause icon when game is paused
 ^7showram is "1" ["1"] show ram icon if low on surface cache memory (not used)
 ^7showsound is "0" ["0"] shows number of active sound sources, sound latency, and other statistics
-^7showspeed is "1" ["0"] shows your current speed (qu per second); number selects unit: 1 = qu/s, 2 = m/s, 3 = km/h, 4 = mph, 5 = knots
+^7showspeed is "0" ["0"] shows your current speed (qu per second); number selects unit: 1 = qu/s, 2 = m/s, 3 = km/h, 4 = mph, 5 = knots
 ^7showtex is "0" ["0"] shows the name of the texture on the crosshair (for map debugging)
 ^7showtime is "0" ["0"] shows current time of day (useful on screenshots)
 ^7showtime_format is "%H:%M:%S" ["%H:%M:%S"] format string for time of day
@@ -4892,9 +4895,9 @@
 ^7skill is "1" ["1"] difficulty level of game, affects monster layouts in levels, 0 = easy, 1 = normal, 2 = hard, 3 = nightmare (same layout as hard but monsters fire twice)
 ^7skill_auto is "0" ["0"] when 1, "skill" gets adjusted to match the best player on the map
 ^7skin is "" [""] QW player skin name (example: base)
-^7slowmo is "1" ["1.0"] controls game speed, 0.5 is half speed, 2 is double speed
+^7slowmo is "1" ["1"] controls game speed, 0.5 is half speed, 2 is double speed
 ^7snd_attenuation_decibel is "0" ["0"] Decibel sound attenuation per sound radius distance
-^7snd_attenuation_exponent is "4" ["1"] Exponent of (1-radius) in sound attenuation formula
+^7snd_attenuation_exponent is "4" ["4"] Exponent of (1-radius) in sound attenuation formula
 ^7snd_channel0volume is "1" ["1"] volume multiplier of the auto-allocate entity channel
 ^7snd_channel1volume is "1" ["1"] volume multiplier of the 1st entity channel
 ^7snd_channel2volume is "1" ["1"] volume multiplier of the 2nd entity channel
@@ -4905,7 +4908,7 @@
 ^7snd_channel7volume is "1" ["1"] volume multiplier of the 7th entity channel
 ^7snd_channel8volume is "1" ["1"] QuakeC controlled background music volume
 ^7snd_channel9volume is "1" ["1"] QuakeC controlled ambient sound volume
-^7snd_channellayout is "2" ["0"] channel layout. Can be 0 (auto - snd_restart needed), 1 (standard layout), or 2 (ALSA layout)
+^7snd_channellayout is "1" ["0"] channel layout. Can be 0 (auto - snd_restart needed), 1 (standard layout), or 2 (ALSA layout)
 ^7snd_channels is "2" ["2"] number of channels for the sound output (2 for stereo; up to 8 supported for 3D sound)
 ^7snd_csqcchannel0volume is "1" ["1"] volume multiplier of the auto-allocate entity channel CSQC entities (DEPRECATED)
 ^7snd_csqcchannel1volume is "1" ["1"] volume multiplier of the 1st entity channel of CSQC entities (DEPRECATED)
@@ -4923,10 +4926,10 @@
 ^7snd_entchannel5volume is "1" ["1"] volume multiplier of the 5th entity channel of regular entities (DEPRECATED)
 ^7snd_entchannel6volume is "1" ["1"] volume multiplier of the 6th entity channel of regular entities (DEPRECATED)
 ^7snd_entchannel7volume is "1" ["1"] volume multiplier of the 7th entity channel of regular entities (DEPRECATED)
-^7snd_identicalsoundrandomization_tics is "1" ["0"] if nonzero, how many tics to limit sound randomization as defined by snd_identicalsoundrandomization_time
-^7snd_identicalsoundrandomization_time is "-0.1" ["0.1"] how much seconds to randomly skip (positive) or delay (negative) sounds when multiple identical sounds are started on the same frame
+^7snd_identicalsoundrandomization_tics is "1" ["1"] if nonzero, how many tics to limit sound randomization as defined by snd_identicalsoundrandomization_time
+^7snd_identicalsoundrandomization_time is "-0.1" ["-0.1"] how much seconds to randomly skip (positive) or delay (negative) sounds when multiple identical sounds are started on the same frame
 ^7snd_initialized is "1" ["1"] indicates the sound subsystem is active
-^7snd_maxchannelvolume is "0" ["10"] maximum volume of a single sound
+^7snd_maxchannelvolume is "0" ["0"] maximum volume of a single sound
 ^7snd_mutewhenidle is "1" ["1"] whether to disable sound output when game window is inactive
 ^7snd_noextraupdate is "0" ["0"] disables extra sound mixer calls that are meant to reduce the chance of sound breakup at very low framerates
 ^7snd_playerchannel0volume is "1" ["1"] volume multiplier of the auto-allocate entity channel of player entities (DEPRECATED)
@@ -4939,8 +4942,8 @@
 ^7snd_playerchannel7volume is "1" ["1"] volume multiplier of the 7th entity channel of player entities (DEPRECATED)
 ^7snd_precache is "1" ["1"] loads sounds before they are used
 ^7snd_show is "0" ["0"] shows some statistics about sound mixing
-^7snd_softclip is "1" ["0"] Use soft-clipping. Soft-clipping can make the sound more smooth if very high volume levels are used. Enable this option if the dynamic range of the loudspeakers is very low. WARNING: This feature creates distortion and should be considered a last resort.
-^7snd_soundradius is "2400" ["1200"] radius of weapon sounds and other standard sound effects (monster idle noises are half this radius and flickering light noises are one third of this radius)
+^7snd_softclip is "1" ["1"] Use soft-clipping. Soft-clipping can make the sound more smooth if very high volume levels are used. Enable this option if the dynamic range of the loudspeakers is very low. WARNING: This feature creates distortion and should be considered a last resort.
+^7snd_soundradius is "2400" ["2400"] radius of weapon sounds and other standard sound effects (monster idle noises are half this radius and flickering light noises are one third of this radius)
 ^7snd_spatialization_control is "0" ["0"] enable spatialization control (headphone friendly mode)
 ^7snd_spatialization_max is "0.95" ["0.95"] maximum spatialization of sounds
 ^7snd_spatialization_max_radius is "100" ["100"] use maximum spatialization below this radius
@@ -4955,7 +4958,7 @@
 ^7snd_startnonloopingsounds is "1" ["1"] whether to start sounds that would not loop (you want this to be 1); existing sounds are not affected
 ^7snd_staticvolume is "1" ["1"] volume of ambient sound effects (such as swampy sounds at the start of e1m2)
 ^7snd_streaming is "1" ["1"] enables keeping compressed ogg sound files compressed, decompressing them only as needed, otherwise they will be decompressed completely at load (may use a lot of memory); when set to 2, streaming is performed even if this would waste memory
-^7snd_streaming_length is "2" ["1"] decompress sounds completely if they are less than this play time when snd_streaming is 1
+^7snd_streaming_length is "2" ["2"] decompress sounds completely if they are less than this play time when snd_streaming is 1
 ^7snd_swapstereo is "0" ["0"] swaps left/right speakers for old ISA soundblaster cards
 ^7snd_width is "2" ["2"] sound output precision, in bytes (1 and 2 supported)
 ^7snd_worldchannel0volume is "1" ["1"] volume multiplier of the auto-allocate entity channel of the world entity (DEPRECATED)
@@ -4969,28 +4972,28 @@
 ^7spawn_debug is "0" ["0"] use all spawns one by one, then abort, to verify all spawnpoints
 ^7spawn_debugview is "0" ["0"] display spawnpoints and their rating on spawn to debug spawnpoint rating calculation
 ^7speedmeter is "0" ["0"] print landing speeds
-^7sv_accelerate is "15" ["10"] rate at which a player accelerates to sv_maxspeed
+^7sv_accelerate is "15" ["15"] rate at which a player accelerates to sv_maxspeed
 ^7sv_accuracy_data_send is "1" ["1"] 1 send weapon accuracy data statistics and improved score info to all the clients at the end of the match, depends on cl_accuracy_data_receive, 0 send the current 'player has won' to all the clients
 ^7sv_accuracy_data_share is "1" ["1"] 1 send weapon accuracy data statistics to spectating clients, depends on cl_accuracy_data_share
 ^7sv_adminnick is "" [""] nick name to use for admin messages instead of host name
 ^7sv_aim is "2" ["2"] maximum cosine angle for quake's vertical autoaim, a value above 1 completely disables the autoaim, quake used 0.93
-^7sv_airaccel_qw is "-0.8" ["1"] ratio of QW-style air control as opposed to simple acceleration; when < 0, the speed is clamped against the maximum allowed forward speed after the move
-^7sv_airaccel_qw_stretchfactor is "2" ["0"] when set, the maximum acceleration increase the player may get compared to forward-acceleration when strafejumping
-^7sv_airaccel_sideways_friction is "0" [""] anti-sideways movement stabilization (reduces speed gain when zigzagging); when < 0, only so much friction is applied that braking (by accelerating backwards) cannot be stronger
-^7sv_airaccelerate is "2" ["-1"] rate at which a player accelerates to sv_maxairspeed while in the air, if less than 0 the sv_accelerate variable is used instead
-^7sv_aircontrol is "100" ["0"] CPMA-style air control
+^7sv_airaccel_qw is "-0.8" ["-0.8"] ratio of QW-style air control as opposed to simple acceleration; when < 0, the speed is clamped against the maximum allowed forward speed after the move
+^7sv_airaccel_qw_stretchfactor is "2" ["2"] when set, the maximum acceleration increase the player may get compared to forward-acceleration when strafejumping
+^7sv_airaccel_sideways_friction is "0" ["0"] anti-sideways movement stabilization (reduces speed gain when zigzagging); when < 0, only so much friction is applied that braking (by accelerating backwards) cannot be stronger
+^7sv_airaccelerate is "2" ["2"] rate at which a player accelerates to sv_maxairspeed while in the air, if less than 0 the sv_accelerate variable is used instead
+^7sv_aircontrol is "100" ["100"] CPMA-style air control
 ^7sv_aircontrol_penalty is "0" ["0"] deceleration while using CPMA-style air control
 ^7sv_aircontrol_power is "2" ["2"] CPMA-style air control exponent
-^7sv_airspeedlimit_nonqw is "900" ["0"] when set, this is a soft speed limit while in air when using airaccel_qw not equal to 1
-^7sv_airstopaccelerate is "3" ["0"] when set, replacement for sv_airaccelerate when moving backwards
-^7sv_airstrafeaccel_qw is "-0.95" ["0"] when set, replacement for sv_airaccel_qw when just strafing
-^7sv_airstrafeaccelerate is "18" ["0"] when set, replacement for sv_airaccelerate when just strafing
+^7sv_airspeedlimit_nonqw is "900" ["900"] when set, this is a soft speed limit while in air when using airaccel_qw not equal to 1
+^7sv_airstopaccelerate is "3" ["3"] when set, replacement for sv_airaccelerate when moving backwards
+^7sv_airstrafeaccel_qw is "-0.95" ["-0.95"] when set, replacement for sv_airaccel_qw when just strafing
+^7sv_airstrafeaccelerate is "18" ["18"] when set, replacement for sv_airaccelerate when just strafing
 ^7sv_allow_fullbright is "1" ["1"] when set, clients may use r_fullbright on this server without getting a night vision effect overlay
-^7sv_allowdownloads is "0" ["1"] whether to allow clients to download files from the server (does not affect http downloads)
+^7sv_allowdownloads is "0" ["0"] whether to allow clients to download files from the server (does not affect http downloads)
 ^7sv_allowdownloads_archive is "0" ["0"] whether to allow downloads of archives (pak/pk3)
 ^7sv_allowdownloads_config is "0" ["0"] whether to allow downloads of config files (cfg)
 ^7sv_allowdownloads_dlcache is "0" ["0"] whether to allow downloads of dlcache files (dlcache/)
-^7sv_allowdownloads_inarchive is "1" ["0"] whether to allow downloads from archives (pak/pk3)
+^7sv_allowdownloads_inarchive is "1" ["1"] whether to allow downloads from archives (pak/pk3)
 ^7sv_areadebug is "0" ["0"] disables physics culling for debugging purposes (only for development)
 ^7sv_areagrid_mingridsize is "128" ["128"] minimum areagrid cell size, smaller values work better for lots of small objects, higher values for large objects
 ^7sv_autodemo_perclient is "0" ["0"] set to 1 to enable autorecorded per-client demos (they'll start to record at the beginning of a match); set it to 2 to also record client->server packets (for debugging)
@@ -5003,14 +5006,14 @@
 ^7sv_clientcommand_antispam_count is "8" ["8"] Amount of commands considered spam before commands are rejected.
 ^7sv_clientcommand_antispam_time is "1" ["1"] Amount of seconds after a command before another command can be called again without being considered spam. (Use -1 for no antispam limit)
 ^7sv_clmovement_enable is "1" ["1"] whether to allow clients to use cl_movement prediction, which can cause choppy movement on the server which may annoy other players
-^7sv_clmovement_inputtimeout is "0.066" ["0.2"] when a client does not send input for this many seconds, force them to move anyway (unlike QuakeWorld)
+^7sv_clmovement_inputtimeout is "0.066" ["0.066"] when a client does not send input for this many seconds, force them to move anyway (unlike QuakeWorld)
 ^7sv_clmovement_minping is "0" ["0"] if client ping is below this time in milliseconds, then their ability to use cl_movement prediction is disabled for a while (as they don't need it)
 ^7sv_clmovement_minping_disabletime is "1000" ["1000"] when client falls below minping, disable their prediction for this many milliseconds (should be at least 1000 or else their prediction may turn on/off frequently)
 ^7sv_clones is "0" ["0"] number of clones a player may make (reset by the "kill" command)
 ^7sv_cullentities_nevercullbmodels is "0" ["0"] if enabled the clients are always notified of moving doors and lifts and other submodels of world (warning: eats a lot of network bandwidth on some levels!)
 ^7sv_cullentities_pvs is "1" ["1"] fast but loose culling of hidden entities
 ^7sv_cullentities_stats is "0" ["0"] displays stats on network entities culled by various methods for each client
-^7sv_cullentities_trace is "1" ["0"] somewhat slow but very tight culling of hidden entities, minimizes network traffic and makes wallhack cheats useless
+^7sv_cullentities_trace is "1" ["1"] somewhat slow but very tight culling of hidden entities, minimizes network traffic and makes wallhack cheats useless
 ^7sv_cullentities_trace_delay is "1" ["1"] number of seconds until the entity gets actually culled
 ^7sv_cullentities_trace_delay_players is "0.2" ["0.2"] number of seconds until the entity gets actually culled if it is a player entity
 ^7sv_cullentities_trace_enlarge is "0" ["0"] box enlargement for entity culling
@@ -5066,32 +5069,33 @@
 ^7sv_fraginfo_ping is "1" ["1"] Enable ping display information, 0 = Never display, 1 = Always display (If the player is a bot, it will say bot instead of the ping.)
 ^7sv_fraginfo_stats is "1" ["1"] Enable statistics (health/armor) display information, 0 = Never display, 1 = Always display (Only available for the person who was killed)
 ^7sv_freezenonclients is "0" ["0"] freezes time, except for players, allowing you to walk around and take screenshots of explosions
-^7sv_friction is "6" ["4"] how fast you slow down
+^7sv_friction is "6" ["6"] how fast you slow down
 ^7sv_friction_on_land is "0" ["0"] custom cvar
+^7sv_friction_slick is "0.5" ["0.5"] custom cvar
 ^7sv_gameplayfix_blowupfallenzombies is "1" ["1"] causes findradius to detect SOLID_NOT entities such as zombies and corpses on the floor, allowing splash damage to apply to them
-^7sv_gameplayfix_consistentplayerprethink is "1" ["0"] improves fairness in multiplayer by running all PlayerPreThink functions (which fire weapons) before performing physics, then running all PlayerPostThink functions
-^7sv_gameplayfix_delayprojectiles is "0" ["1"] causes entities to not move on the same frame they are spawned, meaning that projectiles wait until the next frame to perform their first move, giving proper interpolation and rocket trails, but making weapons harder to use at low framerates
+^7sv_gameplayfix_consistentplayerprethink is "1" ["1"] improves fairness in multiplayer by running all PlayerPreThink functions (which fire weapons) before performing physics, then running all PlayerPostThink functions
+^7sv_gameplayfix_delayprojectiles is "0" ["0"] causes entities to not move on the same frame they are spawned, meaning that projectiles wait until the next frame to perform their first move, giving proper interpolation and rocket trails, but making weapons harder to use at low framerates
 ^7sv_gameplayfix_downtracesupportsongroundflag is "1" ["1"] prevents very short moves from clearing onground (which may make the player stick to the floor at high netfps)
-^7sv_gameplayfix_droptofloorstartsolid is "0" ["1"] prevents items and monsters that start in a solid area from falling out of the level (makes droptofloor treat trace_startsolid as an acceptable outcome)
+^7sv_gameplayfix_droptofloorstartsolid is "0" ["0"] prevents items and monsters that start in a solid area from falling out of the level (makes droptofloor treat trace_startsolid as an acceptable outcome)
 ^7sv_gameplayfix_droptofloorstartsolid_nudgetocorrect is "1" ["1"] tries to nudge stuck items and monsters out of walls before droptofloor is performed
 ^7sv_gameplayfix_easierwaterjump is "1" ["1"] changes water jumping to make it easier to get out of water (exactly like in QuakeWorld)
 ^7sv_gameplayfix_findradiusdistancetobox is "1" ["1"] causes findradius to check the distance to the corner of a box rather than the center of the box, makes findradius detect bmodels such as very large doors that would otherwise be unaffected by splash damage
 ^7sv_gameplayfix_fixedcheckwatertransition is "1" ["1"] fix two very stupid bugs in SV_CheckWaterTransition when watertype is CONTENTS_EMPTY (the bugs causes waterlevel to be 1 on first frame, -1 on second frame - the fix makes it 0 on both frames)
-^7sv_gameplayfix_gravityunaffectedbyticrate is "1" ["0"] fix some ticrate issues in physics.
+^7sv_gameplayfix_gravityunaffectedbyticrate is "1" ["1"] fix some ticrate issues in physics.
 ^7sv_gameplayfix_grenadebouncedownslopes is "1" ["1"] prevents MOVETYPE_BOUNCE (grenades) from getting stuck when fired down a downward sloping surface
 ^7sv_gameplayfix_multiplethinksperframe is "1" ["1"] allows entities to think more often than the server framerate, primarily useful for very high fire rate weapons
 ^7sv_gameplayfix_noairborncorpse is "1" ["1"] causes entities (corpses, items, etc) sitting ontop of moving entities (players) to fall when the moving entity (player) is no longer supporting them
 ^7sv_gameplayfix_noairborncorpse_allowsuspendeditems is "1" ["1"] causes entities sitting ontop of objects that are instantaneously remove to float in midair (special hack to allow a common level design trick for floating items)
-^7sv_gameplayfix_nogravityonground is "1" ["0"] turn off gravity when on ground (to get rid of sliding)
+^7sv_gameplayfix_nogravityonground is "1" ["1"] turn off gravity when on ground (to get rid of sliding)
 ^7sv_gameplayfix_nostepmoveonsteepslopes is "0" ["0"] crude fix which prevents MOVETYPE_STEP (not swimming or flying) to move on slopes whose angle is bigger than 45 degree
 ^7sv_gameplayfix_nudgeoutofsolid is "0" ["0"] attempts to fix physics errors (where an object ended up in solid for some reason)
 ^7sv_gameplayfix_nudgeoutofsolid_separation is "0.03125" ["0.03125"] keep objects this distance apart to prevent collision issues on seams
 ^7sv_gameplayfix_q1bsptracelinereportstexture is "1" ["1"] enables mods to get accurate trace_texture results on q1bsp by using a surface-hitting traceline implementation rather than the standard solidbsp method, q3bsp always reports texture accurately
-^7sv_gameplayfix_q2airaccelerate is "1" ["0"] Quake2-style air acceleration
+^7sv_gameplayfix_q2airaccelerate is "1" ["1"] Quake2-style air acceleration
 ^7sv_gameplayfix_setmodelrealbox is "1" ["1"] fixes a bug in Quake that made setmodel always set the entity box to ('-16 -16 -16', '16 16 16') rather than properly checking the model box, breaks some poorly coded mods
 ^7sv_gameplayfix_slidemoveprojectiles is "1" ["1"] allows MOVETYPE_FLY/FLYMISSILE/TOSS/BOUNCE/BOUNCEMISSILE entities to finish their move in a frame even if they hit something, fixes 'gravity accumulation' bug for grenades on steep slopes
 ^7sv_gameplayfix_stepdown is "0" ["0"] attempts to step down stairs, not just up them (prevents the familiar thud..thud..thud.. when running down stairs and slopes)
-^7sv_gameplayfix_stepmultipletimes is "1" ["0"] applies step-up onto a ledge more than once in a single frame, when running quickly up stairs
+^7sv_gameplayfix_stepmultipletimes is "1" ["1"] applies step-up onto a ledge more than once in a single frame, when running quickly up stairs
 ^7sv_gameplayfix_swiminbmodels is "1" ["1"] causes pointcontents (used to determine if you are in a liquid) to check bmodel entities as well as the world model, so you can swim around in (possibly moving) water bmodel entities
 ^7sv_gameplayfix_unstickentities is "1" ["1"] hack to check if entities are crossing world collision hull and try to move them to the right position
 ^7sv_gameplayfix_unstickplayers is "1" ["1"] big hack to try and fix the rare case of MOVETYPE_WALK entities getting stuck in the world clipping hull.
@@ -5105,10 +5109,10 @@
 ^7sv_join_notices is "" [""] custom cvar
 ^7sv_join_notices_time is "15" ["15"] custom cvar
 ^7sv_jumpspeedcap_max is "" [""] upper bound on the baseline velocity of a jump; final velocity will be <= (jumpheight * max + jumpheight)
-^7sv_jumpspeedcap_max_disable_on_ramps is "1" ["0"] disable upper baseline velocity bound on ramps to preserve the old rampjump style
+^7sv_jumpspeedcap_max_disable_on_ramps is "1" ["1"] disable upper baseline velocity bound on ramps to preserve the old rampjump style
 ^7sv_jumpspeedcap_min is "" [""] lower bound on the baseline velocity of a jump; final velocity will be >= (jumpheight * min + jumpheight)
 ^7sv_jumpstep is "1" ["1"] whether you can step up while jumping
-^7sv_jumpvelocity is "260" ["270"] cvar that can be used by QuakeC code for jump velocity
+^7sv_jumpvelocity is "260" ["260"] cvar that can be used by QuakeC code for jump velocity
 ^7sv_logscores_bots is "0" ["0"] exclude bots by default
 ^7sv_logscores_console is "0" ["0"] print scores to server console
 ^7sv_logscores_file is "0" ["0"] print scores to file
@@ -5125,12 +5129,12 @@
 ^7sv_masterextra3 is "92.62.40.73" ["92.62.40.73"] dpmaster.tchr.no - default master server 3 (admin: tChr)
 ^7sv_masterextra4 is "[2a03:4000:2:225::51:334d]:27950" ["[2a03:4000:2:225::51:334d]:27950"] dpmaster.sudo.rm-f.org - default master server 4 (admin: divVerent)
 ^7sv_masterextra5 is "[2604:180::4ac:98c1]:27950" ["[2604:180::4ac:98c1]:27950"] dpmaster.deathmask.net - default master server 5 ipv6 address of dpmaster.deathmask.net (admin: Willis)
-^7sv_maxairspeed is "360" ["30"] maximum speed a player can accelerate to when airborn (note that it is possible to completely stop by moving the opposite direction)
-^7sv_maxairstrafespeed is "100" ["0"] when set, replacement for sv_maxairspeed when just strafing
+^7sv_maxairspeed is "360" ["360"] maximum speed a player can accelerate to when airborn (note that it is possible to completely stop by moving the opposite direction)
+^7sv_maxairstrafespeed is "100" ["100"] when set, replacement for sv_maxairspeed when just strafing
 ^7sv_maxidle is "0" ["0"] kick players idle for more than this amount of time in seconds
 ^7sv_maxidle_spectatorsareidle is "0" ["0"] when sv_maxidle is not 0, assume spectators are idle too
 ^7sv_maxrate is "1000000" ["1000000"] upper limit on client rate cvar, should reflect your network connection quality
-^7sv_maxspeed is "360" ["320"] maximum speed a player can accelerate to when on ground (can be exceeded by tricks)
+^7sv_maxspeed is "360" ["360"] maximum speed a player can accelerate to when on ground (can be exceeded by tricks)
 ^7sv_maxvelocity is "1000000000" ["1000000000"] universal speed limit on all entities
 ^7sv_motd is "" [""] custom cvar
 ^7sv_namechangetimer is "5" ["5"] how often to allow name changes, in seconds (prevents people from using animated names and other tricks
@@ -5164,9 +5168,9 @@
 ^7sv_sound_watersplash is "" [""] sound to play when MOVETYPE_FLY/TOSS/BOUNCE/STEP entity enters or leaves water (empty cvar disables the sound)
 ^7sv_spectate is "1" ["1"] if set to 1, new clients are allowed to spectate or observe the game, if set to 0 joining clients spawn as players immediately (no spectating)
 ^7sv_spectator_speed_multiplier is "1.5" ["1.5"] custom cvar
-^7sv_status_privacy is "1" ["0"] do not show IP addresses in 'status' replies to clients
-^7sv_status_show_qcstatus is "1" ["0"] show the 'qcstatus' field in status replies, not the 'frags' field. Turn this on if your mod uses this field, and the 'frags' field on the other hand has no meaningful value.
-^7sv_stepheight is "31" ["18"] how high you can step up (TW_SV_STEPCONTROL extension)
+^7sv_status_privacy is "1" ["1"] do not show IP addresses in 'status' replies to clients
+^7sv_status_show_qcstatus is "1" ["1"] show the 'qcstatus' field in status replies, not the 'frags' field. Turn this on if your mod uses this field, and the 'frags' field on the other hand has no meaningful value.
+^7sv_stepheight is "31" ["31"] how high you can step up (TW_SV_STEPCONTROL extension)
 ^7sv_stopspeed is "100" ["100"] how fast you come to a complete stop
 ^7sv_strengthsound_antispam_refire_threshold is "0.04" ["0.04"] apply minimum distance only if refire of the gun is smaller than this
 ^7sv_strengthsound_antispam_time is "0.1" ["0.1"] minimum distance of strength sounds
@@ -5221,7 +5225,7 @@
 ^7sv_vote_timeout is "30" ["30"] a vote will timeout after this many seconds
 ^7sv_vote_wait is "120" ["120"] a player can not call a vote again for this many seconds when his vote was not accepted
 ^7sv_wallfriction is "1" ["1"] how much you slow down when sliding along a wall
-^7sv_warsowbunny_accel is "0.1593" ["0.1585"] how fast you accelerate until after reaching sv_maxspeed (it gets harder as you near sv_warsowbunny_topspeed)
+^7sv_warsowbunny_accel is "0.1593" ["0.1593"] how fast you accelerate until after reaching sv_maxspeed (it gets harder as you near sv_warsowbunny_topspeed)
 ^7sv_warsowbunny_airforwardaccel is "1.00001" ["1.00001"] how fast you accelerate until you reach sv_maxspeed
 ^7sv_warsowbunny_backtosideratio is "0.8" ["0.8"] lower values make it easier to change direction without losing speed; the drawback is "understeering" in sharp turns
 ^7sv_warsowbunny_topspeed is "925" ["925"] soft speed limit (can get faster with rjs and on ramps)
@@ -5242,9 +5246,11 @@
 ^7sys_memsize_physical is "15937.535156" ["15937.535156"] physical memory size in MB (or empty if unknown)
 ^7sys_memsize_virtual is "32202.531250" ["32202.531250"] virtual memory size in MB (or empty if unknown)
 ^7sys_specialcharactertranslation is "1" ["1"] terminal console conchars to ASCII translation (set to 0 if your conchars.tga is for an 8bit character set or if you want raw output)
-^7sys_ticrate is "0.0333333" ["0.01388889"] how long a server frame is in seconds, 0.05 is 20fps server rate, 0.1 is 10fps (can not be set higher than 0.1), 0 runs as many server frames as possible (makes games against bots a little smoother, overwhelms network players), 0.0138889 matches QuakeWorld physics
+^7sys_ticrate is "0.0333333" ["0.0333333"] how long a server frame is in seconds, 0.05 is 20fps server rate, 0.1 is 10fps (can not be set higher than 0.1), 0 runs as many server frames as possible (makes games against bots a little smoother, overwhelms network players), 0.0138889 matches QuakeWorld physics
 ^7sys_useclockgettime is "1" ["1"] use POSIX clock_gettime function (not adjusted by NTP on some older Linux kernels) for timing rather than gettimeofday (which has issues if the system time is stepped by ntpdate, or apparently on some Xen installations)
 ^7sys_usenoclockbutbenchmark is "0" ["0"] don't use ANY real timing, and simulate a clock (for benchmarking); the game then runs as fast as possible. Run a QC mod with bots that does some stuff, then does a quit at the end, to benchmark a server. NEVER do this on a public server.
+^7sys_usesdldelay is "0" ["0"] use SDL_Delay() (less accurate, for debugging)
+^7sys_usesdlgetticks is "0" ["0"] use SDL_GetTicks() timer (less accurate, for debugging)
 ^7team is "none" ["none"] QW team (4 character limit, example: blue)
 ^7teamplay is "0" ["0"] teamplay mode, values depend on mod but typically 0 = no teams, 1 = no team damage no self damage, 2 = team damage and self damage, some mods support 3 = no team damage but can damage self
 ^7teamplay_lockonrestart is "0" ["0"] it set to 1 in a team-based game, the teams are locked once all players readied up and the game restarted (no new players can join after restart unless using the server-command unlockteams)
@@ -5263,38 +5269,38 @@
 ^7timelimit_overtimes is "0" ["0"] how many overtimes to add at max
 ^7timelimit_suddendeath is "5" ["5"] number of minutes suddendeath mode lasts after all overtimes were added and still no winner was found
 ^7timestamps is "0" ["0"] prints timestamps on console messages
-^7userbind10_description is "team: killed flag, icon" ["team: roaming, icon"] custom cvar
-^7userbind10_press is "say_team ^2Killed Flagcarrier ^7(^4l:^5%y^7); g_waypointsprite_team_p" ["say_team roaming (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
+^7userbind10_description is "team: roaming, icon" ["team: roaming, icon"] custom cvar
+^7userbind10_press is "say_team roaming (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here" ["say_team roaming (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
 ^7userbind10_release is "" [""] custom cvar
-^7userbind11_description is "team: dropped flag, icon" ["team: attacking, icon"] custom cvar
-^7userbind11_press is "say_team ^1Dropped Flag ^7(^4l:^5%d^7); g_waypointsprite_team_here_d" ["say_team attacking (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
+^7userbind11_description is "team: attacking, icon" ["team: attacking, icon"] custom cvar
+^7userbind11_press is "say_team attacking (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here" ["say_team attacking (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
 ^7userbind11_release is "" [""] custom cvar
-^7userbind12_description is "team: drop, icon" ["team: killed flag, icon"] custom cvar
-^7userbind12_press is "say_team ^6Dropped Gun %w ^7(^4l:^5%l^7); g_waypointsprite_team_here; dropweapon" ["say_team killed flagcarrier (l:%y^7); g_waypointsprite_team_here_p"] custom cvar
+^7userbind12_description is "team: killed flag, icon" ["team: killed flag, icon"] custom cvar
+^7userbind12_press is "say_team killed flagcarrier (l:%y^7); g_waypointsprite_team_here_p" ["say_team killed flagcarrier (l:%y^7); g_waypointsprite_team_here_p"] custom cvar
 ^7userbind12_release is "" [""] custom cvar
-^7userbind13_description is "chat: nice one" ["team: dropped flag, icon"] custom cvar
-^7userbind13_press is "say :-) / nice one" ["say_team dropped flag (l:%d^7); g_waypointsprite_team_here_d"] custom cvar
+^7userbind13_description is "team: dropped flag, icon" ["team: dropped flag, icon"] custom cvar
+^7userbind13_press is "say_team dropped flag (l:%d^7); g_waypointsprite_team_here_d" ["say_team dropped flag (l:%d^7); g_waypointsprite_team_here_d"] custom cvar
 ^7userbind13_release is "" [""] custom cvar
-^7userbind14_description is "chat: good game" ["team: drop gun, icon"] custom cvar
-^7userbind14_press is "say Good Game!" ["say_team dropped gun %w^7 (l:%l^7); g_waypointsprite_team_here; wait; dropweapon"] custom cvar
+^7userbind14_description is "team: drop gun, icon" ["team: drop gun, icon"] custom cvar
+^7userbind14_press is "say_team dropped gun %w^7 (l:%l^7); g_waypointsprite_team_here; wait; dropweapon" ["say_team dropped gun %w^7 (l:%l^7); g_waypointsprite_team_here; wait; dropweapon"] custom cvar
 ^7userbind14_release is "" [""] custom cvar
-^7userbind15_description is "chat: hi / good luck" ["team: drop flag/key, icon"] custom cvar
-^7userbind15_press is "say hi / good luck and have fun (-.-) \m/" ["say_team dropped flag/key %w^7 (l:%l^7); g_waypointsprite_team_here; wait; +use"] custom cvar
+^7userbind15_description is "team: drop flag/key, icon" ["team: drop flag/key, icon"] custom cvar
+^7userbind15_press is "say_team dropped flag/key %w^7 (l:%l^7); g_waypointsprite_team_here; wait; +use" ["say_team dropped flag/key %w^7 (l:%l^7); g_waypointsprite_team_here; wait; +use"] custom cvar
 ^7userbind15_release is "-use" ["-use"] custom cvar
-^7userbind16_description is "Ninja Pack: Message Menu" ["chat: nice one"] custom cvar
-^7userbind16_press is "aotm_menu" ["say :-) / nice one"] custom cvar
+^7userbind16_description is "chat: nice one" ["chat: nice one"] custom cvar
+^7userbind16_press is "say :-) / nice one" ["say :-) / nice one"] custom cvar
 ^7userbind16_release is "" [""] custom cvar
-^7userbind17_description is "Ninja Pack: Quick Zoom" ["chat: good game"] custom cvar
-^7userbind17_press is "+aot_zoom_temp" ["say good game"] custom cvar
-^7userbind17_release is "-aot_zoom_temp" [""] custom cvar
-^7userbind18_description is "Ninja Pack: FOV Adjustment" ["chat: hi / good luck"] custom cvar
-^7userbind18_press is "+aot_zoomadjust" ["say hi / good luck and have fun"] custom cvar
-^7userbind18_release is "-aot_zoomadjust" [""] custom cvar
-^7userbind19_description is "Ninja Pack: Default FOV" ["scoreboard / chat history"] custom cvar
-^7userbind19_press is "fov 130" ["+showscores; +con_chat_maximize"] custom cvar
-^7userbind19_release is "" ["-showscores; -con_chat_maximize"] custom cvar
+^7userbind17_description is "chat: good game" ["chat: good game"] custom cvar
+^7userbind17_press is "say good game" ["say good game"] custom cvar
+^7userbind17_release is "" [""] custom cvar
+^7userbind18_description is "chat: hi / good luck" ["chat: hi / good luck"] custom cvar
+^7userbind18_press is "say hi / good luck and have fun" ["say hi / good luck and have fun"] custom cvar
+^7userbind18_release is "" [""] custom cvar
+^7userbind19_description is "scoreboard / chat history" ["scoreboard / chat history"] custom cvar
+^7userbind19_press is "+showscores; +con_chat_maximize" ["+showscores; +con_chat_maximize"] custom cvar
+^7userbind19_release is "-showscores; -con_chat_maximize" ["-showscores; -con_chat_maximize"] custom cvar
 ^7userbind1_description is "team: quad soon" ["team: quad soon"] custom cvar
-^7userbind1_press is "say_team ^4Quad Soon" ["say_team quad soon"] custom cvar
+^7userbind1_press is "say_team quad soon" ["say_team quad soon"] custom cvar
 ^7userbind1_release is "" [""] custom cvar
 ^7userbind20_description is "toggle recording .avi" ["toggle recording .avi"] custom cvar
 ^7userbind20_press is "toggle cl_capturevideo" ["toggle cl_capturevideo"] custom cvar
@@ -5327,7 +5333,7 @@
 ^7userbind29_press is "" [""] custom cvar
 ^7userbind29_release is "" [""] custom cvar
 ^7userbind2_description is "team: free item, icon" ["team: free item, icon"] custom cvar
-^7userbind2_press is "say_team ^6Free Item %x ^7(^4l:^5%y^7); g_waypointsprite_team_here_p" ["say_team free item %x^7 (l:%y^7); g_waypointsprite_team_here_p"] custom cvar
+^7userbind2_press is "say_team free item %x^7 (l:%y^7); g_waypointsprite_team_here_p" ["say_team free item %x^7 (l:%y^7); g_waypointsprite_team_here_p"] custom cvar
 ^7userbind2_release is "" [""] custom cvar
 ^7userbind30_description is "" [""] custom cvar
 ^7userbind30_press is "" [""] custom cvar
@@ -5339,27 +5345,27 @@
 ^7userbind32_press is "" [""] custom cvar
 ^7userbind32_release is "" [""] custom cvar
 ^7userbind3_description is "team: took item, icon" ["team: took item, icon"] custom cvar
-^7userbind3_press is "say_team ^6Took Item ^7(^4l:^5%l^7); g_waypointsprite_team_here" ["say_team took item (l:%l^7); g_waypointsprite_team_here"] custom cvar
+^7userbind3_press is "say_team took item (l:%l^7); g_waypointsprite_team_here" ["say_team took item (l:%l^7); g_waypointsprite_team_here"] custom cvar
 ^7userbind3_release is "" [""] custom cvar
 ^7userbind4_description is "team: negative" ["team: negative"] custom cvar
-^7userbind4_press is "say_team ^1Negative" ["say_team negative"] custom cvar
+^7userbind4_press is "say_team negative" ["say_team negative"] custom cvar
 ^7userbind4_release is "" [""] custom cvar
-^7userbind5_description is "team: need help, icon" ["team: positive"] custom cvar
-^7userbind5_press is "say_team ^3Need Help ^7(^4l:^5%l^7) ^7(^1h:%h^7 ^2a:%a^7 ^6w:%w^7); g_waypointsprite_team_helpme" ["say_team positive"] custom cvar
+^7userbind5_description is "team: positive" ["team: positive"] custom cvar
+^7userbind5_press is "say_team positive" ["say_team positive"] custom cvar
 ^7userbind5_release is "" [""] custom cvar
-^7userbind6_description is "team: enemy seen, icon" ["team: need help, icon"] custom cvar
-^7userbind6_press is "say_team ^1Enemy Seen ^7(^4l:^5%y^7); g_waypointsprite_team_danger_p" ["say_team need help (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_helpme; cmd voice needhelp"] custom cvar
+^7userbind6_description is "team: need help, icon" ["team: need help, icon"] custom cvar
+^7userbind6_press is "say_team need help (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_helpme; cmd voice needhelp" ["say_team need help (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_helpme; cmd voice needhelp"] custom cvar
 ^7userbind6_release is "" [""] custom cvar
-^7userbind7_description is "team: defending, icon" ["team: enemy seen, icon"] custom cvar
-^7userbind7_press is "say_team ^5Defending ^7(^4l:^5%l^7) ^7(^1h:%h^7 ^2a:%a^7 ^6w:%w^7); g_waypointsprite_team_here" ["say_team enemy seen (l:%y^7); g_waypointsprite_team_danger_p; cmd voice incoming"] custom cvar
+^7userbind7_description is "team: enemy seen, icon" ["team: enemy seen, icon"] custom cvar
+^7userbind7_press is "say_team enemy seen (l:%y^7); g_waypointsprite_team_danger_p; cmd voice incoming" ["say_team enemy seen (l:%y^7); g_waypointsprite_team_danger_p; cmd voice incoming"] custom cvar
 ^7userbind7_release is "" [""] custom cvar
-^7userbind8_description is "team: roaming, icon" ["team: flag seen, icon"] custom cvar
-^7userbind8_press is "say_team ^5Roaming ^7(^4l:^5%l^7) ^7(^1h:%h^7 ^2a:%a^7 ^6w:%w^7); g_waypointsprite_team_here" ["say_team flag seen (l:%y^7); g_waypointsprite_team_here_p; cmd voice seenflag"] custom cvar
+^7userbind8_description is "team: flag seen, icon" ["team: flag seen, icon"] custom cvar
+^7userbind8_press is "say_team flag seen (l:%y^7); g_waypointsprite_team_here_p; cmd voice seenflag" ["say_team flag seen (l:%y^7); g_waypointsprite_team_here_p; cmd voice seenflag"] custom cvar
 ^7userbind8_release is "" [""] custom cvar
-^7userbind9_description is "team: attacking, icon" ["team: defending, icon"] custom cvar
-^7userbind9_press is "say_team ^5Attacking ^7(^4l:%l^7) ^7(^1h:%h^7 ^2a:%a^7 ^6w:%w^7); g_waypointsprite_team_here" ["say_team defending (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
+^7userbind9_description is "team: defending, icon" ["team: defending, icon"] custom cvar
+^7userbind9_press is "say_team defending (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here" ["say_team defending (l:%l^7) (h:%h^7 a:%a^7 w:%w^7); g_waypointsprite_team_here"] custom cvar
 ^7userbind9_release is "" [""] custom cvar
-^7utf8_enable is "1" ["0"] Enable UTF-8 support. For compatibility, this is disabled by default in most games.
+^7utf8_enable is "1" ["1"] Enable UTF-8 support. For compatibility, this is disabled by default in most games.
 ^7v_brightness is "0" ["0"] brightness of black, useful for monitors that are too dark
 ^7v_centermove is "0.15" ["0.15"] how long before the view begins to center itself (if freelook/+mlook/+jlook/+klook are off)
 ^7v_centerspeed is "500" ["500"] how fast the view centers itself
@@ -5396,14 +5402,14 @@
 ^7v_psycho is "0" ["0"] easter egg
 ^7vid_bitsperpixel is "32" ["32"] how many bits per pixel to render at (32 or 16, 32 is recommended)
 ^7vid_conheight is "600" ["600"] virtual height of 2D graphics system
-^7vid_conwidth is "960" ["800"] virtual width of 2D graphics system
+^7vid_conwidth is "1920" ["800"] virtual width of 2D graphics system
 ^7vid_desktopfullscreen is "1" ["1"] force desktop resolution for fullscreen; also use some OS dependent tricks for better fullscreen integration
 ^7vid_fullscreen is "1" ["1"] use fullscreen (1) or windowed (0)
 ^7vid_gl13 is "1" ["1"] enables faster rendering using OpenGL 1.3 features (such as GL_ARB_texture_env_combine extension)
 ^7vid_gl20 is "1" ["1"] enables faster rendering using OpenGL 2.0 features (such as GL_ARB_fragment_shader extension)
 ^7vid_grabkeyboard is "0" ["0"] whether to grab the keyboard when mouse is active (prevents use of volume control keys, music player keys, etc on some keyboards)
 ^7vid_hardwaregammasupported is "1" ["1"] indicates whether hardware gamma is supported (updated by attempts to set hardware gamma ramps)
-^7vid_height is "768" ["768"] resolution
+^7vid_height is "1200" ["768"] resolution
 ^7vid_minheight is "0" ["0"] minimum vid_height that is acceptable (to be set in default.cfg in mods)
 ^7vid_minwidth is "0" ["0"] minimum vid_width that is acceptable (to be set in default.cfg in mods)
 ^7vid_mouse is "1" ["1"] whether to use the mouse in windowed mode (fullscreen always does)
@@ -5429,8 +5435,15 @@
 ^7vid_touchscreen_ydpi is "300" ["300"] Vertical DPI of the screen (only valid on Android currently)
 ^7vid_userefreshrate is "0" ["0"] set this to 1 to make vid_refreshrate used, or to 0 to let the engine choose a sane default
 ^7vid_vsync is "0" ["0"] sync to vertical blank, prevents 'tearing' (seeing part of one frame and part of another on the screen at the same time), automatically disabled when doing timedemo benchmarks
-^7vid_width is "1024" ["1024"] resolution
+^7vid_width is "3840" ["1024"] resolution
 ^7vid_x11_display is "" [""] xonotic-linux-*.sh will use this to start xonotic on an other/new X display
 ^7viewsize is "100" ["100"] how large the view should be, 110 disables inventory bar, 120 disables status bar
-^7volume is "1" ["0.5"] volume of sound effects
+^7volume is "1" ["1"] volume of sound effects
 ^7waypoint_benchmark is "0" ["0"] quit after waypoint loading to benchmark bot navigation code
+^75440 cvar(s)
+^7]exit
+^7CL_Disconnect
+^7Host_ShutdownServer
+^7OpenGL Backend shutting down
+====== Log stopped (Sat Apr 04 13:26:33 2015) ======
+
