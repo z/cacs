@@ -7,8 +7,8 @@
   <meta name="author" content="Tyler -z- Mulligan">
   <link rel="icon" href="favicon.ico">
 
-  <title>cvar and cmd viewer</title>
-  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <title>cvar and cmd search</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <script data-main="js/app" src="js/require.js"></script>
@@ -19,7 +19,7 @@
   <section id="wrap">
 
     <div class="page-header">
-      <h1 class="text-primary"><i class="glyphicon glyphicon-list-alt"></i> cvar and cmd list</h1>
+      <h1 class="text-primary"><i class="glyphicon glyphicon-list-alt"></i> cvar and cmd search</h1>
       <p>Choose which game you'd like to view cvars and cmds for:</p>
       <ul id="game" class="list-inline">
         <li><a href="#xonotic" id="xonotic" class="active">Xonotic</a></li>
@@ -55,8 +55,8 @@
       </div><!-- .panel-body -->
     </div><!-- .panel -->
 
-    <h3 class="text-info">About</h3>
-    <div class="alert alert-info">
+    <div class="well">
+      <h3 class="text-muted">About</h3>
       <p>This tool lists all cvars and cmds in the game.</p>
       <p>The data is extracted from the game with "cmdlist" and "cvarlist" and dumped into txt files with "condump".</p>
     </div>
