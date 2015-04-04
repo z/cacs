@@ -11,10 +11,7 @@ require.config({
     shim: {
         datatables: {
             deps: ['jquery']
-        },
-        cookie: {
-            deps: ['jquery']
-        },
+        }
         dtbootstrap: {
             deps: ['datatables']
         },
