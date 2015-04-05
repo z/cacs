@@ -5,6 +5,11 @@ define(function (require) {
 
     $(document).ready(function() {
 
+      // fun variables from the location hash to play with
+      var hash = location.hash.substr(1).split("/")
+      var game = hash[0] || "xonotic";
+      var filter = hash[1] || "";
+
       var list = {};
 
       function loadItems(game) {
@@ -14,7 +19,6 @@ define(function (require) {
         $.get("data/" + game + "/cmdlist.txt", function(data) {
           cmds = data.split("\n").map(function(line){
 
-            var str = '^7+button10 : activate button10 (behavior depends on mod)';
             var re_cmd = new RegExp(/[\^]7(.+) : (.+)/);
             var cmd_grp = re_cmd.exec(line);
             //console.log(cmd_grp);
@@ -24,6 +28,26 @@ define(function (require) {
                 label: cmd_grp[1],
                 type: "cmd",
                 description: cmd_grp[2].replace('"','\"')
+              };
+              list['items'].push(item);
+            }
+          });
+          
+          //console.log(list);
+        });
+
+        $.get("data/" + game + "/aliaslist.txt", function(data) {
+          aliases = data.split("\n").map(function(line){
+
+            var re_alias = new RegExp(/[\^]7(.+) : (.+)/);
+            var alias_grp = re_alias.exec(line);
+            //console.log(cmd_grp);
+
+            if (alias_grp) {
+              var item = {
+                label: alias_grp[1],
+                type: "alias",
+                description: alias_grp[2].replace('"','\"')
               };
               list['items'].push(item);
             }
@@ -53,8 +77,6 @@ define(function (require) {
         });
       }
 
-      loadItems("xonotic"); // default to xonotic
-
       var table = $('#cvar-cmd-list').DataTable({
         "columns": [
           { data: "label", "defaultContent": "", width: "30%" },
@@ -69,20 +91,31 @@ define(function (require) {
 
       function populateTable() {
         var all = $.parseJSON(JSON.stringify(list));
-        $('#cvar-cmd-list').DataTable().rows.add(all.items).draw();
+        $('#cvar-cmd-list').DataTable().clear().rows.add(all.items).search(filter).draw();
+        $("#cvar-cmd-list_filter input").val(filter);
       }
+
+      $('#cvar-cmd-list').DataTable().on('search.dt', function () {
+          var search = $('#cvar-cmd-list').DataTable().search();
+          var gs = game + "/" + search;
+          $('#cacs_share').attr("href", "#" + gs);
+          location.hash = gs;
+      });
 
       $("#game a").click(function(e) {
         var $this = $(this);
-        var game = $this.attr("id");
         var name = $this.text();
+        filter = $('#cvar-cmd-list').DataTable().search()
+        game = $this.attr("id");
         $("#game a").removeClass("active");
         $this.addClass("active");
         $("#game-name").text(name);
-        $("#cvar-cmd-list").DataTable().clear();
         loadItems(game);
+        location.hash = game + "/" + filter;
         e.preventDefault();
       });
+
+      $("#game a#" + game).click();
 
     });
   });

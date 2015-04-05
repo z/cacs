@@ -1,0 +1,247 @@
+^7+attack2 : +button3
+^7+cl_hook_laser : weaplast
+^7+cl_hook_nex : +zoom
+^7+con_chat_maximize : _backup_con_chatvars; con_chatpos -9; con_chat 100; con_notify 0; con_chattime 3600; cl_deathscoreboard 0; scr_centertime 0; r_track_sprites 0
+^7+crouch : +button5
+^7+hook : +button6
+^7+show_info : +button7
+^7+userbind : _userbind_call userbind${1}_press
+^7+zoom : +button4
+^7-attack2 : -button3
+^7-cl_hook_laser : 
+^7-cl_hook_nex : -zoom
+^7-con_chat_maximize : _restore_con_chatvars
+^7-crouch : -button5
+^7-hook : -button6
+^7-show_info : -button7
+^7-userbind : _userbind_call userbind${1}_release
+^7-zoom : -button4
+^7_backup_con_chatvars : _backup_con_chatvars_$_backup_con_chatvars_set
+^7_backup_con_chatvars_0 : set _backup_con_chatvars_set 1; set _backup_con_chatpos $con_chatpos; set _backup_con_chat $con_chat; set _backup_con_notify $con_notify; set _backup_con_chattime $con_chattime; set _backup_cl_deathscoreboard $cl_deathscoreboard; set _backup_scr_centertime $scr_centertime;set _backup_r_track_sprites $r_track_sprites
+^7_backup_con_chatvars_1 : 
+^7_cl_hook_gamestart : set _cl_hook_gametype $1; _cl_hook_gamestart_stage2
+^7_cl_hook_gamestart_stage2 : cl_hook_gamestart_all; cl_hook_gamestart_${_cl_hook_gametype}
+^7_detect_dedicated_$qport : $*
+^7_detect_dedicated_0 : 
+^7_gl_flashblend_update_00 : gl_flashblend 1
+^7_gl_flashblend_update_01 : gl_flashblend 0
+^7_gl_flashblend_update_10 : gl_flashblend 0
+^7_gl_flashblend_update_11 : gl_flashblend 0
+^7_gunalign_01 : cl_gunalign 1
+^7_gunalign_02 : cl_gunalign 2
+^7_gunalign_03 : cl_gunalign 3
+^7_gunalign_04 : cl_gunalign 4
+^7_gunalign_11 : cl_gunalign 2
+^7_gunalign_12 : cl_gunalign 1
+^7_gunalign_13 : cl_gunalign 4
+^7_gunalign_14 : cl_gunalign 3
+^7_gunalign_update : _gunalign_$v_flipped$menu_cl_gunalign
+^7_menu_loadmap_prepare_maxpl : maxplayers $_menu_loadmap_maxplayers
+^7_restore_con_chatvars : _restore_con_chatvars_$_backup_con_chatvars_set
+^7_restore_con_chatvars_0 : 
+^7_restore_con_chatvars_1 : set _backup_con_chatvars_set 0; con_chatpos $_backup_con_chatpos; con_chat $_backup_con_chat; con_notify $_backup_con_notify; con_chattime $_backup_con_chattime; cl_deathscoreboard $_backup_cl_deathscoreboard; scr_centertime $_backup_scr_centertime;r_track_sprites $_backup_r_track_sprites
+^7_settemp_restore_0 : set settemp_var _settemp_x; set settemp_list 0
+^7_settemp_restore_1 : $1 "${$2}"; _settemp_restore_${3- asis}
+^7_sv_hook_gamestart : set _sv_hook_gametype $1; _sv_hook_gamestart_stage2
+^7_sv_hook_gamestart_stage2 : sv_hook_gamestart_all; sv_hook_gamestart_${_sv_hook_gametype}
+^7_update_configversion_0 : 
+^7_update_configversion_1 : 
+^7_update_configversion_2 : 
+^7_update_generic : _update_generic_r_dynamic_$r_dynamic
+^7_update_generic_r_dynamic_0 : r_dynamic 1; r_shadow_realtime_dlight 1
+^7_update_generic_r_dynamic_1 : 
+^7_userbind_call : ${$1}
+^7_weapnext_000 : impulse 10
+^7_weapnext_001 : impulse 10
+^7_weapnext_010 : impulse 10
+^7_weapnext_011 : impulse 10
+^7_weapnext_020 : impulse 10
+^7_weapnext_021 : impulse 10
+^7_weapnext_100 : impulse 10
+^7_weapnext_101 : impulse 15
+^7_weapnext_110 : impulse 18
+^7_weapnext_111 : impulse 15
+^7_weapnext_120 : impulse 18
+^7_weapnext_121 : impulse 15
+^7_weapprev_000 : impulse 12
+^7_weapprev_001 : impulse 12
+^7_weapprev_010 : impulse 12
+^7_weapprev_011 : impulse 12
+^7_weapprev_020 : impulse 12
+^7_weapprev_021 : impulse 12
+^7_weapprev_100 : impulse 12
+^7_weapprev_101 : impulse 16
+^7_weapprev_110 : impulse 19
+^7_weapprev_111 : impulse 16
+^7_weapprev_120 : impulse 19
+^7_weapprev_121 : impulse 16
+^7addfav : qc_cmd addtolist net_slist_favorites $*
+^7addvote : qc_cmd addtolist sv_vote_commands $*
+^7adminmsg : sv_cmd adminmsg $*
+^7allready : sv_cmd allready
+^7asay_ctf_flagcarrier : say_team flag carrier at %y
+^7asay_ctf_haveflag : say_team (%l) have the flag
+^7asay_drop : say_team (%l) dropped %w ; impulse 17
+^7asay_killed : say_team got killed at %d
+^7asay_noammo : say_team (%l) need %W for %w
+^7asay_support : say_team (%l) need help, %h%%
+^7asay_willgo : say_team will go to %y
+^7autoswitch : set cl_autoswitch $1 ; cmd autoswitch $1
+^7ban : sv_cmd ban $*
+^7bans : sv_cmd bans
+^7bsp : ls maps/*.bsp
+^7chmap : changelevel $*
+^7cl_fbskin_green : playermodel models/player/nexus.zym; playerskin 6; color 3 3
+^7cl_fbskin_off : playermodel models/player/nexus.zym; playerskin 0
+^7cl_fbskin_orange : playermodel models/player/nexus.zym; playerskin 6; color 14 14
+^7cl_fbskin_red : playermodel models/player/nexus.zym; playerskin 6; color 4 4
+^7cl_hook_gameend : 
+^7cl_hook_gamestart_all : 
+^7cl_hook_gamestart_arena : 
+^7cl_hook_gamestart_as : 
+^7cl_hook_gamestart_ctf : 
+^7cl_hook_gamestart_cts : 
+^7cl_hook_gamestart_dm : 
+^7cl_hook_gamestart_dom : 
+^7cl_hook_gamestart_kh : 
+^7cl_hook_gamestart_lms : 
+^7cl_hook_gamestart_nexball : 
+^7cl_hook_gamestart_nop : 
+^7cl_hook_gamestart_ons : 
+^7cl_hook_gamestart_rc : 
+^7cl_hook_gamestart_rune : 
+^7cl_hook_gamestart_tdm : 
+^7cl_teamradar_rotate : toggle cl_teamradar_rotation 0 1 2 3 4
+^7clearmap : disconnect
+^7cointoss : sv_cmd cointoss
+^7dropweapon : impulse 17
+^7endmatch : timelimit -1
+^7extendmatchtime : sv_cmd rpn /timelimit timelimit timelimit_max timelimit timelimit_increment add bound def
+^7g_hitplots_add : qc_cmd rpn /g_hitplots_individuals g_hitplots_individuals $1 union def
+^7g_hitplots_remove : qc_cmd rpn /g_hitplots_individuals g_hitplots_individuals $1 difference def
+^7g_maplist_add : qc_cmd maplist add $*
+^7g_maplist_cleanup : qc_cmd maplist cleanup
+^7g_maplist_putfirst : qc_cmd maplist remove $* ; qc_cmd maplist add $*
+^7g_maplist_remove : qc_cmd maplist remove $*
+^7g_maplist_shufflenow : qc_cmd maplist shuffle
+^7g_tourney : g_tourney_$1
+^7g_tourney_0 : g_warmup 0; g_chat_nospectators 0; sv_vote_nospectators 0
+^7g_tourney_1 : g_warmup 1; g_chat_nospectators 2; sv_vote_nospectators 1
+^7g_turrets_reload : set g_turrets_reloadcvars 1
+^7g_waypointeditor_relinkall : impulse 105
+^7g_waypointeditor_remove : impulse 104
+^7g_waypointeditor_saveall : impulse 106
+^7g_waypointeditor_spawn : impulse 103
+^7g_waypointeditor_unreachable : impulse 107
+^7g_waypointsprite_clear : impulse 48
+^7g_waypointsprite_clear_personal : impulse 47
+^7g_waypointsprite_personal : impulse 30
+^7g_waypointsprite_personal_d : impulse 32
+^7g_waypointsprite_personal_p : impulse 31
+^7g_waypointsprite_team_danger : impulse 37
+^7g_waypointsprite_team_danger_d : impulse 39
+^7g_waypointsprite_team_danger_p : impulse 38
+^7g_waypointsprite_team_helpme : impulse 33
+^7g_waypointsprite_team_here : impulse 34
+^7g_waypointsprite_team_here_d : impulse 36
+^7g_waypointsprite_team_here_p : impulse 35
+^7g_waypointsprite_toggle : impulse 49
+^7gametype : sv_cmd gametype $*
+^7gl_flashblend_update : _gl_flashblend_update_$r_shadow_realtime_dlight$r_showsurfaces
+^7gotomap : sv_cmd gotomap "$1"
+^7if_client : $*
+^7if_dedicated : _detect_dedicated_$qport $*
+^7kickban : sv_cmd kickban $*
+^7lockteams : sv_cmd lockteams
+^7lsmaps : cmd lsmaps
+^7menu_loadmap_prepare : disconnect; wait; g_campaign 0; menu_cmd rpn /_menu_loadmap_maxplayers menu_maxplayers minplayers bot_number 1 add max max def; _menu_loadmap_prepare_maxpl; g_maplist_shufflenow
+^7menu_showteamselect : menu_cmd directmenu TeamSelect
+^7menu_sync : menu_cmd sync
+^7movetoteam_auto : sv_cmd movetoteam $1 auto
+^7movetoteam_blue : sv_cmd movetoteam $1 blue
+^7movetoteam_pink : sv_cmd movetoteam $1 pink
+^7movetoteam_red : sv_cmd movetoteam $1 red
+^7movetoteam_yellow : sv_cmd movetoteam $1 yellow
+^7mute : prvm_edictset server $1 muted 1
+^7nospectators : sv_cmd nospectators
+^7ons_map : cl_cmd radar
+^7ply : playdemo $1
+^7printstats : sv_cmd printstats
+^7qc_cmd : menu_cmd $*
+^7radar : cl_cmd radar
+^7ready : cmd ready
+^7rec : record demos/$1
+^7records : cmd records
+^7reducematchtime : sv_cmd rpn /timelimit timelimit timelimit_decrement sub timelimit_min timelimit bound def
+^7reload : impulse 20
+^7sbar_columns_help : cl_cmd sbar_columns_help $*
+^7sbar_columns_set : cl_cmd sbar_columns_set $*
+^7sethostname : set menu_use_default_hostname 0; hostname $*
+^7setreport : set "$1" "$2" ; sendcvar "$1"
+^7settemp : settemp_list "1 $1 $settemp_var $settemp_list"; set $settemp_var "${$1}"; settemp_var ${settemp_var}x; $1 "$2"
+^7settemp_restore : _settemp_restore_${settemp_list asis}
+^7singleplayer_continue : set scmenu_campaign_goto -1
+^7singleplayer_levellist : set scmenu_campaign_dump 1; togglemenu; wait; togglemenu
+^7singleplayer_start : g_campaign_index 0; set scmenu_campaign_goto 0
+^7spec : cmd spectate
+^7startmap_dm : set _sv_init 0; map _init/_init; exec $serverconfig; set _sv_init 1; map _init/_init
+^7startmap_sp : map start
+^7suggestmap : cmd suggestmap $1
+^7sv_fbskin_green : g_fullbrightplayers 1; sv_defaultcharacter 1; sv_defaultplayermodel models/player/nexus.zym; sv_defaultplayerskin 6; sv_defaultplayercolors 51
+^7sv_fbskin_off : g_fullbrightplayers 0; sv_defaultcharacter 0; sv_defaultplayerskin 0; sv_defaultplayercolors ""
+^7sv_fbskin_orange : g_fullbrightplayers 1; sv_defaultcharacter 1; sv_defaultplayermodel models/player/nexus.zym; sv_defaultplayerskin 6; sv_defaultplayercolors 238
+^7sv_fbskin_red : g_fullbrightplayers 1; sv_defaultcharacter 1; sv_defaultplayermodel models/player/nexus.zym; sv_defaultplayerskin 6; sv_defaultplayercolors 68
+^7sv_hook_gameend : 
+^7sv_hook_gamerestart : 
+^7sv_hook_gamestart_all : 
+^7sv_hook_gamestart_arena : 
+^7sv_hook_gamestart_as : 
+^7sv_hook_gamestart_ctf : 
+^7sv_hook_gamestart_cts : 
+^7sv_hook_gamestart_dm : 
+^7sv_hook_gamestart_dom : 
+^7sv_hook_gamestart_kh : 
+^7sv_hook_gamestart_lms : 
+^7sv_hook_gamestart_nexball : 
+^7sv_hook_gamestart_ons : 
+^7sv_hook_gamestart_rc : 
+^7sv_hook_gamestart_rune : 
+^7sv_hook_gamestart_tdm : 
+^7sv_loadconfig : exec $serverconfig
+^7sv_restart : say "Server will restart at the end of the match, you will all be reconnected automatically. $* "; quit_and_redirect self
+^7tdem : timedemo $1
+^7team_auto : cmd selectteam auto; cmd join
+^7team_blue : cmd selectteam blue; cmd join
+^7team_pink : cmd selectteam pink; cmd join
+^7team_red : cmd selectteam red; cmd join
+^7team_yellow : cmd selectteam yellow; cmd join
+^7teamstatus : cmd teamstatus; sv_cmd teamstatus
+^7timein : cmd timein
+^7timeout : cmd timeout
+^7unban : sv_cmd unban $*
+^7unlockteams : sv_cmd unlockteams
+^7unmute : prvm_edictset server $1 muted 0
+^7vabstain : cmd vote abstain
+^7vcall : cmd vote call $*
+^7vdo : cmd vote do $*
+^7vdoend : vdo endmatch
+^7vdokick : vdo kick $*
+^7vdokickban : vdo kickban $*
+^7vdomap : vdo gotomap $1
+^7vdontcare : cmd vote dontcare
+^7vend : vcall endmatch
+^7vhelp : cmd vote help
+^7vkick : vcall kick $1
+^7vkickban : vcall kickban $1
+^7vlogin : cmd vote login $*
+^7vmap : vcall gotomap $1
+^7vmaster : cmd vote master
+^7vno : cmd vote no
+^7vstatus : cmd vote status
+^7vstop : cmd vote stop
+^7vyes : cmd vote yes
+^7weapbest : impulse 13
+^7weaplast : impulse 11
+^7weapnext : _weapnext_${_supports_weaponpriority}${sbar_hudselector}${cl_weaponpriority_useforcycling}
+^7weapprev : _weapprev_${_supports_weaponpriority}${sbar_hudselector}${cl_weaponpriority_useforcycling}
+

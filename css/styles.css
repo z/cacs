@@ -21,3 +21,15 @@ body { font-size: 140%; }
 .well h3 {
   margin-top:0;
 }
+#cvar-cmd-list td {
+  font-family: courier;
+}
+#cvar-cmd-list td:last-child { /* not working */
+  word-wrap: break-word;
+  white-space: normal;
+}
+#cacs_share {
+  float:right;
+  margin-top:-44px;
+  font-size:14px;
+}
