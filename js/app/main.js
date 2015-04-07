@@ -9,7 +9,7 @@ define(function (require) {
       var hash = location.hash.substr(1).split('/');
       var game = hash[0] || 'xonotic';
       var ordering = hash[1] || '0a';
-      var regex = (hash[2] == 0 || hash[2] == NaN) ? false : true;
+      var regex = (hash[2] == 0 || hash[2] == undefined) ? false : true;
       var smart = (regex) ? false : true;
       var filter = hash[3] || '';
       filter = decodeURIComponent(filter);
@@ -112,10 +112,13 @@ define(function (require) {
 
       $('#cvar-cmd-list').on('order.dt', function() {
           var order = table.order();
-          var o1 = (order[0][1] == 'desc') ? 'd' : 'a';
-          ordering = order[0][0] + o1
+          var order_arr = [];
+          order.forEach(function(e, i, a) {
+            var o = (e[1] == 'desc') ? 'd' : 'a';
+            order_arr.push(e[0] + o);
+          });
+          ordering = order_arr.join("-");
           writeUrl();
-          $('#orderInfo').html( 'Ordering on column '+  +' ('+order[0][1]+')' );
       });
 
       $('#use-regex').change(function() {
@@ -132,12 +135,10 @@ define(function (require) {
         var r = regexOption();
         $('#cvar-cmd-list').DataTable().search(filter, r[0], r[1]).draw();
         regex = r[0];
-        console.log(r);
         writeUrl();
       }
 
       function writeUrl() {
-        //var sort = '0a';
         var regexon = (regex) ? 1 : 0;
         var gs = game + '/' + ordering + '/' + regexon + '/' + encodeURIComponent(filter);
         location.hash = gs;
