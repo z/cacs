@@ -11,7 +11,8 @@ define(function (require) {
       var ordering = hash[1] || '0a';
       var regex = (hash[2] == 0 || hash[2] == NaN) ? false : true;
       var smart = (regex) ? false : true;
-      var filter = decodeURIComponent(hash[3]) || '';
+      var filter = hash[3] || '';
+      filter = decodeURIComponent(filter);
 
       var list = {};
 
@@ -21,7 +22,6 @@ define(function (require) {
 
         $.get('data/' + game + '/cmdlist.txt', function(data) {
           cmds = data.split('\n').map(function(line){
-
             var re_cmd = new RegExp(/[\^]7(.+) : (.+)/);
             var cmd_grp = re_cmd.exec(line);
             //console.log(cmd_grp);
@@ -35,13 +35,11 @@ define(function (require) {
               list['items'].push(item);
             }
           });
-          
           //console.log(list);
         });
 
         $.get('data/' + game + '/aliaslist.txt', function(data) {
           aliases = data.split('\n').map(function(line){
-
             var re_alias = new RegExp(/[\^]7(.+) : (.+)/);
             var alias_grp = re_alias.exec(line);
             //console.log(cmd_grp);
@@ -55,13 +53,12 @@ define(function (require) {
               list['items'].push(item);
             }
           });
-          
           //console.log(list);
         });
 
         $.get('data/' + game + '/cvarlist.txt', function(data) {
           cvars = data.split('\n').map(function(line){
-            var re_cvar = new RegExp(/[\^]7(\w+) is '(.*)' [\[]'(.*)'[\]] (.+)/);
+            var re_cvar = new RegExp(/[\^]7(\w+) is "(.*)" [\[]"(.*)"[\]] (.+)/);
             var cvar_grp = re_cvar.exec(line);
             //console.log(cvar_grp);
 
