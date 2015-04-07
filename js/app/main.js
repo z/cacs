@@ -11,7 +11,7 @@ define(function (require) {
       var ordering = hash[1] || '0a';
       var regex = (hash[2] == 0 || hash[2] == NaN) ? false : true;
       var smart = (regex) ? false : true;
-      var filter = hash[3] || '';
+      var filter = decodeURIComponent(hash[3]) || '';
       console.log(regex);
       console.log(smart);
       console.log(hash);
@@ -147,7 +147,7 @@ define(function (require) {
       function writeUrl() {
         //var sort = '0a';
         var regexon = (regex) ? 1 : 0;
-        var gs = game + '/' + ordering + '/' + regexon + '/' + filter;
+        var gs = game + '/' + ordering + '/' + regexon + '/' + encodeURIComponent(filter);
         location.hash = gs;
         $('#cacs_share').attr('href', '#' + gs);
       }
