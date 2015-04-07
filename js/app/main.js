@@ -12,10 +12,6 @@ define(function (require) {
       var regex = (hash[2] == 0 || hash[2] == NaN) ? false : true;
       var smart = (regex) ? false : true;
       var filter = decodeURIComponent(hash[3]) || '';
-      console.log(regex);
-      console.log(smart);
-      console.log(hash);
-      console.log(filter);
 
       var list = {};
 
@@ -90,7 +86,6 @@ define(function (require) {
         var col = e.substr(0,1);
         var sort = (e.substr(1,1) == 'd') ? 'desc' : 'asc';
         order.push([col, sort]);
-        console.log([col, sort]);
       });
 
       var table = $('#cvar-cmd-list').DataTable({
