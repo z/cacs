@@ -6,9 +6,16 @@ define(function (require) {
     $(document).ready(function() {
 
       // fun variables from the location hash to play with
-      var hash = location.hash.substr(1).split("/")
-      var game = hash[0] || "xonotic";
-      var filter = hash[1] || "";
+      var hash = location.hash.substr(1).split('/');
+      var game = hash[0] || 'xonotic';
+      var ordering = hash[1] || '0a';
+      var regex = (hash[2] == 0 || hash[2] == NaN) ? false : true;
+      var smart = (regex) ? false : true;
+      var filter = hash[3] || '';
+      console.log(regex);
+      console.log(smart);
+      console.log(hash);
+      console.log(filter);
 
       var list = {};
 
@@ -16,8 +23,8 @@ define(function (require) {
 
         list['items'] = [];
 
-        $.get("data/" + game + "/cmdlist.txt", function(data) {
-          cmds = data.split("\n").map(function(line){
+        $.get('data/' + game + '/cmdlist.txt', function(data) {
+          cmds = data.split('\n').map(function(line){
 
             var re_cmd = new RegExp(/[\^]7(.+) : (.+)/);
             var cmd_grp = re_cmd.exec(line);
@@ -26,7 +33,7 @@ define(function (require) {
             if (cmd_grp) {
               var item = {
                 label: cmd_grp[1],
-                type: "cmd",
+                type: 'cmd',
                 description: cmd_grp[2].replace('"','\"')
               };
               list['items'].push(item);
@@ -36,8 +43,8 @@ define(function (require) {
           //console.log(list);
         });
 
-        $.get("data/" + game + "/aliaslist.txt", function(data) {
-          aliases = data.split("\n").map(function(line){
+        $.get('data/' + game + '/aliaslist.txt', function(data) {
+          aliases = data.split('\n').map(function(line){
 
             var re_alias = new RegExp(/[\^]7(.+) : (.+)/);
             var alias_grp = re_alias.exec(line);
@@ -46,7 +53,7 @@ define(function (require) {
             if (alias_grp) {
               var item = {
                 label: alias_grp[1],
-                type: "alias",
+                type: 'alias',
                 description: alias_grp[2].replace('"','\"')
               };
               list['items'].push(item);
@@ -56,16 +63,16 @@ define(function (require) {
           //console.log(list);
         });
 
-        $.get("data/" + game + "/cvarlist.txt", function(data) {
-          cvars = data.split("\n").map(function(line){
-            var re_cvar = new RegExp(/[\^]7(\w+) is "(.*)" [\[]"(.*)"[\]] (.+)/);
+        $.get('data/' + game + '/cvarlist.txt', function(data) {
+          cvars = data.split('\n').map(function(line){
+            var re_cvar = new RegExp(/[\^]7(\w+) is '(.*)' [\[]'(.*)'[\]] (.+)/);
             var cvar_grp = re_cvar.exec(line);
             //console.log(cvar_grp);
 
             if (cvar_grp) {
               var item = {
                 label: cvar_grp[1],
-                type: "cvar",
+                type: 'cvar',
                 default_value: cvar_grp[3].replace('"','\"'),
                 description: cvar_grp[4].replace('"','\"')
               };
@@ -77,45 +84,88 @@ define(function (require) {
         });
       }
 
+      var co = ordering.split('-');
+      var order = [];
+      co.forEach(function(e, i, a) {
+        var col = e.substr(0,1);
+        var sort = (e.substr(1,1) == 'd') ? 'desc' : 'asc';
+        order.push([col, sort]);
+        console.log([col, sort]);
+      });
+
       var table = $('#cvar-cmd-list').DataTable({
-        "columns": [
-          { data: "label", "defaultContent": "", width: "30%" },
-          { data: "type", "defaultContent": "", width: "5%" },
-          { data: "description", "defaultContent": "", width: "45%" },
-          { data: "default_value", "defaultContent": "", width: "20%" },
+        'columns': [
+          { data: 'label', 'defaultContent': '', width: '30%' },
+          { data: 'type', 'defaultContent': '', width: '5%' },
+          { data: 'description', 'defaultContent': '', width: '45%' },
+          { data: 'default_value', 'defaultContent': '', width: '20%' },
         ],
-        "order": [[0, 'asc']],
-        "pageLength": 200,
-        "lengthMenu": [ [200, 500, 1000, 2000, -1], [200, 500, 1000, 2000, "All"] ]
+        'order': order,
+        'pageLength': 200,
+        'lengthMenu': [ [200, 500, 1000, 2000, -1], [200, 500, 1000, 2000, 'All'] ]
       });
 
       function populateTable() {
         var all = $.parseJSON(JSON.stringify(list));
-        $('#cvar-cmd-list').DataTable().clear().rows.add(all.items).search(filter).draw();
-        $("#cvar-cmd-list_filter input").val(filter);
+        var r = regexOption();
+        $('#cvar-cmd-list').DataTable().clear().rows.add(all.items).search(filter, r[0], r[1]).draw();
+        $('#cvar-cmd-list_filter input').val(filter);
       }
 
-      $('#cvar-cmd-list').DataTable().on('search.dt', function () {
-          var search = $('#cvar-cmd-list').DataTable().search();
-          var gs = game + "/" + search;
-          $('#cacs_share').attr("href", "#" + gs);
-          location.hash = gs;
+      $('#cvar-cmd-list').DataTable().on('search.dt', function() {
+        var search = $('#cvar-cmd-list').DataTable().search();
+        filter = search;
+        writeUrl();
       });
 
-      $("#game a").click(function(e) {
+      $('#cvar-cmd-list').on('order.dt', function() {
+          var order = table.order();
+          var o1 = (order[0][1] == 'desc') ? 'd' : 'a';
+          ordering = order[0][0] + o1
+          writeUrl();
+          $('#orderInfo').html( 'Ordering on column '+  +' ('+order[0][1]+')' );
+      });
+
+      $('#use-regex').change(function() {
+        toggleRegex();
+      });
+
+      function regexOption() {
+        var regex = $('#use-regex').prop('checked');
+        var smart = (regex) ? false : true; // if regex, disable smart search
+        return [regex, smart];
+      }
+
+      function toggleRegex() {
+        var r = regexOption();
+        $('#cvar-cmd-list').DataTable().search(filter, r[0], r[1]).draw();
+        regex = r[0];
+        console.log(r);
+        writeUrl();
+      }
+
+      function writeUrl() {
+        //var sort = '0a';
+        var regexon = (regex) ? 1 : 0;
+        var gs = game + '/' + ordering + '/' + regexon + '/' + filter;
+        location.hash = gs;
+        $('#cacs_share').attr('href', '#' + gs);
+      }
+
+      $('#game a').click(function(e) {
         var $this = $(this);
         var name = $this.text();
-        filter = $('#cvar-cmd-list').DataTable().search()
-        game = $this.attr("id");
-        $("#game a").removeClass("active");
-        $this.addClass("active");
-        $("#game-name").text(name);
+        game = $this.attr('id');
+        $('#game a').removeClass('active');
+        $this.addClass('active');
+        $('#game-name').text(name);
         loadItems(game);
-        location.hash = game + "/" + filter;
+        writeUrl();
         e.preventDefault();
       });
 
-      $("#game a#" + game).click();
+      $('#use-regex').prop('checked', regex);
+      $('#game a#' + game).click();
 
     });
   });
