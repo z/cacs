@@ -104,7 +104,7 @@ define(function (require) {
         $('#cvar-cmd-list_filter input').val(filter);
       }
 
-      $('#cvar-cmd-list').DataTable().on('search.dt', function() {
+      $('#cvar-cmd-list').on('search.dt', function() {
         var search = $('#cvar-cmd-list').DataTable().search();
         filter = search;
         writeUrl();
