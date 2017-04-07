@@ -282,4 +282,3 @@
 ^7viewprev : change to previous animation frame of viewthing entity in current level
 ^7wait : make script execution wait for next rendered frame
 ^7which : accepts a file name as argument and reports where the file is taken from
-
